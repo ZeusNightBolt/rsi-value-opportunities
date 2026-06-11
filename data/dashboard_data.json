@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-11T12:56:28.210286-04:00",
+  "generated_at": "2026-06-11T12:59:18.480160-04:00",
   "latest_4h_timestamp": "2026-06-11 08:00:00-04:00",
   "price_filter": 30.0,
   "universe_count": 119,
@@ -2682,7 +2682,7 @@
     {
       "ticker": "MTG",
       "cache_key": "MTG:1781006400000:90.32",
-      "generated_at": "2026-06-11T16:42:00.055835+00:00",
+      "generated_at": "2026-06-11T16:58:24.542161+00:00",
       "input": {
         "ticker": "MTG",
         "company": "MGIC Investment Corp.",
@@ -2695,7 +2695,7 @@
         "rsi_acceleration_score": 100.0,
         "rsi_current": 51.7,
         "rsi_delta_1": 27.0,
-        "prior_rsi_delta_3_avg": -7.2,
+        "prior_rsi_delta_3_bar_avg": -7.2,
         "rsi_acceleration": 34.2,
         "forward_pe": 7.64,
         "trailing_pe": 8.02,
@@ -2706,12 +2706,12 @@
         "short_pct_float": 3.8,
         "sentiment_score": 1.0
       },
-      "analysis": "- **Setup:** RSI acceleration inflection from deeply negative momentum (prior 3-day avg delta -7.2) to a +34.2 acceleration, with current RSI at 51.7 (neutral, not overbought). Value confirmation via forward P/E 7.64, P/B 1.07, and PEG 0.4.\n- **Why it can work:** The RSI acceleration signal (score 100) suggests a sharp reversal in short-term momentum, often preceding sustained moves when combined with low valuation. The stock is cheap on earnings and book value, and short interest at 3.8% is modest, reducing squeeze risk but leaving room for covering if sentiment improves.\n- **What can break it:** The RSI acceleration is a single data point; it could be a dead-cat bounce if broader financial sector or housing credit conditions deteriorate. MGIC\u2019s business is tied to mortgage insurance claims; a recession or housing downturn could spike losses, making low P/E a value trap. Sentiment score of 1.0 (max bullish) may already be priced in.\n- **Confirming evidence to watch:** Look for sustained RSI above 55 with positive deltas over the next 5-10 sessions. Also monitor mortgage delinquency rates and MGIC\u2019s combined ratio; any uptick would undermine the value thesis. Volume should confirm the inflection\u2014above-average buying pressure needed.\n- **Bottom line:** The RSI acceleration setup is technically compelling and value metrics are supportive, but the signal is early and fragile. Without additional data on credit cycle or earnings momentum, this is a high-conviction setup only if you trust the momentum reversal is fundamental, not noise."
+      "analysis": "- **Setup:** RSI acceleration inflection from deeply negative momentum (prior 3-bar avg -7.2) to a +34.2 acceleration, with current RSI at 51.7 (neutral, not overbought). Value confirmation via forward P/E 7.64, P/B 1.07, and PEG 0.4.\n- **Why it can work:** The RSI acceleration signal (score 100) suggests a sharp reversal in short-term momentum, often preceding trend changes. Low valuation multiples (PEG <1, P/B near 1) provide a fundamental floor if the momentum shift attracts buyers.\n- **What can break it:** RSI at 51.7 is still below typical bullish thresholds (e.g., 60+); the acceleration could be a dead-cat bounce if volume or catalyst is absent. Financial sector sensitivity to interest rates and credit cycles is unquantified here. Short float at 3.8% is moderate, not extreme enough to force a squeeze.\n- **Confirming evidence to watch:** Need to see RSI cross above 60 and hold, plus volume confirmation on up days. Also monitor forward earnings revisions\u2014PEG 0.4 implies high growth expectations; any downgrade would break the value thesis.\n- **Bottom line:** The RSI acceleration is a strong technical signal, and value metrics are cheap, but the setup lacks catalyst clarity and sector risk data. Without additional macro or company-specific news, this is a momentum/value hybrid that requires close monitoring for follow-through."
     },
     {
       "ticker": "FNB",
       "cache_key": "FNB:1781006400000:88.3",
-      "generated_at": "2026-06-11T16:42:06.503853+00:00",
+      "generated_at": "2026-06-11T16:58:30.356989+00:00",
       "input": {
         "ticker": "FNB",
         "company": "F.N.B. Corp",
@@ -2724,7 +2724,7 @@
         "rsi_acceleration_score": 100.0,
         "rsi_current": 69.2,
         "rsi_delta_1": 33.8,
-        "prior_rsi_delta_3_avg": -11.6,
+        "prior_rsi_delta_3_bar_avg": -11.6,
         "rsi_acceleration": 45.4,
         "forward_pe": 9.03,
         "trailing_pe": 10.93,
@@ -2735,12 +2735,12 @@
         "short_pct_float": 8.3,
         "sentiment_score": 1.0
       },
-      "analysis": "- **Setup:** RSI acceleration inflection (RSI acceleration score 100.0, current RSI 69.2, prior 3-period avg delta -11.6, now +45.4) as primary trigger; value confirmation via forward P/E 9.03, P/B 0.93, PEG 1.05, composite value score 66.6.\n- **Why it can work:** Sharp RSI acceleration from negative momentum suggests a near-term bullish reversal in a regional bank. Low forward P/E and sub-1.0 P/B imply the stock is cheap relative to book and earnings, potentially attracting value-oriented flows. Sentiment score of 1.0 (max positive) supports the setup.\n- **What can break it:** RSI at 69.2 is approaching overbought territory (70+), risking a pullback. Regional banks are sensitive to interest rate changes, credit quality, and regulatory shifts\u2014none of which are captured in the supplied data. Short float at 8.3% could squeeze but also indicates bearish conviction.\n- **Confirming evidence to watch:** Monitor RSI for a sustained hold above 60 without a sharp reversal; watch for volume expansion on up days. Check upcoming earnings for net interest margin trends and loan loss provisions. Price action relative to 52-week high/low (data missing) would clarify trend context.\n- **Bottom line:** The RSI acceleration is a strong short-term momentum signal, and valuation supports a long bias, but the setup lacks macro and fundamental context (e.g., interest rate outlook, credit cycle). Without those, the inflection may be a dead cat bounce in a downtrend. No trade recommendation."
+      "analysis": "- **Setup:** RSI acceleration inflection (score 100.0) with current RSI 69.2, delta +33.8 vs. prior 3-bar avg -11.6, signaling a sharp momentum reversal from oversold conditions. Value confirmation via composite value score 66.6, forward P/E 9.03, and price/book 0.93.\n- **Why it can work:** The RSI acceleration is extreme (45.4), often preceding sustained upward moves if volume confirms. Low forward P/E and sub-1.0 price/book suggest the stock is cheap relative to book value, providing a valuation floor if momentum stalls.\n- **What can break it:** RSI at 69.2 is nearing overbought territory (70+), risking a pullback. Regional banks face interest rate sensitivity, credit quality concerns, and potential regulatory headwinds\u2014none quantified here. Short float at 8.3% could squeeze, but also indicates bearish sentiment.\n- **Confirming evidence to watch:** Look for RSI to hold above 60 without a sharp decline, and for price to break above recent resistance (unknown from data). Volume should increase on up days. Watch for earnings or macro data (e.g., Fed policy, loan loss provisions) that could reverse momentum.\n- **Bottom line:** The RSI acceleration is a strong short-term momentum signal, and valuation supports a floor, but the setup lacks confirmation from 52-week range data and macro context. Skeptical: momentum alone can fade quickly in regional banks. No trade recommendation."
     },
     {
       "ticker": "ASB",
       "cache_key": "ASB:1781006400000:88.21",
-      "generated_at": "2026-06-11T16:42:13.044344+00:00",
+      "generated_at": "2026-06-11T16:58:36.831316+00:00",
       "input": {
         "ticker": "ASB",
         "company": "Associated Banc-Corp",
@@ -2753,7 +2753,7 @@
         "rsi_acceleration_score": 99.7,
         "rsi_current": 65.1,
         "rsi_delta_1": 29.7,
-        "prior_rsi_delta_3_avg": -0.9,
+        "prior_rsi_delta_3_bar_avg": -0.9,
         "rsi_acceleration": 30.6,
         "forward_pe": 8.59,
         "trailing_pe": 9.65,
@@ -2764,12 +2764,12 @@
         "short_pct_float": 4.2,
         "sentiment_score": 0.83
       },
-      "analysis": "- **Setup:** RSI acceleration inflection (score 99.7) with current RSI 65.1, delta +29.7 vs prior 3-day avg -0.9, signaling a sharp momentum shift from negative to positive. Value confirmation: forward P/E 8.59, P/B 0.94 (below book), composite value score 66.8.\n\n- **Why it can work:** The RSI acceleration from negative to strongly positive often catches early trend reversals. Low forward P/E and sub-1.0 P/B suggest the stock is not priced for growth, leaving room for re-rating if momentum persists. Short float 4.2% could add squeeze potential.\n\n- **What can break it:** Regional bank sector headwinds (e.g., rate cuts compressing net interest margins, credit quality deterioration) are not captured in the data. RSI at 65.1 is nearing overbought; acceleration could fade quickly if volume or catalyst is absent. PEG 1.78 implies growth expectations may already be priced in relative to earnings.\n\n- **Confirming evidence to watch:** Need to see RSI hold above 60 and acceleration remain positive over next 3-5 sessions. Volume spike on up days would support momentum. Any insider buying or upward earnings revision would strengthen the case. Unknown: 52-week high/low context, recent earnings trend, and macro exposure.\n\n- **Bottom line:** The RSI acceleration is a strong technical signal, and value metrics are supportive, but the setup lacks fundamental catalyst data. Without confirmation of improving bank fundamentals or sector tailwinds, this is a momentum trade with high uncertainty. No recommendation."
+      "analysis": "- **Setup:** RSI acceleration inflection (score 99.7) with RSI at 65.1, accelerating from a prior 3-bar average delta of -0.9 to a current delta of +29.7. Value confirmation via composite value score 66.8, forward P/E 8.59, and price/book 0.94.\n\n- **Why it can work:** The sharp RSI acceleration from negative to strongly positive momentum suggests a recent shift in buying pressure, often preceding further upside if sustained. Low forward P/E and sub-1.0 price/book provide a valuation floor, reducing downside risk in a regional bank with a 4.2% short float that could squeeze.\n\n- **What can break it:** RSI at 65.1 is approaching overbought territory (70+), risking a pullback if momentum fades. Regional banks are sensitive to interest rate changes and credit quality; a hawkish Fed or rising loan defaults could reverse the setup. The PEG ratio of 1.78 suggests growth expectations may already be priced in.\n\n- **Confirming evidence to watch:** Look for RSI to hold above 60 without a sharp reversal, and for price to stay above recent support levels. Monitor short interest changes\u2014a drop from 4.2% would reduce squeeze potential. Also watch for earnings beats or upward guidance to validate the value score.\n\n- **Bottom line:** The RSI acceleration is strong and timely, but value confirmation is moderate (66.8). The setup is plausible for a momentum-driven long, but the sector risk and approaching overbought RSI require caution. No trade recommendation."
     },
     {
       "ticker": "ONB",
       "cache_key": "ONB:1781006400000:87.81",
-      "generated_at": "2026-06-11T16:42:19.396711+00:00",
+      "generated_at": "2026-06-11T16:58:43.283990+00:00",
       "input": {
         "ticker": "ONB",
         "company": "Old National Bancorp",
@@ -2782,7 +2782,7 @@
         "rsi_acceleration_score": 100.0,
         "rsi_current": 63.4,
         "rsi_delta_1": 30.4,
-        "prior_rsi_delta_3_avg": -1.1,
+        "prior_rsi_delta_3_bar_avg": -1.1,
         "rsi_acceleration": 31.5,
         "forward_pe": 8.18,
         "trailing_pe": 12.26,
@@ -2793,12 +2793,12 @@
         "short_pct_float": 6.0,
         "sentiment_score": 1.0
       },
-      "analysis": "- **Setup:** RSI acceleration inflection (RSI acceleration score 100.0, current RSI 63.4, prior 3-day avg delta -1.1, now +31.5) as primary signal; value metrics (forward P/E 8.18, P/B 1.11, composite value score 65.2) as confirmation.\n- **Why it can work:** The sharp RSI acceleration from a negative average suggests momentum shift; low forward P/E and P/B near book value imply limited downside if earnings hold. Short float at 6% could add squeeze potential if buying accelerates.\n- **What can break it:** Regional bank earnings are sensitive to credit quality and net interest margins\u2014neither supplied. RSI at 63.4 is not oversold; acceleration could fade quickly if macro headwinds (e.g., rate cuts, loan loss provisions) emerge. PEG of 1.59 suggests growth expectations may already be priced.\n- **Confirming evidence to watch:** Need to see sustained volume increase, earnings beat or guidance raise, and no deterioration in loan loss reserves. Also monitor short interest trend\u2014if it rises further, it may signal smart money skepticism.\n- **Bottom line:** The RSI acceleration is a strong technical signal, and value metrics are supportive, but the setup lacks fundamental data on credit risk and earnings quality. Without those, the inflection could be noise in a cyclical sector."
+      "analysis": "- **Setup:** RSI acceleration inflection (score 100) with RSI jumping from a prior 3-bar average decline of -1.1 to a current delta of +30.4, now at 63.4. Value confirmation via composite value score of 65.2, forward P/E of 8.18, and price-to-book of 1.11.\n- **Why it can work:** The sharp RSI acceleration from negative momentum to strong positive suggests a near-term trend reversal or breakout in buying pressure. Low forward P/E and P/B near 1.0 imply the stock is not overvalued, giving the momentum room to run if fundamentals support.\n- **What can break it:** RSI at 63.4 is approaching overbought territory (70+), and the acceleration could be a short-term spike rather than sustained trend. Regional banks face interest rate and credit risk unknowns; short float at 6% indicates some bearish positioning. No data on 52-week highs/lows, so context of current price level is missing.\n- **Confirming evidence to watch:** Look for RSI to hold above 60 without immediately reversing, and for price to break above recent resistance (unknown from data). Monitor forward earnings revisions and net interest margin trends; a rising PEG (1.59) suggests growth expectations may already be priced in.\n- **Bottom line:** The RSI acceleration is a strong technical signal, and value metrics are supportive, but the setup lacks fundamental catalysts and 52-week context. Without confirmation of sustained buying or improving bank sector conditions, this is a high-momentum, low-conviction long candidate."
     },
     {
       "ticker": "HOMB",
       "cache_key": "HOMB:1781006400000:85.3",
-      "generated_at": "2026-06-11T16:42:25.233610+00:00",
+      "generated_at": "2026-06-11T16:58:49.754223+00:00",
       "input": {
         "ticker": "HOMB",
         "company": "Home BancShares, Inc.",
@@ -2811,7 +2811,7 @@
         "rsi_acceleration_score": 100.0,
         "rsi_current": 68.1,
         "rsi_delta_1": 28.2,
-        "prior_rsi_delta_3_avg": -2.8,
+        "prior_rsi_delta_3_bar_avg": -2.8,
         "rsi_acceleration": 31.1,
         "forward_pe": 10.47,
         "trailing_pe": 11.13,
@@ -2822,12 +2822,12 @@
         "short_pct_float": 5.2,
         "sentiment_score": 0.9
       },
-      "analysis": "- **Setup:** RSI acceleration inflection (RSI acceleration score 100.0, current RSI 68.1, delta +31.1 vs. prior 3-day avg -2.8) as primary signal; value (composite value score 58.0, forward P/E 10.47, P/B 1.22) as secondary confirmation.\n- **Why it can work:** The sharp RSI reversal from negative momentum to positive acceleration often precedes short-term price continuation. Low forward P/E and P/B near book value suggest limited downside if earnings hold, and short interest at 5.2% could add squeeze potential.\n- **What can break it:** RSI at 68.1 is approaching overbought territory; a failed breakout above resistance could reverse the inflection. PEG of 3.01 implies growth is priced in, and regional bank earnings are sensitive to interest rate changes and credit quality\u2014unknowns here.\n- **Confirming evidence to watch:** Volume expansion on up days; RSI holding above 60 without rolling over; price breaking above recent range (52-week high/low not provided, so use chart resistance). Also monitor sector sentiment and loan loss provisions.\n- **Bottom line:** The RSI acceleration signal is strong, but value confirmation is moderate (PEG high, composite score only 58). Without 52-week context or macro data, this is a momentum-driven setup with execution risk. No trade recommendation."
+      "analysis": "- **Setup:** RSI acceleration inflection (RSI acceleration score 100.0, RSI delta +28.2 vs prior 3-bar avg -2.8) as primary signal, with composite value score (58.0) as secondary confirmation. Price $27.51, market cap $5.37B.\n\n- **Why it can work:** The RSI acceleration from negative to strongly positive (+31.1) suggests a momentum shift that often precedes continued upward price movement. Forward P/E of 10.47 and P/B of 1.22 are below regional bank averages, providing a valuation cushion. Sentiment score of 0.9 is bullish, and short float at 5.2% could fuel a squeeze.\n\n- **What can break it:** RSI at 68.1 is approaching overbought territory (70+), risking a pullback. PEG ratio of 3.01 implies growth expectations are already priced in; any earnings miss could reverse momentum. Regional banks face interest rate and credit risk unknowns not captured in supplied data.\n\n- **Confirming evidence to watch:** RSI must stay above 60 and not form a bearish divergence. Volume should increase on up days. A pullback to the 50-day moving average (not supplied) that holds would strengthen the setup. Watch for insider selling or negative earnings revisions.\n\n- **Bottom line:** The RSI acceleration inflection is strong and timely, but value confirmation is only moderate (58/100). The setup is plausible for a momentum-driven long, but the high PEG and near-overbought RSI require caution. No trade recommendation."
     },
     {
       "ticker": "FHN",
       "cache_key": "FHN:1781006400000:85.19",
-      "generated_at": "2026-06-11T16:42:31.126912+00:00",
+      "generated_at": "2026-06-11T16:58:55.860144+00:00",
       "input": {
         "ticker": "FHN",
         "company": "First Horizon Corporation",
@@ -2840,7 +2840,7 @@
         "rsi_acceleration_score": 100.0,
         "rsi_current": 61.4,
         "rsi_delta_1": 28.4,
-        "prior_rsi_delta_3_avg": -2.6,
+        "prior_rsi_delta_3_bar_avg": -2.6,
         "rsi_acceleration": 31.0,
         "forward_pe": 10.33,
         "trailing_pe": 12.2,
@@ -2851,12 +2851,12 @@
         "short_pct_float": 2.9,
         "sentiment_score": 0.5
       },
-      "analysis": "- **Setup:** RSI acceleration inflection (RSI acceleration score 100.0, RSI delta 1 of +28.4 vs. prior 3-day avg of -2.6) as primary signal; value (composite value score 57.7, forward P/E 10.33, P/B 1.37) as confirmation.\n- **Why it can work:** Sharp RSI acceleration from negative momentum suggests a near-term bullish reversal in price. Low forward P/E (10.33) and P/B (1.37) relative to sector may attract value buyers, providing fundamental support if momentum persists.\n- **What can break it:** RSI at 61.4 is not oversold; acceleration could be a short-lived bounce in a downtrend. Composite value score (57.7) is only moderate\u2014not deep value. PEG of 1.76 implies growth expectations are not cheap. Unknown: 52-week high/low context, earnings trend, and macro/rate sensitivity for regional banks.\n- **Confirming evidence to watch:** Sustained RSI above 60 with positive delta; volume increase on up days; price breaking above recent resistance (unknown level). Watch for earnings or loan growth data that supports value thesis. Short float (2.9%) is low, so no squeeze catalyst.\n- **Bottom line:** The RSI acceleration is a strong technical signal, but value confirmation is only moderate. Without 52-week context or sector catalyst, this is a momentum-driven setup with limited fundamental margin of safety. No trade recommendation."
+      "analysis": "- **Setup:** RSI acceleration inflection (RSI acceleration score 100.0, current RSI 61.4, prior 3-bar avg delta -2.6, delta +31.0) with value confirmation (composite value score 57.7, forward P/E 10.33, P/B 1.37).\n- **Why it can work:** The sharp RSI acceleration from a negative average suggests momentum shift; low forward P/E and P/B relative to sector may attract value-oriented flows. Short float at 2.9% is modest, not a squeeze risk but not a headwind.\n- **What can break it:** RSI acceleration could be a dead-cat bounce if broader financial sector weakens or if regional bank earnings disappoint. PEG of 1.76 implies growth expectations may already be priced in, limiting upside.\n- **Confirming evidence to watch:** Need sustained RSI above 60 with positive delta over next 1-2 weeks; rising volume on up days; improvement in sentiment score above 0.5; any insider buying or analyst upgrades.\n- **Bottom line:** The RSI inflection is strong, but value confirmation is moderate (57.7). Without 52-week high/low context or earnings data, this is a momentum setup with incomplete fundamental validation. No trade recommendation."
     },
     {
       "ticker": "KEY",
       "cache_key": "KEY:1781006400000:84.88",
-      "generated_at": "2026-06-11T16:42:37.142578+00:00",
+      "generated_at": "2026-06-11T16:59:01.098707+00:00",
       "input": {
         "ticker": "KEY",
         "company": "KeyCorp",
@@ -2869,7 +2869,7 @@
         "rsi_acceleration_score": 100.0,
         "rsi_current": 69.0,
         "rsi_delta_1": 34.5,
-        "prior_rsi_delta_3_avg": -0.9,
+        "prior_rsi_delta_3_bar_avg": -0.9,
         "rsi_acceleration": 35.4,
         "forward_pe": 10.11,
         "trailing_pe": 13.37,
@@ -2880,12 +2880,12 @@
         "short_pct_float": 3.1,
         "sentiment_score": 0.5
       },
-      "analysis": "- **Setup:** RSI acceleration inflection (RSI acceleration score 100.0, current RSI 69.0, delta +35.4 vs. prior 3-day avg -0.9) as primary signal; value (composite value score 56.8, forward P/E 10.11, P/B 1.35) as secondary confirmation.\n- **Why it can work:** The sharp RSI acceleration from a negative baseline suggests a momentum shift that often precedes sustained rallies in regional banks, especially when forward P/E (10.11) and P/B (1.35) are below sector medians, implying limited downside if earnings hold.\n- **What can break it:** RSI at 69 is near overbought territory; a pullback could reverse the inflection. Forward P/E is low, but PEG of 2.06 indicates growth expectations are modest\u2014any earnings miss or credit quality deterioration (common in regional banks) could negate value support.\n- **Confirming evidence to watch:** Sustained RSI above 60 without a sharp reversal; volume increase on up days; short float (3.1%) declining; sentiment score (0.5) improving above neutral; no new negative analyst revisions or loan loss reserve increases.\n- **Bottom line:** The RSI acceleration signal is strong, but value confirmation is only moderate (composite score 56.8). The setup is plausible for a short-term momentum trade, but lacks deep value margin of safety. Unknown: interest rate sensitivity, regional economic exposure, and insider trading activity."
+      "analysis": "- **Setup:** RSI acceleration inflection (score 100) with moderate value confirmation (composite value score 56.8). RSI jumped from a negative 3-bar average (\u22120.9) to +35.4, now at 69\u2014approaching overbought but not yet extreme.\n- **Why it can work:** The sharp RSI acceleration suggests a momentum shift that often precedes sustained moves in regional banks. Forward P/E of 10.11 and P/B of 1.35 are below historical averages, providing a valuation floor if momentum stalls.\n- **What can break it:** RSI at 69 is near overbought; a reversal could trap late buyers. PEG of 2.06 implies growth expectations are already priced in. Regional banks face credit risk and rate sensitivity\u2014unknowns not captured in the data.\n- **Confirming evidence to watch:** RSI pulling back to 60\u201365 on higher volume would confirm a healthy consolidation. A drop in short float (currently 3.1%) or a rise in sentiment above 0.5 would strengthen the case. Watch for earnings or macro data that could shift rate expectations.\n- **Bottom line:** The RSI acceleration is a strong near-term signal, but value confirmation is only moderate. Without 52-week context or credit quality data, the setup is momentum-driven and fragile. No trade recommendation."
     },
     {
       "ticker": "RF",
       "cache_key": "RF:1781006400000:83.65",
-      "generated_at": "2026-06-11T16:42:42.876655+00:00",
+      "generated_at": "2026-06-11T16:59:06.322312+00:00",
       "input": {
         "ticker": "RF",
         "company": "Regions Financial Corp.",
@@ -2898,7 +2898,7 @@
         "rsi_acceleration_score": 97.1,
         "rsi_current": 66.4,
         "rsi_delta_1": 26.6,
-        "prior_rsi_delta_3_avg": -1.7,
+        "prior_rsi_delta_3_bar_avg": -1.7,
         "rsi_acceleration": 28.3,
         "forward_pe": 10.0,
         "trailing_pe": 11.85,
@@ -2909,12 +2909,12 @@
         "short_pct_float": 6.3,
         "sentiment_score": 0.3
       },
-      "analysis": "- **Setup:** RSI acceleration inflection as primary signal (RSI acceleration score 97.1, current RSI 66.4, delta +28.3 vs prior 3-day avg -1.7), with value as confirmation (composite value score 58.6, forward P/E 10.0, P/B 1.4).\n- **Why it can work:** The sharp RSI acceleration from a negative prior average suggests momentum shift; low forward P/E (10.0) and P/B (1.4) relative to sector may attract value buyers. Short float 6.3% could fuel squeeze if buying continues.\n- **What can break it:** RSI at 66.4 is nearing overbought territory (70+), risking exhaustion. PEG 1.66 above 1.0 implies growth not cheap on earnings basis. Sentiment score 0.3 (neutral) offers no bullish edge. Unknown: earnings quality, loan loss trends, interest rate sensitivity.\n- **Confirming evidence to watch:** RSI must stay above 60 without hitting 70+; volume increase on up days; forward P/E holding below 11; short float rising above 8% could amplify squeeze potential. Watch for insider buying or upward EPS revisions.\n- **Bottom line:** The RSI acceleration is a strong short-term momentum signal, but value confirmation is moderate (composite score 58.6). Without data on earnings catalysts or macro risks, the setup is speculative. No trade recommendation."
+      "analysis": "- **Setup:** RSI acceleration inflection as primary signal (score 97.1), with value as secondary confirmation (composite value score 58.6). RSI jumped from a negative 3-bar average (\u22121.7) to +26.6 in one period, a sharp positive inflection.\n- **Why it can work:** The RSI acceleration suggests recent buying momentum broke a prior downtrend. Forward P/E of 10.0 and P/B of 1.4 are below regional bank averages, offering a valuation cushion if momentum persists.\n- **What can break it:** The RSI at 66.4 is approaching overbought territory; further acceleration may be limited. PEG of 1.66 implies growth is already priced in. Short interest at 6.3% is moderate but could indicate skepticism about earnings quality or regional bank exposure.\n- **Confirming evidence to watch:** Need to see RSI hold above 60 without reversing, and volume confirmation on up days. Also watch for improvement in composite value score (currently only 58.6) and sentiment score (0.3 is neutral, not bullish).\n- **Bottom line:** The RSI inflection is strong, but value confirmation is lukewarm. Without additional data on earnings trends, loan quality, or macro exposure, the setup is incomplete. No trade recommendation."
     },
     {
       "ticker": "VTRS",
       "cache_key": "VTRS:1781006400000:81.95",
-      "generated_at": "2026-06-11T16:42:48.569510+00:00",
+      "generated_at": "2026-06-11T16:59:11.859673+00:00",
       "input": {
         "ticker": "VTRS",
         "company": "Viatris Inc. Common Stock",
@@ -2927,7 +2927,7 @@
         "rsi_acceleration_score": 89.6,
         "rsi_current": 55.5,
         "rsi_delta_1": 20.4,
-        "prior_rsi_delta_3_avg": -1.1,
+        "prior_rsi_delta_3_bar_avg": -1.1,
         "rsi_acceleration": 21.4,
         "forward_pe": 5.95,
         "trailing_pe": null,
@@ -2938,12 +2938,12 @@
         "short_pct_float": 3.5,
         "sentiment_score": 0.7
       },
-      "analysis": "- **Setup:** RSI acceleration inflection (RSI acceleration score 89.6, current RSI 55.5, delta +21.4 vs prior 3-day avg -1.1) as primary signal; value (forward P/E 5.95, P/B 1.25, PEG 0.15) as confirmation.\n- **Why it can work:** Sharp RSI reversal from negative momentum suggests near-term buying pressure; extremely low forward P/E and PEG imply the market may be pricing in excessive pessimism, leaving room for re-rating if fundamentals stabilize.\n- **What can break it:** RSI acceleration can be a false signal in a downtrend; forward P/E of 5.95 may reflect structural earnings risk (e.g., patent cliffs, debt, or regulatory headwinds) that value metrics alone do not capture. Short float is low (3.5%), so no squeeze catalyst.\n- **Confirming evidence to watch:** Sustained RSI above 60 with positive delta; volume expansion on up days; earnings or guidance that confirm the low PEG is justified by growth, not a trap. Sentiment score (0.7) is neutral\u2014needs improvement.\n- **Bottom line:** The RSI inflection is strong, and value metrics are cheap on the surface, but the setup depends on whether the low valuation is a bargain or a value trap. No trade recommendation."
+      "analysis": "- **Setup:** RSI acceleration inflection from negative average (-1.1) to +21.4, with current RSI at 55.5 (neutral, not overbought). Composite value score 67.8, forward P/E 5.95, P/B 1.25, PEG 0.15.\n- **Why it can work:** Sharp RSI acceleration suggests momentum shift after prior weakness; extremely low forward P/E and PEG imply deep value if earnings hold. Low short float (3.5%) reduces squeeze risk, and sentiment is mildly positive (0.7).\n- **What can break it:** RSI acceleration may be a dead cat bounce if prior negative average was prolonged; forward P/E of 5.95 could reflect structural earnings decline (generic drug pricing pressure, patent cliffs). No trailing P/E data\u2014unknown if earnings are negative or one-time adjusted.\n- **Confirming evidence to watch:** Need volume confirmation on next up days; watch for RSI holding above 50 and further acceleration. Also monitor earnings stability\u2014PEG 0.15 implies high growth expectations, which may be unrealistic for generic pharma.\n- **Bottom line:** The RSI inflection is a valid momentum signal, but value metrics are suspiciously cheap\u2014often a red flag for hidden deterioration. Without earnings quality data, this is a high-risk setup requiring strict stop-loss discipline."
     },
     {
       "ticker": "CAG",
       "cache_key": "CAG:1781006400000:80.57",
-      "generated_at": "2026-06-11T16:42:54.840875+00:00",
+      "generated_at": "2026-06-11T16:59:17.977586+00:00",
       "input": {
         "ticker": "CAG",
         "company": "Conagra Brands, Inc.",
@@ -2956,7 +2956,7 @@
         "rsi_acceleration_score": 90.0,
         "rsi_current": 56.5,
         "rsi_delta_1": 18.1,
-        "prior_rsi_delta_3_avg": -4.7,
+        "prior_rsi_delta_3_bar_avg": -4.7,
         "rsi_acceleration": 22.8,
         "forward_pe": 8.11,
         "trailing_pe": null,
@@ -2967,7 +2967,7 @@
         "short_pct_float": 10.3,
         "sentiment_score": -0.8
       },
-      "analysis": "- **Setup:** RSI acceleration inflection (RSI acceleration score 90.0, current RSI 56.5, delta +22.8 vs. prior 3\u2011day avg -4.7) as primary signal; value as confirmation (composite value score 63.1, forward P/E 8.11, P/B 0.77).\n- **Why it can work:** Sharp RSI reversal from negative momentum suggests short-term buying pressure; deep value metrics (forward P/E <10, P/B <1) may attract contrarian flows; high short float (10.3%) could fuel a squeeze if inflection holds.\n- **What can break it:** RSI acceleration may be a dead\u2011cat bounce in a downtrend\u2014prior RSI was deeply negative; PEG ratio of 10.86 implies expensive growth relative to earnings; sentiment score of -0.8 indicates bearish analyst/consensus view; no trailing P/E or 52\u2011week data provided, limiting trend context.\n- **Confirming evidence to watch:** Sustained RSI above 60 with positive delta; volume spike confirming price move; reduction in short float; improvement in sentiment score (toward positive); any catalyst (earnings beat, guidance raise, or cost savings) that justifies the low forward P/E.\n- **Bottom line:** The RSI inflection is a valid technical alert, but value confirmation is weak given high PEG and negative sentiment. Without additional data on earnings trends or 52\u2011week context, this setup is speculative\u2014not a clear long."
+      "analysis": "- **Setup:** RSI acceleration inflection (RSI current 56.5, delta +18.1 vs. prior 3-bar avg -4.7, acceleration +22.8) with cheap valuation (forward P/E 8.11, P/B 0.77, market cap $6.4B). Composite value score 63.1, opportunity score 80.6.\n\n- **Why it can work:** Sharp RSI acceleration from negative momentum suggests a near-term reversal in a beaten-down consumer staple. Low forward P/E and sub-1 P/B imply limited downside if fundamentals stabilize. High short float (10.3%) could fuel a squeeze if buying pressure continues.\n\n- **What can break it:** Sentiment is deeply negative (-0.8) and PEG ratio (10.86) signals expensive growth relative to earnings\u2014value may be a trap. No trailing P/E or 52-week data provided; unknown if recent price drop reflects structural issues (e.g., margin compression, debt). RSI acceleration alone can fade quickly in weak sectors.\n\n- **Confirming evidence to watch:** Need to see sustained RSI above 60 and volume confirmation. Watch for improvement in sentiment score or insider buying. A catalyst (e.g., earnings beat, cost-cutting announcement) would strengthen the case. Short float reduction would also support.\n\n- **Bottom line:** RSI acceleration is a valid short-term momentum signal, but deep value metrics conflict with poor sentiment and high PEG. Without fundamental catalyst or sector tailwind, this setup is speculative. Not a clear long without additional data on earnings quality and debt."
     }
   ]
 }

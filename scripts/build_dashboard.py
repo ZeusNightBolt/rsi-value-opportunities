@@ -246,7 +246,7 @@ def analyze_top_inflections(df: pd.DataFrame, top_n: int, force_refresh: bool) -
             "rsi_acceleration_score": round(float(row.get("rsi_acceleration_score")), 1),
             "rsi_current": round(float(row.get("rsi0")), 1),
             "rsi_delta_1": round(float(row.get("rsi_delta_1")), 1),
-            "prior_rsi_delta_3_avg": round(float(row.get("prior_delta_3_avg")), 1),
+            "prior_rsi_delta_3_bar_avg": round(float(row.get("prior_delta_3_avg")), 1),
             "rsi_acceleration": round(float(row.get("rsi_accel")), 1),
             "forward_pe": None if pd.isna(row.get("yf_forward_pe")) else round(float(row.get("yf_forward_pe")), 2),
             "trailing_pe": None if pd.isna(row.get("yf_trailing_pe")) else round(float(row.get("yf_trailing_pe")), 2),
