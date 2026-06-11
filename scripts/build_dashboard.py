@@ -83,6 +83,14 @@ with rsi_hist as (
     max(case when rn=6 then rsi_14 end) rsi5,
     count(*) n
   from rsi_hist where rn<=6 group by ticker
+), latest_daily_ts as (
+  select max(timestamp) as max_ts from daily_bars
+), daily_52w as (
+  select d.ticker, min(d.low) low_52w, max(d.high) high_52w
+  from daily_bars d, latest_daily_ts l
+  where d.timestamp >= l.max_ts - 31536000000
+    and d.low is not null and d.high is not null
+  group by d.ticker
 ), base as (
   select distinct
     s.sector,
@@ -94,8 +102,8 @@ with rsi_hist as (
     s.sic_description,
     s.sentiment_score,
     s.short_pct_float,
-    s.from_52w_high_pct,
-    s.from_52w_low_pct,
+    coalesce(s.from_52w_high_pct, case when d.high_52w > 0 then ((p.close0 / d.high_52w) - 1.0) * 100.0 end) from_52w_high_pct,
+    coalesce(s.from_52w_low_pct, case when d.low_52w > 0 then ((p.close0 / d.low_52w) - 1.0) * 100.0 end) from_52w_low_pct,
     s.price_vs_sma20_pct,
     s.price_vs_sma50_pct,
     s.price_vs_sma200_pct,
@@ -128,6 +136,7 @@ with rsi_hist as (
   join piv p on s.ticker=p.ticker
   left join vti_daily_enriched_latest e on s.ticker=e.ticker
   left join v_vti_factor_production_scores_5b f on s.ticker=f.ticker
+  left join daily_52w d on s.ticker=d.ticker
   where s.market_cap >= 5000000000
     and p.close0 < ?
     and s.sector is not null and s.sector <> ''
