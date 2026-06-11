@@ -540,7 +540,7 @@ def render_dashboard(df: pd.DataFrame, analyses: list[dict], price_filter: float
     (DOCS_DIR / "index.html").write_text(content)
 
 def git_commit_push() -> None:
-    subprocess.run(["git", "add", "README.md", ".gitignore", "run_daily.sh", "scripts/build_dashboard.py", "docs/index.html", "docs/dashboard_data.json", "data/dashboard_data.json", "data/llm_analysis.json"], cwd=PROJECT_DIR, check=True)
+    subprocess.run(["git", "add", "README.md", ".gitignore", "run_daily.sh", "scripts/build_dashboard.py", "docs/index.html", "docs/dashboard_data.json", "data/dashboard_data.json", "data/llm_analysis.json", "data/scored_candidates.csv"], cwd=PROJECT_DIR, check=True)
     status = subprocess.run(["git", "status", "--porcelain"], cwd=PROJECT_DIR, text=True, capture_output=True, check=True).stdout.strip()
     if not status:
         print("git: no changes to commit")
