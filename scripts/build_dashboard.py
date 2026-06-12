@@ -120,6 +120,10 @@ with rsi_hist as (
     f.dolt_value_score,
     f.production_factor_score,
     f.production_factor_basket,
+    f.production_theme,
+    f.primary_keyword_factor,
+    f.primary_keyword_factor_score,
+    f.keyword_factor_baskets,
     f.quant_factor_score,
     f.ret_1w_pct,
     f.ret_1m_pct,
@@ -403,12 +407,13 @@ def record(row) -> dict:
         "ret_1w_pct", "ret_1m_pct", "ret_3m_pct", "ret_6m_pct", "ret_ytd_pct",
         "sector_ret_1m_median", "peer_lag_1m_pct", "peer_lag_3m_pct",
         "near_low_score", "short_score", "peer_lag_score", "sentiment_score", "value_grade",
-        "growth_grade", "momentum_grade", "primary_strategy", "production_factor_basket", "production_factor_score", "four_h_timestamp",
+        "growth_grade", "momentum_grade", "primary_strategy", "production_factor_basket", "production_factor_score",
+        "production_theme", "primary_keyword_factor", "primary_keyword_factor_score", "keyword_factor_baskets", "four_h_timestamp",
     ]
     out = {}
     for key in keys:
         value = row.get(key)
-        if key in {"sector", "ticker", "company", "value_grade", "growth_grade", "momentum_grade", "primary_strategy", "production_factor_basket"}:
+        if key in {"sector", "ticker", "company", "value_grade", "growth_grade", "momentum_grade", "primary_strategy", "production_factor_basket", "production_theme", "primary_keyword_factor", "keyword_factor_baskets"}:
             out[key] = None if pd.isna(value) else str(value)
         elif key == "four_h_timestamp":
             out[key] = str(value)
@@ -512,6 +517,70 @@ def factor_basket_analysis(df: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame
     return baskets, opps
 
 
+def keyword_theme_analysis(df: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
+    """Rank Polygon keyword/thematic baskets like AI Infrastructure, Cloud Software, Oil & Gas."""
+    if df.empty or "primary_keyword_factor" not in df.columns:
+        return pd.DataFrame(), pd.DataFrame()
+    work = df[df["primary_keyword_factor"].notna()].copy()
+    if work.empty:
+        return pd.DataFrame(), pd.DataFrame()
+    g = work.groupby("primary_keyword_factor", dropna=True)
+    themes = g.agg(
+        ticker_count=("ticker", "count"),
+        avg_keyword_score=("primary_keyword_factor_score", "mean"),
+        avg_opportunity_score=("opportunity_score", "mean"),
+        avg_factor_score=("production_factor_score", "mean"),
+        avg_value_score=("composite_value_score", "mean"),
+        avg_ret_1w_pct=("ret_1w_pct", "mean"),
+        avg_ret_1m_pct=("ret_1m_pct", "mean"),
+        avg_ret_3m_pct=("ret_3m_pct", "mean"),
+        avg_ret_ytd_pct=("ret_ytd_pct", "mean"),
+        avg_rsi=("rsi0", "mean"),
+        avg_rsi_delta_1=("rsi_delta_1", "mean"),
+        avg_rsi_accel=("rsi_accel", "mean"),
+        inflection_count=("is_top_inflection", "sum"),
+    ).reset_index().rename(columns={"primary_keyword_factor": "theme_name"})
+    themes = themes[themes["ticker_count"] >= 3].copy()
+    if themes.empty:
+        return themes, pd.DataFrame()
+    themes["lag_score"] = (
+        np.maximum(0, -themes["avg_ret_1m_pct"].fillna(0))
+        + 0.50 * np.maximum(0, -themes["avg_ret_3m_pct"].fillna(0))
+        + 0.25 * np.maximum(0, -themes["avg_ret_ytd_pct"].fillna(0))
+    )
+    themes["inflection_score"] = (
+        4.0 * np.maximum(0, themes["avg_rsi_delta_1"].fillna(0))
+        + 2.0 * np.maximum(0, themes["avg_rsi_accel"].fillna(0))
+        + 0.5 * np.maximum(0, themes["avg_ret_1w_pct"].fillna(0))
+        + 3.0 * themes["inflection_count"].fillna(0) / themes["ticker_count"].clip(lower=1)
+    )
+    themes["is_lagged"] = (
+        (themes["avg_ret_1m_pct"].fillna(0) < 0)
+        | (themes["avg_ret_3m_pct"].fillna(0) < 0)
+        | (themes["avg_ret_ytd_pct"].fillna(0) < 0)
+    )
+    themes["theme_reversal_score"] = (
+        0.50 * pct_score(themes["lag_score"], lower_is_better=False).fillna(50)
+        + 0.30 * pct_score(themes["inflection_score"], lower_is_better=False).fillna(50)
+        + 0.20 * pct_score(themes["avg_keyword_score"], lower_is_better=False).fillna(50)
+    )
+    themes["display_score"] = np.where(themes["is_lagged"], themes["theme_reversal_score"], themes["theme_reversal_score"] * 0.25)
+    themes = themes.sort_values(["display_score", "theme_reversal_score"], ascending=False).reset_index(drop=True)
+    themes["rank"] = themes.index + 1
+    target_theme = themes[themes["is_lagged"]].iloc[0]["theme_name"] if themes["is_lagged"].any() else themes.iloc[0]["theme_name"]
+    opps = work[work["primary_keyword_factor"] == target_theme].copy()
+    keyword_fill = opps["primary_keyword_factor_score"].median() if opps["primary_keyword_factor_score"].notna().any() else 10.0
+    opps["theme_opportunity_score"] = (
+        0.30 * opps["rsi_value_score"].fillna(50)
+        + 0.25 * opps["squeeze_laggard_score"].fillna(50)
+        + 0.20 * opps["composite_value_score"].fillna(50)
+        + 0.15 * opps["primary_keyword_factor_score"].fillna(keyword_fill).clip(0, 50) * 2.0
+        + 0.10 * opps["peer_lag_score"].fillna(50)
+    ).clip(0, 100)
+    opps = cap_by_sector(opps.sort_values("theme_opportunity_score", ascending=False), "theme_opportunity_score", 20, 4)
+    return themes, opps
+
+
 def render_dashboard(df: pd.DataFrame, analyses: list[dict], price_filter: float) -> None:
     DOCS_DIR.mkdir(parents=True, exist_ok=True)
     DATA_DIR.mkdir(parents=True, exist_ok=True)
@@ -612,6 +681,25 @@ def render_dashboard(df: pd.DataFrame, analyses: list[dict], price_filter: float
             rr["display_rank"] = display_rank
             factor_opp_rows.append(row_html(rr, "display_rank"))
 
+    theme_baskets, theme_opps = keyword_theme_analysis(df)
+    theme_rows = []
+    selected_theme = "none"
+    if not theme_baskets.empty:
+        selected_theme = str(theme_baskets.iloc[0]["theme_name"])
+        for _, b in theme_baskets.iterrows():
+            cls = " class='selected'" if str(b["theme_name"]) == selected_theme else ""
+            theme_rows.append(
+                f"<tr{cls}><td>{int(b['rank'])}</td><td><strong>{html.escape(str(b['theme_name']))}</strong><small>{int(b['ticker_count'])} names under ${price_filter:.0f}</small></td>"
+                f"<td>{render_bar(b['theme_reversal_score'])}</td><td>{fmt_num(b['avg_keyword_score'])}</td><td>{fmt_num(b['avg_ret_1w_pct'])}%</td><td>{fmt_num(b['avg_ret_1m_pct'])}%</td><td>{fmt_num(b['avg_ret_3m_pct'])}%</td>"
+                f"<td>{fmt_num(b['avg_rsi'])}</td><td>{fmt_num(b['avg_rsi_delta_1'])}</td><td>{fmt_num(b['avg_rsi_accel'])}</td><td>{int(b['inflection_count'])}</td></tr>"
+            )
+    theme_opp_rows = []
+    if not theme_opps.empty:
+        for display_rank, (_, r) in enumerate(theme_opps.iterrows(), 1):
+            rr = r.copy()
+            rr["display_rank"] = display_rank
+            theme_opp_rows.append(row_html(rr, "display_rank"))
+
     css = """
 :root{--bg:#080808;--panel:#101010;--panel2:#151515;--text:#e8e4d8;--muted:#8a867b;--line:#2a2822;--amber:#e6b422;--green:#40c463;--red:#ff5c5c;--purple:#b58cff;--cyan:#47d7ff}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:'JetBrains Mono','SFMono-Regular',Consolas,monospace;font-size:13px}header{border-bottom:1px solid var(--line);padding:18px 22px;background:#0d0d0d;position:sticky;top:0;z-index:2}h1{font-size:18px;margin:0 0 8px;color:var(--amber);letter-spacing:.04em}h2{font-size:15px;margin:28px 0 12px;color:var(--amber);text-transform:uppercase}h3{font-size:13px;color:var(--amber)}.status{display:flex;gap:14px;flex-wrap:wrap;color:var(--muted)}.dot{color:var(--green)}main{padding:18px 22px;max-width:1600px;margin:0 auto}.note{border:1px solid var(--line);padding:12px;background:var(--panel);color:var(--muted);line-height:1.5}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:12px}.card,.sector{border:1px solid var(--line);background:var(--panel);padding:12px}.card-head{display:flex;justify-content:space-between;border-bottom:1px solid var(--line);padding-bottom:8px;margin-bottom:8px}.card-head span{color:var(--amber);font-size:16px;font-weight:bold}.card-head em{font-style:normal;color:var(--muted)}.metrics{color:var(--green);margin-bottom:8px}.card p{line-height:1.55;margin:0;color:#d8d2c3}table{width:100%;border-collapse:collapse;background:var(--panel)}th,td{border:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}th{color:var(--amber);font-weight:600;background:#0e0e0e;position:sticky;top:76px}td small{display:block;color:var(--muted);font-size:11px;margin-top:3px}a.ticker-link{color:var(--amber);text-decoration:none;border-bottom:1px solid rgba(230,180,34,.45)}a.ticker-link:hover{color:var(--green);border-bottom-color:var(--green)}.nav{display:flex;gap:10px;margin-top:10px}.nav a{border:1px solid var(--line);padding:6px 8px;text-decoration:none}.nav a.active{color:#080808;background:var(--amber)}tr.selected td{background:#171203}.bar{display:inline-block;width:74px;height:7px;background:#242018;margin-right:8px;vertical-align:middle}.bar i{display:block;height:100%;background:var(--amber)}.bar.hot i{background:var(--green)}.bar.value i{background:var(--purple)}.bar.short i{background:var(--cyan)}.sector ol{margin:0;padding-left:22px}.sector li{margin:6px 0;line-height:1.45}.footer{color:var(--muted);font-size:11px;margin:28px 0}.pill{border:1px solid var(--line);padding:3px 6px;color:var(--amber);display:inline-block;margin-right:6px}a{color:var(--amber)}
 """
@@ -631,15 +719,18 @@ def render_dashboard(df: pd.DataFrame, analyses: list[dict], price_filter: float
 <div class="footer">Known: numeric data from local Polygon/DuckDB warehouse. Estimated: composite scores from normalized warehouse fields. Unknown: forward catalysts beyond supplied warehouse fields unless LLM explicitly labels them unknown.</div>
 </main></body></html>"""
     factor_header = "<table><thead><tr><th>#</th><th>Factor basket</th><th>Reversal</th><th>1W</th><th>1M</th><th>3M</th><th>RSI</th><th>RSI Δ1</th><th>RSI Accel</th><th>Inflect Names</th></tr></thead><tbody>"
+    theme_header = "<table><thead><tr><th>#</th><th>Keyword / theme basket</th><th>Reversal</th><th>Theme Score</th><th>1W</th><th>1M</th><th>3M</th><th>RSI</th><th>RSI Δ1</th><th>RSI Accel</th><th>Inflect Names</th></tr></thead><tbody>"
     factor_content = f"""<!doctype html>
 <html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Factor Basket Inflections</title><style>{css}</style></head>
-<body><header><h1>FACTOR BASKET LAGGARDS + INFLECTIONS</h1><div class="status"><span class="dot">● LIVE</span><span>generated {html.escape(now_et.strftime('%Y-%m-%d %H:%M %Z'))}</span><span>price &lt; ${price_filter:.0f}</span><span>selected basket: {html.escape(selected_basket)}</span></div><nav class="nav"><a href="index.html">Opportunities</a><a class="active" href="factor-baskets.html">Factor basket inflections</a></nav></header>
+<body><header><h1>FACTOR + KEYWORD BASKET LAGGARDS / INFLECTIONS</h1><div class="status"><span class="dot">● LIVE</span><span>generated {html.escape(now_et.strftime('%Y-%m-%d %H:%M %Z'))}</span><span>price &lt; ${price_filter:.0f}</span><span>selected factor: {html.escape(selected_basket)}</span><span>selected theme: {html.escape(selected_theme)}</span></div><nav class="nav"><a href="index.html">Opportunities</a><a class="active" href="factor-baskets.html">Factor basket inflections</a></nav></header>
 <main>
-<div class="note"><span class="pill">Method</span> First rank production factor baskets by lag plus latest 4h RSI/return inflection. Lag is negative 1M/3M/YTD momentum; inflection is positive latest 4h RSI delta/acceleration plus 1W stabilization. Then show the best sub-${price_filter:.0f} names inside the highest-ranked lagging factor basket.</div>
-<h2>Factor basket score + momentum analysis</h2>{factor_header}{''.join(factor_rows)}</tbody></table>
-<h2>Best opportunities within selected lagging / inflecting factor: {html.escape(selected_basket)}</h2>{header}{''.join(factor_opp_rows)}</tbody></table>
-<div class="footer">Known: basket membership, prices, technicals, returns, and factor scores from local Polygon/DuckDB warehouse. Estimated: reversal score is a deterministic composite of basket lag and short-term inflection.</div>
+<div class="note"><span class="pill">Method</span> First rank production factor baskets, then separately rank Polygon keyword/theme baskets such as AI Infrastructure, Cloud Software, Defense / Aerospace, and other beneficiary groups. Both use lag plus latest 4h RSI/return inflection. Then show the best sub-${price_filter:.0f} names inside the highest-ranked lagging factor and keyword/theme baskets.</div>
+<h2>Production factor basket score + momentum analysis</h2>{factor_header}{''.join(factor_rows)}</tbody></table>
+<h2>Best opportunities within selected lagging / inflecting production factor: {html.escape(selected_basket)}</h2>{header}{''.join(factor_opp_rows)}</tbody></table>
+<h2>Keyword / theme basket score + momentum analysis</h2>{theme_header}{''.join(theme_rows)}</tbody></table>
+<h2>Best opportunities within selected lagging / inflecting keyword theme: {html.escape(selected_theme)}</h2>{header}{''.join(theme_opp_rows)}</tbody></table>
+<div class="footer">Known: production factor baskets, primary keyword factors, prices, technicals, returns, and factor scores from local Polygon/DuckDB warehouse. Estimated: reversal scores are deterministic composites of basket lag, keyword relevance, and short-term inflection.</div>
 </main></body></html>"""
     (DOCS_DIR / "factor-baskets.html").write_text(factor_content)
     (DOCS_DIR / "index.html").write_text(content)

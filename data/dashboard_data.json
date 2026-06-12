@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-12T17:42:43.183915-04:00",
+  "generated_at": "2026-06-12T17:55:50.062363-04:00",
   "latest_4h_timestamp": "2026-06-12 08:00:00-04:00",
   "price_filter": 50.0,
   "universe_count": 235,
@@ -49,6 +49,10 @@
       "primary_strategy": "shorted near lows / peer lag",
       "production_factor_basket": "Broken Momentum / Avoid",
       "production_factor_score": 3.27503154900621,
+      "production_theme": "Semiconductors",
+      "primary_keyword_factor": "Energy Transition",
+      "primary_keyword_factor_score": 13.618294355592985,
+      "keyword_factor_baskets": "Energy Transition, Oil & Gas, Consumer / Retail, Semiconductors, Healthcare / Biotech",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -95,6 +99,10 @@
       "primary_strategy": "shorted near lows / peer lag",
       "production_factor_basket": "Broken Momentum / Avoid",
       "production_factor_score": 4.635812358755925,
+      "production_theme": "Oil & Gas",
+      "primary_keyword_factor": "Macro Rates / Inflation",
+      "primary_keyword_factor_score": 4.871813568354304,
+      "keyword_factor_baskets": "Macro Rates / Inflation, Oil & Gas",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -141,6 +149,10 @@
       "primary_strategy": "shorted near lows / peer lag",
       "production_factor_basket": "Broken Momentum / Avoid",
       "production_factor_score": 3.6449362787217794,
+      "production_theme": "Consumer / Retail",
+      "primary_keyword_factor": "Consumer / Retail",
+      "primary_keyword_factor_score": 16.3639792682948,
+      "keyword_factor_baskets": "Consumer / Retail, Macro Rates / Inflation",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -187,6 +199,10 @@
       "primary_strategy": "shorted near lows / peer lag",
       "production_factor_basket": "Broken Momentum / Avoid",
       "production_factor_score": 3.513869228212942,
+      "production_theme": "Consumer / Retail",
+      "primary_keyword_factor": "Consumer / Retail",
+      "primary_keyword_factor_score": 7.48188336109631,
+      "keyword_factor_baskets": "Consumer / Retail",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -233,6 +249,10 @@
       "primary_strategy": "shorted near lows / peer lag",
       "production_factor_basket": "Neutral / Transition",
       "production_factor_score": 4.186497576287612,
+      "production_theme": "Defense / Aerospace",
+      "primary_keyword_factor": "Defense / Aerospace",
+      "primary_keyword_factor_score": 4.734612446840819,
+      "keyword_factor_baskets": "Defense / Aerospace",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -279,6 +299,10 @@
       "primary_strategy": "shorted near lows / peer lag",
       "production_factor_basket": "Broken Momentum / Avoid",
       "production_factor_score": 3.1232433449133508,
+      "production_theme": "AI Infrastructure",
+      "primary_keyword_factor": "AI Infrastructure",
+      "primary_keyword_factor_score": 13.553764442431781,
+      "keyword_factor_baskets": "AI Infrastructure, Cloud Software, Housing / Real Estate, Financials / Credit, Energy Transition",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -325,6 +349,10 @@
       "primary_strategy": "shorted near lows / peer lag",
       "production_factor_basket": "Oversold / Mean-Reversion Watch",
       "production_factor_score": 2.8271389846556234,
+      "production_theme": "AI Infrastructure",
+      "primary_keyword_factor": "AI Infrastructure",
+      "primary_keyword_factor_score": 22.11851173522806,
+      "keyword_factor_baskets": "AI Infrastructure, Housing / Real Estate, Cloud Software, Commodities / Materials, Industrial Automation",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -371,6 +399,10 @@
       "primary_strategy": "RSI inflection + value",
       "production_factor_basket": "Broken Momentum / Avoid",
       "production_factor_score": 4.032654783768547,
+      "production_theme": "Financials / Credit",
+      "primary_keyword_factor": "Financials / Credit",
+      "primary_keyword_factor_score": 15.186910273506829,
+      "keyword_factor_baskets": "Financials / Credit",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -417,6 +449,10 @@
       "primary_strategy": "shorted near lows / peer lag",
       "production_factor_basket": "Oversold / Mean-Reversion Watch",
       "production_factor_score": 3.2549256523672954,
+      "production_theme": "Crypto / Digital Assets",
+      "primary_keyword_factor": "Financials / Credit",
+      "primary_keyword_factor_score": 13.671783040543971,
+      "keyword_factor_baskets": "Financials / Credit, Crypto / Digital Assets, Consumer / Retail, Defense / Aerospace",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -463,6 +499,10 @@
       "primary_strategy": "cheap peer laggard",
       "production_factor_basket": "Broken Momentum / Avoid",
       "production_factor_score": 3.772083407603606,
+      "production_theme": "Defense / Aerospace",
+      "primary_keyword_factor": "Defense / Aerospace",
+      "primary_keyword_factor_score": 7.70502691241052,
+      "keyword_factor_baskets": "Defense / Aerospace",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     }
   ],
@@ -511,6 +551,10 @@
       "primary_strategy": "shorted near lows / peer lag",
       "production_factor_basket": "Broken Momentum / Avoid",
       "production_factor_score": 3.27503154900621,
+      "production_theme": "Semiconductors",
+      "primary_keyword_factor": "Energy Transition",
+      "primary_keyword_factor_score": 13.618294355592985,
+      "keyword_factor_baskets": "Energy Transition, Oil & Gas, Consumer / Retail, Semiconductors, Healthcare / Biotech",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -557,6 +601,10 @@
       "primary_strategy": "shorted near lows / peer lag",
       "production_factor_basket": "Broken Momentum / Avoid",
       "production_factor_score": 4.635812358755925,
+      "production_theme": "Oil & Gas",
+      "primary_keyword_factor": "Macro Rates / Inflation",
+      "primary_keyword_factor_score": 4.871813568354304,
+      "keyword_factor_baskets": "Macro Rates / Inflation, Oil & Gas",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -603,6 +651,10 @@
       "primary_strategy": "shorted near lows / peer lag",
       "production_factor_basket": "Broken Momentum / Avoid",
       "production_factor_score": 3.6449362787217794,
+      "production_theme": "Consumer / Retail",
+      "primary_keyword_factor": "Consumer / Retail",
+      "primary_keyword_factor_score": 16.3639792682948,
+      "keyword_factor_baskets": "Consumer / Retail, Macro Rates / Inflation",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -649,6 +701,10 @@
       "primary_strategy": "shorted near lows / peer lag",
       "production_factor_basket": "Broken Momentum / Avoid",
       "production_factor_score": 3.513869228212942,
+      "production_theme": "Consumer / Retail",
+      "primary_keyword_factor": "Consumer / Retail",
+      "primary_keyword_factor_score": 7.48188336109631,
+      "keyword_factor_baskets": "Consumer / Retail",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -695,6 +751,10 @@
       "primary_strategy": "shorted near lows / peer lag",
       "production_factor_basket": "Neutral / Transition",
       "production_factor_score": 4.186497576287612,
+      "production_theme": "Defense / Aerospace",
+      "primary_keyword_factor": "Defense / Aerospace",
+      "primary_keyword_factor_score": 4.734612446840819,
+      "keyword_factor_baskets": "Defense / Aerospace",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -741,6 +801,10 @@
       "primary_strategy": "RSI inflection + value",
       "production_factor_basket": "Broken Momentum / Avoid",
       "production_factor_score": 4.032654783768547,
+      "production_theme": "Financials / Credit",
+      "primary_keyword_factor": "Financials / Credit",
+      "primary_keyword_factor_score": 15.186910273506829,
+      "keyword_factor_baskets": "Financials / Credit",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -787,6 +851,10 @@
       "primary_strategy": "shorted near lows / peer lag",
       "production_factor_basket": "Broken Momentum / Avoid",
       "production_factor_score": 3.1232433449133508,
+      "production_theme": "AI Infrastructure",
+      "primary_keyword_factor": "AI Infrastructure",
+      "primary_keyword_factor_score": 13.553764442431781,
+      "keyword_factor_baskets": "AI Infrastructure, Cloud Software, Housing / Real Estate, Financials / Credit, Energy Transition",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -833,6 +901,10 @@
       "primary_strategy": "RSI inflection + value",
       "production_factor_basket": "Neutral / Transition",
       "production_factor_score": 7.22253765489381,
+      "production_theme": "Financials / Credit",
+      "primary_keyword_factor": "Financials / Credit",
+      "primary_keyword_factor_score": 20.763469917612277,
+      "keyword_factor_baskets": "Financials / Credit",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -879,6 +951,10 @@
       "primary_strategy": "shorted near lows / peer lag",
       "production_factor_basket": "Oversold / Mean-Reversion Watch",
       "production_factor_score": 2.8271389846556234,
+      "production_theme": "AI Infrastructure",
+      "primary_keyword_factor": "AI Infrastructure",
+      "primary_keyword_factor_score": 22.11851173522806,
+      "keyword_factor_baskets": "AI Infrastructure, Housing / Real Estate, Cloud Software, Commodities / Materials, Industrial Automation",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -925,6 +1001,10 @@
       "primary_strategy": "shorted near lows / peer lag",
       "production_factor_basket": "Broken Momentum / Avoid",
       "production_factor_score": 2.9069977067911994,
+      "production_theme": "Semiconductors",
+      "primary_keyword_factor": "AI Infrastructure",
+      "primary_keyword_factor_score": 14.130982462107468,
+      "keyword_factor_baskets": "AI Infrastructure, Semiconductors",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -971,6 +1051,10 @@
       "primary_strategy": "RSI inflection + value",
       "production_factor_basket": "Quality / Low-Vol Uptrend",
       "production_factor_score": 7.790569640629965,
+      "production_theme": "Financials / Credit",
+      "primary_keyword_factor": "Financials / Credit",
+      "primary_keyword_factor_score": 20.424396899291004,
+      "keyword_factor_baskets": "Financials / Credit, Macro Rates / Inflation",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -1017,6 +1101,10 @@
       "primary_strategy": "shorted near lows / peer lag",
       "production_factor_basket": "Oversold / Mean-Reversion Watch",
       "production_factor_score": 2.6628474504878166,
+      "production_theme": "Semiconductors",
+      "primary_keyword_factor": "Consumer / Retail",
+      "primary_keyword_factor_score": 20.23518027920269,
+      "keyword_factor_baskets": "Consumer / Retail, Semiconductors, AI Infrastructure, Cloud Software",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -1063,6 +1151,10 @@
       "primary_strategy": "shorted near lows / peer lag",
       "production_factor_basket": "Broken Momentum / Avoid",
       "production_factor_score": 3.4871286104096164,
+      "production_theme": "Consumer / Retail",
+      "primary_keyword_factor": "Housing / Real Estate",
+      "primary_keyword_factor_score": 25.043278033170886,
+      "keyword_factor_baskets": "Housing / Real Estate, Consumer / Retail",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -1109,6 +1201,10 @@
       "primary_strategy": "shorted near lows / peer lag",
       "production_factor_basket": "Broken Momentum / Avoid",
       "production_factor_score": 3.3568125444735557,
+      "production_theme": "AI Infrastructure",
+      "primary_keyword_factor": "Housing / Real Estate",
+      "primary_keyword_factor_score": 19.203057731803412,
+      "keyword_factor_baskets": "Housing / Real Estate, AI Infrastructure, Energy Transition, Defense / Aerospace, Financials / Credit",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -1155,6 +1251,10 @@
       "primary_strategy": "RSI inflection + value",
       "production_factor_basket": "Oversold / Mean-Reversion Watch",
       "production_factor_score": 2.7025997456256574,
+      "production_theme": "Semiconductors",
+      "primary_keyword_factor": "Consumer / Retail",
+      "primary_keyword_factor_score": 7.48188336109631,
+      "keyword_factor_baskets": "Consumer / Retail, Oil & Gas, Semiconductors, Energy Transition",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -1201,6 +1301,10 @@
       "primary_strategy": "RSI inflection + value",
       "production_factor_basket": "Neutral / Transition",
       "production_factor_score": 4.922539525296581,
+      "production_theme": null,
+      "primary_keyword_factor": "Macro Rates / Inflation",
+      "primary_keyword_factor_score": 6.894096696194191,
+      "keyword_factor_baskets": "Macro Rates / Inflation",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -1247,6 +1351,10 @@
       "primary_strategy": "RSI inflection + value",
       "production_factor_basket": "Neutral / Transition",
       "production_factor_score": 6.03052175355649,
+      "production_theme": "Oil & Gas",
+      "primary_keyword_factor": "Oil & Gas",
+      "primary_keyword_factor_score": 34.62130634831133,
+      "keyword_factor_baskets": "Oil & Gas",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -1293,6 +1401,10 @@
       "primary_strategy": "RSI inflection + value",
       "production_factor_basket": "Broken Momentum / Avoid",
       "production_factor_score": 5.1048246093099925,
+      "production_theme": "Energy Transition",
+      "primary_keyword_factor": "Oil & Gas",
+      "primary_keyword_factor_score": 12.602912721074599,
+      "keyword_factor_baskets": "Oil & Gas, Energy Transition",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -1339,6 +1451,10 @@
       "primary_strategy": "RSI inflection + value",
       "production_factor_basket": "Broken Momentum / Avoid",
       "production_factor_score": 4.13949132269542,
+      "production_theme": "Housing / Real Estate",
+      "primary_keyword_factor": "Housing / Real Estate",
+      "primary_keyword_factor_score": 15.558914171530867,
+      "keyword_factor_baskets": "Housing / Real Estate",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -1385,6 +1501,10 @@
       "primary_strategy": "RSI inflection + value",
       "production_factor_basket": "Thematic Momentum Leadership",
       "production_factor_score": 8.968237328940592,
+      "production_theme": "Healthcare / Biotech",
+      "primary_keyword_factor": "Energy Transition",
+      "primary_keyword_factor_score": 11.252147781109194,
+      "keyword_factor_baskets": "Energy Transition, Healthcare / Biotech, Consumer / Retail, Oil & Gas, Macro Rates / Inflation",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -1431,6 +1551,10 @@
       "primary_strategy": "RSI inflection + value",
       "production_factor_basket": "Quality / Low-Vol Uptrend",
       "production_factor_score": 7.200797618726468,
+      "production_theme": "Healthcare / Biotech",
+      "primary_keyword_factor": "Healthcare / Biotech",
+      "primary_keyword_factor_score": 25.554345758378563,
+      "keyword_factor_baskets": "Healthcare / Biotech, Energy Transition",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -1477,6 +1601,10 @@
       "primary_strategy": "RSI inflection + value",
       "production_factor_basket": "Quality / Low-Vol Uptrend",
       "production_factor_score": 7.201174154917141,
+      "production_theme": "Consumer / Retail",
+      "primary_keyword_factor": "Housing / Real Estate",
+      "primary_keyword_factor_score": 31.581966852855075,
+      "keyword_factor_baskets": "Housing / Real Estate, Consumer / Retail, Macro Rates / Inflation",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -1523,6 +1651,10 @@
       "primary_strategy": "cheap peer laggard",
       "production_factor_basket": "Broken Momentum / Avoid",
       "production_factor_score": 3.772083407603606,
+      "production_theme": "Defense / Aerospace",
+      "primary_keyword_factor": "Defense / Aerospace",
+      "primary_keyword_factor_score": 7.70502691241052,
+      "keyword_factor_baskets": "Defense / Aerospace",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -1569,6 +1701,10 @@
       "primary_strategy": "cheap peer laggard",
       "production_factor_basket": "Oversold / Mean-Reversion Watch",
       "production_factor_score": 3.2994624145003844,
+      "production_theme": "Semiconductors",
+      "primary_keyword_factor": "Defense / Aerospace",
+      "primary_keyword_factor_score": 59.43176565331069,
+      "keyword_factor_baskets": "Defense / Aerospace, Semiconductors",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -1615,6 +1751,10 @@
       "primary_strategy": "RSI inflection + value",
       "production_factor_basket": "Neutral / Transition",
       "production_factor_score": 4.971875074327484,
+      "production_theme": "Energy Transition",
+      "primary_keyword_factor": "Energy Transition",
+      "primary_keyword_factor_score": 4.709294638856528,
+      "keyword_factor_baskets": "Energy Transition, Macro Rates / Inflation",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     }
   ],
@@ -1663,6 +1803,10 @@
       "primary_strategy": "RSI inflection + value",
       "production_factor_basket": "Broken Momentum / Avoid",
       "production_factor_score": 4.032654783768547,
+      "production_theme": "Financials / Credit",
+      "primary_keyword_factor": "Financials / Credit",
+      "primary_keyword_factor_score": 15.186910273506829,
+      "keyword_factor_baskets": "Financials / Credit",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -1709,6 +1853,10 @@
       "primary_strategy": "RSI inflection + value",
       "production_factor_basket": "Neutral / Transition",
       "production_factor_score": 7.22253765489381,
+      "production_theme": "Financials / Credit",
+      "primary_keyword_factor": "Financials / Credit",
+      "primary_keyword_factor_score": 20.763469917612277,
+      "keyword_factor_baskets": "Financials / Credit",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -1755,6 +1903,10 @@
       "primary_strategy": "RSI inflection + value",
       "production_factor_basket": "Quality / Low-Vol Uptrend",
       "production_factor_score": 7.790569640629965,
+      "production_theme": "Financials / Credit",
+      "primary_keyword_factor": "Financials / Credit",
+      "primary_keyword_factor_score": 20.424396899291004,
+      "keyword_factor_baskets": "Financials / Credit, Macro Rates / Inflation",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -1801,6 +1953,10 @@
       "primary_strategy": "RSI inflection + value",
       "production_factor_basket": "Broken Momentum / Avoid",
       "production_factor_score": 4.518771776619392,
+      "production_theme": "Energy Transition",
+      "primary_keyword_factor": "Energy Transition",
+      "primary_keyword_factor_score": 13.93414730501146,
+      "keyword_factor_baskets": "Energy Transition, Consumer / Retail",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -1847,6 +2003,10 @@
       "primary_strategy": "RSI inflection + value",
       "production_factor_basket": "Oversold / Mean-Reversion Watch",
       "production_factor_score": 2.7025997456256574,
+      "production_theme": "Semiconductors",
+      "primary_keyword_factor": "Consumer / Retail",
+      "primary_keyword_factor_score": 7.48188336109631,
+      "keyword_factor_baskets": "Consumer / Retail, Oil & Gas, Semiconductors, Energy Transition",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -1893,6 +2053,10 @@
       "primary_strategy": "RSI inflection + value",
       "production_factor_basket": "Neutral / Transition",
       "production_factor_score": 4.922539525296581,
+      "production_theme": null,
+      "primary_keyword_factor": "Macro Rates / Inflation",
+      "primary_keyword_factor_score": 6.894096696194191,
+      "keyword_factor_baskets": "Macro Rates / Inflation",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -1939,6 +2103,10 @@
       "primary_strategy": "RSI inflection + value",
       "production_factor_basket": "Neutral / Transition",
       "production_factor_score": 6.03052175355649,
+      "production_theme": "Oil & Gas",
+      "primary_keyword_factor": "Oil & Gas",
+      "primary_keyword_factor_score": 34.62130634831133,
+      "keyword_factor_baskets": "Oil & Gas",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -1985,6 +2153,10 @@
       "primary_strategy": "RSI inflection + value",
       "production_factor_basket": "Broken Momentum / Avoid",
       "production_factor_score": 5.1048246093099925,
+      "production_theme": "Energy Transition",
+      "primary_keyword_factor": "Oil & Gas",
+      "primary_keyword_factor_score": 12.602912721074599,
+      "keyword_factor_baskets": "Oil & Gas, Energy Transition",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -2031,6 +2203,10 @@
       "primary_strategy": "RSI inflection + value",
       "production_factor_basket": "Broken Momentum / Avoid",
       "production_factor_score": 4.13949132269542,
+      "production_theme": "Housing / Real Estate",
+      "primary_keyword_factor": "Housing / Real Estate",
+      "primary_keyword_factor_score": 15.558914171530867,
+      "keyword_factor_baskets": "Housing / Real Estate",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -2077,6 +2253,10 @@
       "primary_strategy": "RSI inflection + value",
       "production_factor_basket": "Thematic Momentum Leadership",
       "production_factor_score": 8.968237328940592,
+      "production_theme": "Healthcare / Biotech",
+      "primary_keyword_factor": "Energy Transition",
+      "primary_keyword_factor_score": 11.252147781109194,
+      "keyword_factor_baskets": "Energy Transition, Healthcare / Biotech, Consumer / Retail, Oil & Gas, Macro Rates / Inflation",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -2123,6 +2303,10 @@
       "primary_strategy": "RSI inflection + value",
       "production_factor_basket": "Quality / Low-Vol Uptrend",
       "production_factor_score": 7.200797618726468,
+      "production_theme": "Healthcare / Biotech",
+      "primary_keyword_factor": "Healthcare / Biotech",
+      "primary_keyword_factor_score": 25.554345758378563,
+      "keyword_factor_baskets": "Healthcare / Biotech, Energy Transition",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -2169,6 +2353,10 @@
       "primary_strategy": "RSI inflection + value",
       "production_factor_basket": "Quality / Low-Vol Uptrend",
       "production_factor_score": 7.201174154917141,
+      "production_theme": "Consumer / Retail",
+      "primary_keyword_factor": "Housing / Real Estate",
+      "primary_keyword_factor_score": 31.581966852855075,
+      "keyword_factor_baskets": "Housing / Real Estate, Consumer / Retail, Macro Rates / Inflation",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -2215,6 +2403,10 @@
       "primary_strategy": "RSI inflection + value",
       "production_factor_basket": "Neutral / Transition",
       "production_factor_score": 4.971875074327484,
+      "production_theme": "Energy Transition",
+      "primary_keyword_factor": "Energy Transition",
+      "primary_keyword_factor_score": 4.709294638856528,
+      "keyword_factor_baskets": "Energy Transition, Macro Rates / Inflation",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -2261,6 +2453,10 @@
       "primary_strategy": "RSI inflection + value",
       "production_factor_basket": "Quality / Low-Vol Uptrend",
       "production_factor_score": 7.9384463594993155,
+      "production_theme": "AI Infrastructure",
+      "primary_keyword_factor": "Housing / Real Estate",
+      "primary_keyword_factor_score": 8.077030810434557,
+      "keyword_factor_baskets": "Housing / Real Estate, AI Infrastructure, Consumer / Retail",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -2307,6 +2503,10 @@
       "primary_strategy": "shorted near lows / peer lag",
       "production_factor_basket": "Broken Momentum / Avoid",
       "production_factor_score": 3.6449362787217794,
+      "production_theme": "Consumer / Retail",
+      "primary_keyword_factor": "Consumer / Retail",
+      "primary_keyword_factor_score": 16.3639792682948,
+      "keyword_factor_baskets": "Consumer / Retail, Macro Rates / Inflation",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     }
   ],
@@ -2355,6 +2555,10 @@
       "primary_strategy": "shorted near lows / peer lag",
       "production_factor_basket": "Broken Momentum / Avoid",
       "production_factor_score": 3.27503154900621,
+      "production_theme": "Semiconductors",
+      "primary_keyword_factor": "Energy Transition",
+      "primary_keyword_factor_score": 13.618294355592985,
+      "keyword_factor_baskets": "Energy Transition, Oil & Gas, Consumer / Retail, Semiconductors, Healthcare / Biotech",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -2401,6 +2605,10 @@
       "primary_strategy": "shorted near lows / peer lag",
       "production_factor_basket": "Broken Momentum / Avoid",
       "production_factor_score": 4.635812358755925,
+      "production_theme": "Oil & Gas",
+      "primary_keyword_factor": "Macro Rates / Inflation",
+      "primary_keyword_factor_score": 4.871813568354304,
+      "keyword_factor_baskets": "Macro Rates / Inflation, Oil & Gas",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -2447,6 +2655,10 @@
       "primary_strategy": "shorted near lows / peer lag",
       "production_factor_basket": "Broken Momentum / Avoid",
       "production_factor_score": 3.6449362787217794,
+      "production_theme": "Consumer / Retail",
+      "primary_keyword_factor": "Consumer / Retail",
+      "primary_keyword_factor_score": 16.3639792682948,
+      "keyword_factor_baskets": "Consumer / Retail, Macro Rates / Inflation",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -2493,6 +2705,10 @@
       "primary_strategy": "shorted near lows / peer lag",
       "production_factor_basket": "Broken Momentum / Avoid",
       "production_factor_score": 3.513869228212942,
+      "production_theme": "Consumer / Retail",
+      "primary_keyword_factor": "Consumer / Retail",
+      "primary_keyword_factor_score": 7.48188336109631,
+      "keyword_factor_baskets": "Consumer / Retail",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -2539,6 +2755,10 @@
       "primary_strategy": "shorted near lows / peer lag",
       "production_factor_basket": "Neutral / Transition",
       "production_factor_score": 4.186497576287612,
+      "production_theme": "Defense / Aerospace",
+      "primary_keyword_factor": "Defense / Aerospace",
+      "primary_keyword_factor_score": 4.734612446840819,
+      "keyword_factor_baskets": "Defense / Aerospace",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -2585,6 +2805,10 @@
       "primary_strategy": "shorted near lows / peer lag",
       "production_factor_basket": "Broken Momentum / Avoid",
       "production_factor_score": 3.1232433449133508,
+      "production_theme": "AI Infrastructure",
+      "primary_keyword_factor": "AI Infrastructure",
+      "primary_keyword_factor_score": 13.553764442431781,
+      "keyword_factor_baskets": "AI Infrastructure, Cloud Software, Housing / Real Estate, Financials / Credit, Energy Transition",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -2631,6 +2855,10 @@
       "primary_strategy": "shorted near lows / peer lag",
       "production_factor_basket": "Oversold / Mean-Reversion Watch",
       "production_factor_score": 2.8271389846556234,
+      "production_theme": "AI Infrastructure",
+      "primary_keyword_factor": "AI Infrastructure",
+      "primary_keyword_factor_score": 22.11851173522806,
+      "keyword_factor_baskets": "AI Infrastructure, Housing / Real Estate, Cloud Software, Commodities / Materials, Industrial Automation",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -2677,6 +2905,10 @@
       "primary_strategy": "shorted near lows / peer lag",
       "production_factor_basket": "Broken Momentum / Avoid",
       "production_factor_score": 2.9069977067911994,
+      "production_theme": "Semiconductors",
+      "primary_keyword_factor": "AI Infrastructure",
+      "primary_keyword_factor_score": 14.130982462107468,
+      "keyword_factor_baskets": "AI Infrastructure, Semiconductors",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -2723,6 +2955,10 @@
       "primary_strategy": "shorted near lows / peer lag",
       "production_factor_basket": "Oversold / Mean-Reversion Watch",
       "production_factor_score": 2.6628474504878166,
+      "production_theme": "Semiconductors",
+      "primary_keyword_factor": "Consumer / Retail",
+      "primary_keyword_factor_score": 20.23518027920269,
+      "keyword_factor_baskets": "Consumer / Retail, Semiconductors, AI Infrastructure, Cloud Software",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -2769,6 +3005,10 @@
       "primary_strategy": "shorted near lows / peer lag",
       "production_factor_basket": "Neutral / Transition",
       "production_factor_score": 4.765182409873486,
+      "production_theme": "Semiconductors",
+      "primary_keyword_factor": "Energy Transition",
+      "primary_keyword_factor_score": 13.464143675765726,
+      "keyword_factor_baskets": "Energy Transition, Financials / Credit, AI Infrastructure, Semiconductors, Crypto / Digital Assets",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -2815,6 +3055,10 @@
       "primary_strategy": "shorted near lows / peer lag",
       "production_factor_basket": "Broken Momentum / Avoid",
       "production_factor_score": 3.4871286104096164,
+      "production_theme": "Consumer / Retail",
+      "primary_keyword_factor": "Housing / Real Estate",
+      "primary_keyword_factor_score": 25.043278033170886,
+      "keyword_factor_baskets": "Housing / Real Estate, Consumer / Retail",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -2861,6 +3105,10 @@
       "primary_strategy": "shorted near lows / peer lag",
       "production_factor_basket": "Broken Momentum / Avoid",
       "production_factor_score": 3.3568125444735557,
+      "production_theme": "AI Infrastructure",
+      "primary_keyword_factor": "Housing / Real Estate",
+      "primary_keyword_factor_score": 19.203057731803412,
+      "keyword_factor_baskets": "Housing / Real Estate, AI Infrastructure, Energy Transition, Defense / Aerospace, Financials / Credit",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -2907,6 +3155,10 @@
       "primary_strategy": "shorted near lows / peer lag",
       "production_factor_basket": "Oversold / Mean-Reversion Watch",
       "production_factor_score": 3.2549256523672954,
+      "production_theme": "Crypto / Digital Assets",
+      "primary_keyword_factor": "Financials / Credit",
+      "primary_keyword_factor_score": 13.671783040543971,
+      "keyword_factor_baskets": "Financials / Credit, Crypto / Digital Assets, Consumer / Retail, Defense / Aerospace",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -2953,6 +3205,10 @@
       "primary_strategy": "shorted near lows / peer lag",
       "production_factor_basket": "Broken Momentum / Avoid",
       "production_factor_score": 3.00147455207245,
+      "production_theme": "Defense / Aerospace",
+      "primary_keyword_factor": "Energy Transition",
+      "primary_keyword_factor_score": 14.31144153615293,
+      "keyword_factor_baskets": "Energy Transition, Industrial Automation, Defense / Aerospace",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -2999,6 +3255,10 @@
       "primary_strategy": "RSI inflection + value",
       "production_factor_basket": "Broken Momentum / Avoid",
       "production_factor_score": 4.13949132269542,
+      "production_theme": "Housing / Real Estate",
+      "primary_keyword_factor": "Housing / Real Estate",
+      "primary_keyword_factor_score": 15.558914171530867,
+      "keyword_factor_baskets": "Housing / Real Estate",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     }
   ],
@@ -3047,6 +3307,10 @@
       "primary_strategy": "cheap peer laggard",
       "production_factor_basket": "Oversold / Mean-Reversion Watch",
       "production_factor_score": 2.9543750355848495,
+      "production_theme": "Cloud Software",
+      "primary_keyword_factor": "Financials / Credit",
+      "primary_keyword_factor_score": 47.21526984537356,
+      "keyword_factor_baskets": "Financials / Credit, Crypto / Digital Assets, Energy Transition, Cloud Software, Consumer / Retail",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -3093,6 +3357,10 @@
       "primary_strategy": "RSI inflection + value",
       "production_factor_basket": "Broken Momentum / Avoid",
       "production_factor_score": 4.032654783768547,
+      "production_theme": "Financials / Credit",
+      "primary_keyword_factor": "Financials / Credit",
+      "primary_keyword_factor_score": 15.186910273506829,
+      "keyword_factor_baskets": "Financials / Credit",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -3139,6 +3407,10 @@
       "primary_strategy": "shorted near lows / peer lag",
       "production_factor_basket": "Oversold / Mean-Reversion Watch",
       "production_factor_score": 3.2549256523672954,
+      "production_theme": "Crypto / Digital Assets",
+      "primary_keyword_factor": "Financials / Credit",
+      "primary_keyword_factor_score": 13.671783040543971,
+      "keyword_factor_baskets": "Financials / Credit, Crypto / Digital Assets, Consumer / Retail, Defense / Aerospace",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -3185,6 +3457,10 @@
       "primary_strategy": "cheap peer laggard",
       "production_factor_basket": "Broken Momentum / Avoid",
       "production_factor_score": 3.772083407603606,
+      "production_theme": "Defense / Aerospace",
+      "primary_keyword_factor": "Defense / Aerospace",
+      "primary_keyword_factor_score": 7.70502691241052,
+      "keyword_factor_baskets": "Defense / Aerospace",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -3231,6 +3507,10 @@
       "primary_strategy": "cheap peer laggard",
       "production_factor_basket": "Oversold / Mean-Reversion Watch",
       "production_factor_score": 3.2994624145003844,
+      "production_theme": "Semiconductors",
+      "primary_keyword_factor": "Defense / Aerospace",
+      "primary_keyword_factor_score": 59.43176565331069,
+      "keyword_factor_baskets": "Defense / Aerospace, Semiconductors",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -3277,6 +3557,10 @@
       "primary_strategy": "cheap peer laggard",
       "production_factor_basket": "Broken Momentum / Avoid",
       "production_factor_score": 3.3546185723184943,
+      "production_theme": "AI Infrastructure",
+      "primary_keyword_factor": "AI Infrastructure",
+      "primary_keyword_factor_score": 5.690123891868255,
+      "keyword_factor_baskets": "AI Infrastructure",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -3323,6 +3607,10 @@
       "primary_strategy": "cheap peer laggard",
       "production_factor_basket": "Broken Momentum / Avoid",
       "production_factor_score": 3.337286179721593,
+      "production_theme": "Crypto / Digital Assets",
+      "primary_keyword_factor": "Financials / Credit",
+      "primary_keyword_factor_score": 13.192209960282085,
+      "keyword_factor_baskets": "Financials / Credit, Housing / Real Estate, Crypto / Digital Assets, Macro Rates / Inflation",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -3369,6 +3657,10 @@
       "primary_strategy": "cheap peer laggard",
       "production_factor_basket": "Broken Momentum / Avoid",
       "production_factor_score": 3.9450495269298145,
+      "production_theme": "AI Infrastructure",
+      "primary_keyword_factor": "Financials / Credit",
+      "primary_keyword_factor_score": 30.86379132112111,
+      "keyword_factor_baskets": "Financials / Credit, Housing / Real Estate, AI Infrastructure",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -3415,6 +3707,10 @@
       "primary_strategy": "shorted near lows / peer lag",
       "production_factor_basket": "Broken Momentum / Avoid",
       "production_factor_score": 3.6449362787217794,
+      "production_theme": "Consumer / Retail",
+      "primary_keyword_factor": "Consumer / Retail",
+      "primary_keyword_factor_score": 16.3639792682948,
+      "keyword_factor_baskets": "Consumer / Retail, Macro Rates / Inflation",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -3461,6 +3757,10 @@
       "primary_strategy": "RSI inflection + value",
       "production_factor_basket": "Oversold / Mean-Reversion Watch",
       "production_factor_score": 2.7025997456256574,
+      "production_theme": "Semiconductors",
+      "primary_keyword_factor": "Consumer / Retail",
+      "primary_keyword_factor_score": 7.48188336109631,
+      "keyword_factor_baskets": "Consumer / Retail, Oil & Gas, Semiconductors, Energy Transition",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -3507,6 +3807,10 @@
       "primary_strategy": "cheap peer laggard",
       "production_factor_basket": "Broken Momentum / Avoid",
       "production_factor_score": 4.071954448776112,
+      "production_theme": "Financials / Credit",
+      "primary_keyword_factor": "Housing / Real Estate",
+      "primary_keyword_factor_score": 21.066716506605168,
+      "keyword_factor_baskets": "Housing / Real Estate, Financials / Credit, Macro Rates / Inflation",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -3553,6 +3857,10 @@
       "primary_strategy": "shorted near lows / peer lag",
       "production_factor_basket": "Broken Momentum / Avoid",
       "production_factor_score": 2.9069977067911994,
+      "production_theme": "Semiconductors",
+      "primary_keyword_factor": "AI Infrastructure",
+      "primary_keyword_factor_score": 14.130982462107468,
+      "keyword_factor_baskets": "AI Infrastructure, Semiconductors",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -3599,6 +3907,10 @@
       "primary_strategy": "cheap peer laggard",
       "production_factor_basket": "Broken Momentum / Avoid",
       "production_factor_score": 3.0095951184122844,
+      "production_theme": "Defense / Aerospace",
+      "primary_keyword_factor": "Industrial Automation",
+      "primary_keyword_factor_score": 12.935618474900334,
+      "keyword_factor_baskets": "Industrial Automation, Defense / Aerospace, Energy Transition",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -3645,6 +3957,10 @@
       "primary_strategy": "cheap peer laggard",
       "production_factor_basket": "Neutral / Transition",
       "production_factor_score": 4.670600668639951,
+      "production_theme": "Energy Transition",
+      "primary_keyword_factor": "Housing / Real Estate",
+      "primary_keyword_factor_score": 20.830327728540937,
+      "keyword_factor_baskets": "Housing / Real Estate, Energy Transition, Consumer / Retail",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -3691,6 +4007,10 @@
       "primary_strategy": "RSI inflection + value",
       "production_factor_basket": "Broken Momentum / Avoid",
       "production_factor_score": 4.518771776619392,
+      "production_theme": "Energy Transition",
+      "primary_keyword_factor": "Energy Transition",
+      "primary_keyword_factor_score": 13.93414730501146,
+      "keyword_factor_baskets": "Energy Transition, Consumer / Retail",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     }
   ],
@@ -3739,6 +4059,10 @@
       "primary_strategy": "shorted near lows / peer lag",
       "production_factor_basket": "Broken Momentum / Avoid",
       "production_factor_score": 2.9069977067911994,
+      "production_theme": "Semiconductors",
+      "primary_keyword_factor": "AI Infrastructure",
+      "primary_keyword_factor_score": 14.130982462107468,
+      "keyword_factor_baskets": "AI Infrastructure, Semiconductors",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -3785,6 +4109,10 @@
       "primary_strategy": "cheap peer laggard",
       "production_factor_basket": "Oversold / Mean-Reversion Watch",
       "production_factor_score": 3.2994624145003844,
+      "production_theme": "Semiconductors",
+      "primary_keyword_factor": "Defense / Aerospace",
+      "primary_keyword_factor_score": 59.43176565331069,
+      "keyword_factor_baskets": "Defense / Aerospace, Semiconductors",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -3831,6 +4159,10 @@
       "primary_strategy": "cheap peer laggard",
       "production_factor_basket": "Broken Momentum / Avoid",
       "production_factor_score": 3.3546185723184943,
+      "production_theme": "AI Infrastructure",
+      "primary_keyword_factor": "AI Infrastructure",
+      "primary_keyword_factor_score": 5.690123891868255,
+      "keyword_factor_baskets": "AI Infrastructure",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -3877,6 +4209,10 @@
       "primary_strategy": "shorted near lows / peer lag",
       "production_factor_basket": "Oversold / Mean-Reversion Watch",
       "production_factor_score": 2.6870491439190167,
+      "production_theme": "Semiconductors",
+      "primary_keyword_factor": "AI Infrastructure",
+      "primary_keyword_factor_score": 13.825933720371228,
+      "keyword_factor_baskets": "AI Infrastructure, Housing / Real Estate, Semiconductors, Cloud Software, Financials / Credit",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -3923,6 +4259,10 @@
       "primary_strategy": "cheap peer laggard",
       "production_factor_basket": "Oversold / Mean-Reversion Watch",
       "production_factor_score": 2.7090627995567527,
+      "production_theme": "Semiconductors",
+      "primary_keyword_factor": "AI Infrastructure",
+      "primary_keyword_factor_score": 13.825933720371228,
+      "keyword_factor_baskets": "AI Infrastructure, Housing / Real Estate, Semiconductors, Cloud Software, Financials / Credit",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -3969,6 +4309,10 @@
       "primary_strategy": "shorted near lows / peer lag",
       "production_factor_basket": "Broken Momentum / Avoid",
       "production_factor_score": 4.635812358755925,
+      "production_theme": "Oil & Gas",
+      "primary_keyword_factor": "Macro Rates / Inflation",
+      "primary_keyword_factor_score": 4.871813568354304,
+      "keyword_factor_baskets": "Macro Rates / Inflation, Oil & Gas",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -4015,6 +4359,10 @@
       "primary_strategy": "shorted near lows / peer lag",
       "production_factor_basket": "Oversold / Mean-Reversion Watch",
       "production_factor_score": 2.6628474504878166,
+      "production_theme": "Semiconductors",
+      "primary_keyword_factor": "Consumer / Retail",
+      "primary_keyword_factor_score": 20.23518027920269,
+      "keyword_factor_baskets": "Consumer / Retail, Semiconductors, AI Infrastructure, Cloud Software",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -4061,6 +4409,10 @@
       "primary_strategy": "cheap peer laggard",
       "production_factor_basket": "Broken Momentum / Avoid",
       "production_factor_score": 3.772083407603606,
+      "production_theme": "Defense / Aerospace",
+      "primary_keyword_factor": "Defense / Aerospace",
+      "primary_keyword_factor_score": 7.70502691241052,
+      "keyword_factor_baskets": "Defense / Aerospace",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -4107,6 +4459,10 @@
       "primary_strategy": "RSI inflection + value",
       "production_factor_basket": "Thematic Momentum Leadership",
       "production_factor_score": 8.1830647397994,
+      "production_theme": "Housing / Real Estate",
+      "primary_keyword_factor": "Housing / Real Estate",
+      "primary_keyword_factor_score": 7.70502691241052,
+      "keyword_factor_baskets": "Housing / Real Estate",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -4153,6 +4509,10 @@
       "primary_strategy": "RSI inflection + value",
       "production_factor_basket": "Oversold / Mean-Reversion Watch",
       "production_factor_score": 2.9354526269912036,
+      "production_theme": "Energy Transition",
+      "primary_keyword_factor": "Energy Transition",
+      "primary_keyword_factor_score": 4.36393345481807,
+      "keyword_factor_baskets": "Energy Transition",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -4199,6 +4559,10 @@
       "primary_strategy": "shorted near lows / peer lag",
       "production_factor_basket": "Broken Momentum / Avoid",
       "production_factor_score": 3.27503154900621,
+      "production_theme": "Semiconductors",
+      "primary_keyword_factor": "Energy Transition",
+      "primary_keyword_factor_score": 13.618294355592985,
+      "keyword_factor_baskets": "Energy Transition, Oil & Gas, Consumer / Retail, Semiconductors, Healthcare / Biotech",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -4245,6 +4609,10 @@
       "primary_strategy": "shorted near lows / peer lag",
       "production_factor_basket": "Broken Momentum / Avoid",
       "production_factor_score": 3.6449362787217794,
+      "production_theme": "Consumer / Retail",
+      "primary_keyword_factor": "Consumer / Retail",
+      "primary_keyword_factor_score": 16.3639792682948,
+      "keyword_factor_baskets": "Consumer / Retail, Macro Rates / Inflation",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -4291,6 +4659,10 @@
       "primary_strategy": "shorted near lows / peer lag",
       "production_factor_basket": "Broken Momentum / Avoid",
       "production_factor_score": 3.513869228212942,
+      "production_theme": "Consumer / Retail",
+      "primary_keyword_factor": "Consumer / Retail",
+      "primary_keyword_factor_score": 7.48188336109631,
+      "keyword_factor_baskets": "Consumer / Retail",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -4337,6 +4709,10 @@
       "primary_strategy": "RSI inflection + value",
       "production_factor_basket": "Broken Momentum / Avoid",
       "production_factor_score": 4.518771776619392,
+      "production_theme": "Energy Transition",
+      "primary_keyword_factor": "Energy Transition",
+      "primary_keyword_factor_score": 13.93414730501146,
+      "keyword_factor_baskets": "Energy Transition, Consumer / Retail",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -4383,6 +4759,10 @@
       "primary_strategy": "shorted near lows / peer lag",
       "production_factor_basket": "Broken Momentum / Avoid",
       "production_factor_score": 4.0165679297208285,
+      "production_theme": "Consumer / Retail",
+      "primary_keyword_factor": "Consumer / Retail",
+      "primary_keyword_factor_score": 10.268390268318381,
+      "keyword_factor_baskets": "Consumer / Retail, Macro Rates / Inflation",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -4429,6 +4809,10 @@
       "primary_strategy": "RSI inflection + value",
       "production_factor_basket": "Neutral / Transition",
       "production_factor_score": 6.03052175355649,
+      "production_theme": "Oil & Gas",
+      "primary_keyword_factor": "Oil & Gas",
+      "primary_keyword_factor_score": 34.62130634831133,
+      "keyword_factor_baskets": "Oil & Gas",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -4475,6 +4859,10 @@
       "primary_strategy": "RSI inflection + value",
       "production_factor_basket": "Neutral / Transition",
       "production_factor_score": 5.031904106015894,
+      "production_theme": "Oil & Gas",
+      "primary_keyword_factor": "Oil & Gas",
+      "primary_keyword_factor_score": 31.590859073261065,
+      "keyword_factor_baskets": "Oil & Gas",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -4521,6 +4909,10 @@
       "primary_strategy": "RSI inflection + value",
       "production_factor_basket": "Neutral / Transition",
       "production_factor_score": 5.060413298347648,
+      "production_theme": "Energy Transition",
+      "primary_keyword_factor": "Oil & Gas",
+      "primary_keyword_factor_score": 23.355203909788376,
+      "keyword_factor_baskets": "Oil & Gas, Energy Transition",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -4567,6 +4959,10 @@
       "primary_strategy": "shorted near lows / peer lag",
       "production_factor_basket": "Broken Momentum / Avoid",
       "production_factor_score": 3.7250056993326073,
+      "production_theme": "Oil & Gas",
+      "primary_keyword_factor": "Macro Rates / Inflation",
+      "primary_keyword_factor_score": 13.14757432981098,
+      "keyword_factor_baskets": "Macro Rates / Inflation, Oil & Gas, Commodities / Materials",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -4613,6 +5009,10 @@
       "primary_strategy": "RSI inflection + value",
       "production_factor_basket": "Neutral / Transition",
       "production_factor_score": 5.904411743747318,
+      "production_theme": "AI Infrastructure",
+      "primary_keyword_factor": "Oil & Gas",
+      "primary_keyword_factor_score": 18.011030998495876,
+      "keyword_factor_baskets": "Oil & Gas, Cybersecurity, Energy Transition, AI Infrastructure",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -4659,6 +5059,10 @@
       "primary_strategy": "RSI inflection + value",
       "production_factor_basket": "Broken Momentum / Avoid",
       "production_factor_score": 4.032654783768547,
+      "production_theme": "Financials / Credit",
+      "primary_keyword_factor": "Financials / Credit",
+      "primary_keyword_factor_score": 15.186910273506829,
+      "keyword_factor_baskets": "Financials / Credit",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -4705,6 +5109,10 @@
       "primary_strategy": "RSI inflection + value",
       "production_factor_basket": "Neutral / Transition",
       "production_factor_score": 7.22253765489381,
+      "production_theme": "Financials / Credit",
+      "primary_keyword_factor": "Financials / Credit",
+      "primary_keyword_factor_score": 20.763469917612277,
+      "keyword_factor_baskets": "Financials / Credit",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -4751,6 +5159,10 @@
       "primary_strategy": "RSI inflection + value",
       "production_factor_basket": "Quality / Low-Vol Uptrend",
       "production_factor_score": 7.790569640629965,
+      "production_theme": "Financials / Credit",
+      "primary_keyword_factor": "Financials / Credit",
+      "primary_keyword_factor_score": 20.424396899291004,
+      "keyword_factor_baskets": "Financials / Credit, Macro Rates / Inflation",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -4797,6 +5209,10 @@
       "primary_strategy": "RSI inflection + value",
       "production_factor_basket": "Quality / Low-Vol Uptrend",
       "production_factor_score": 7.3974610438396065,
+      "production_theme": "Financials / Credit",
+      "primary_keyword_factor": "Financials / Credit",
+      "primary_keyword_factor_score": 21.74372063430471,
+      "keyword_factor_baskets": "Financials / Credit",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -4843,6 +5259,10 @@
       "primary_strategy": "RSI inflection + value",
       "production_factor_basket": "Neutral / Transition",
       "production_factor_score": 4.480169694607177,
+      "production_theme": "Financials / Credit",
+      "primary_keyword_factor": "Financials / Credit",
+      "primary_keyword_factor_score": 14.193658500496547,
+      "keyword_factor_baskets": "Financials / Credit, Housing / Real Estate",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -4889,6 +5309,10 @@
       "primary_strategy": "RSI inflection + value",
       "production_factor_basket": "Oversold / Mean-Reversion Watch",
       "production_factor_score": 2.7025997456256574,
+      "production_theme": "Semiconductors",
+      "primary_keyword_factor": "Consumer / Retail",
+      "primary_keyword_factor_score": 7.48188336109631,
+      "keyword_factor_baskets": "Consumer / Retail, Oil & Gas, Semiconductors, Energy Transition",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -4935,6 +5359,10 @@
       "primary_strategy": "RSI inflection + value",
       "production_factor_basket": "Thematic Momentum Leadership",
       "production_factor_score": 8.968237328940592,
+      "production_theme": "Healthcare / Biotech",
+      "primary_keyword_factor": "Energy Transition",
+      "primary_keyword_factor_score": 11.252147781109194,
+      "keyword_factor_baskets": "Energy Transition, Healthcare / Biotech, Consumer / Retail, Oil & Gas, Macro Rates / Inflation",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -4981,6 +5409,10 @@
       "primary_strategy": "RSI inflection + value",
       "production_factor_basket": "Quality / Low-Vol Uptrend",
       "production_factor_score": 7.200797618726468,
+      "production_theme": "Healthcare / Biotech",
+      "primary_keyword_factor": "Healthcare / Biotech",
+      "primary_keyword_factor_score": 25.554345758378563,
+      "keyword_factor_baskets": "Healthcare / Biotech, Energy Transition",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -5027,6 +5459,10 @@
       "primary_strategy": "RSI inflection + value",
       "production_factor_basket": "Thematic Momentum Leadership",
       "production_factor_score": 7.8427533599107,
+      "production_theme": "Healthcare / Biotech",
+      "primary_keyword_factor": "Healthcare / Biotech",
+      "primary_keyword_factor_score": 30.037348310392446,
+      "keyword_factor_baskets": "Healthcare / Biotech, Energy Transition, Commodities / Materials, Industrial Automation",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -5073,6 +5509,10 @@
       "primary_strategy": "RSI inflection + value",
       "production_factor_basket": "Neutral / Transition",
       "production_factor_score": 4.626418380758412,
+      "production_theme": "Healthcare / Biotech",
+      "primary_keyword_factor": "Healthcare / Biotech",
+      "primary_keyword_factor_score": 25.00533927205342,
+      "keyword_factor_baskets": "Healthcare / Biotech",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -5119,6 +5559,10 @@
       "primary_strategy": "shorted near lows / peer lag",
       "production_factor_basket": "Broken Momentum / Avoid",
       "production_factor_score": 3.3568125444735557,
+      "production_theme": "AI Infrastructure",
+      "primary_keyword_factor": "Housing / Real Estate",
+      "primary_keyword_factor_score": 19.203057731803412,
+      "keyword_factor_baskets": "Housing / Real Estate, AI Infrastructure, Energy Transition, Defense / Aerospace, Financials / Credit",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -5165,6 +5609,10 @@
       "primary_strategy": "shorted near lows / peer lag",
       "production_factor_basket": "Broken Momentum / Avoid",
       "production_factor_score": 3.00147455207245,
+      "production_theme": "Defense / Aerospace",
+      "primary_keyword_factor": "Energy Transition",
+      "primary_keyword_factor_score": 14.31144153615293,
+      "keyword_factor_baskets": "Energy Transition, Industrial Automation, Defense / Aerospace",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -5211,6 +5659,10 @@
       "primary_strategy": "shorted near lows / peer lag",
       "production_factor_basket": "Broken Momentum / Avoid",
       "production_factor_score": 2.732211058492835,
+      "production_theme": "Defense / Aerospace",
+      "primary_keyword_factor": "Defense / Aerospace",
+      "primary_keyword_factor_score": 50.11730082846607,
+      "keyword_factor_baskets": "Defense / Aerospace",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -5257,6 +5709,10 @@
       "primary_strategy": "cheap peer laggard",
       "production_factor_basket": "Broken Momentum / Avoid",
       "production_factor_score": 3.0095951184122844,
+      "production_theme": "Defense / Aerospace",
+      "primary_keyword_factor": "Industrial Automation",
+      "primary_keyword_factor_score": 12.935618474900334,
+      "keyword_factor_baskets": "Industrial Automation, Defense / Aerospace, Energy Transition",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -5303,6 +5759,10 @@
       "primary_strategy": "shorted near lows / peer lag",
       "production_factor_basket": "Broken Momentum / Avoid",
       "production_factor_score": 2.9012333400028387,
+      "production_theme": "AI Infrastructure",
+      "primary_keyword_factor": "Industrial Automation",
+      "primary_keyword_factor_score": 17.34700391186996,
+      "keyword_factor_baskets": "Industrial Automation, AI Infrastructure, Cloud Software",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -5349,6 +5809,10 @@
       "primary_strategy": "shorted near lows / peer lag",
       "production_factor_basket": "Neutral / Transition",
       "production_factor_score": 4.186497576287612,
+      "production_theme": "Defense / Aerospace",
+      "primary_keyword_factor": "Defense / Aerospace",
+      "primary_keyword_factor_score": 4.734612446840819,
+      "keyword_factor_baskets": "Defense / Aerospace",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -5395,6 +5859,10 @@
       "primary_strategy": "shorted near lows / peer lag",
       "production_factor_basket": "Broken Momentum / Avoid",
       "production_factor_score": 3.1232433449133508,
+      "production_theme": "AI Infrastructure",
+      "primary_keyword_factor": "AI Infrastructure",
+      "primary_keyword_factor_score": 13.553764442431781,
+      "keyword_factor_baskets": "AI Infrastructure, Cloud Software, Housing / Real Estate, Financials / Credit, Energy Transition",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -5441,6 +5909,10 @@
       "primary_strategy": "shorted near lows / peer lag",
       "production_factor_basket": "Oversold / Mean-Reversion Watch",
       "production_factor_score": 2.8271389846556234,
+      "production_theme": "AI Infrastructure",
+      "primary_keyword_factor": "AI Infrastructure",
+      "primary_keyword_factor_score": 22.11851173522806,
+      "keyword_factor_baskets": "AI Infrastructure, Housing / Real Estate, Cloud Software, Commodities / Materials, Industrial Automation",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -5487,6 +5959,10 @@
       "primary_strategy": "shorted near lows / peer lag",
       "production_factor_basket": "Broken Momentum / Avoid",
       "production_factor_score": 3.262397471644338,
+      "production_theme": "Semiconductors",
+      "primary_keyword_factor": "AI Infrastructure",
+      "primary_keyword_factor_score": 28.75406295305713,
+      "keyword_factor_baskets": "AI Infrastructure, Cloud Software, Financials / Credit, Semiconductors",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -5533,6 +6009,10 @@
       "primary_strategy": "cheap peer laggard",
       "production_factor_basket": "Oversold / Mean-Reversion Watch",
       "production_factor_score": 2.9543750355848495,
+      "production_theme": "Cloud Software",
+      "primary_keyword_factor": "Financials / Credit",
+      "primary_keyword_factor_score": 47.21526984537356,
+      "keyword_factor_baskets": "Financials / Credit, Crypto / Digital Assets, Energy Transition, Cloud Software, Consumer / Retail",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -5579,6 +6059,10 @@
       "primary_strategy": "RSI inflection + value",
       "production_factor_basket": "Thematic Momentum Leadership",
       "production_factor_score": 8.924447457415601,
+      "production_theme": "Crypto / Digital Assets",
+      "primary_keyword_factor": "Energy Transition",
+      "primary_keyword_factor_score": 12.1861904584418,
+      "keyword_factor_baskets": "Energy Transition, Consumer / Retail, Crypto / Digital Assets, Defense / Aerospace, Industrial Automation",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -5625,6 +6109,10 @@
       "primary_strategy": "shorted near lows / peer lag",
       "production_factor_basket": "Broken Momentum / Avoid",
       "production_factor_score": 3.056873751568093,
+      "production_theme": "Industrial Automation",
+      "primary_keyword_factor": "Industrial Automation",
+      "primary_keyword_factor_score": 7.145411124475097,
+      "keyword_factor_baskets": "Industrial Automation, Oil & Gas",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -5671,6 +6159,10 @@
       "primary_strategy": "cheap peer laggard",
       "production_factor_basket": "Broken Momentum / Avoid",
       "production_factor_score": 3.0526892645043957,
+      "production_theme": "AI Infrastructure",
+      "primary_keyword_factor": "AI Infrastructure",
+      "primary_keyword_factor_score": 8.76301417006087,
+      "keyword_factor_baskets": "AI Infrastructure, Crypto / Digital Assets, Commodities / Materials, Industrial Automation",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -5717,6 +6209,10 @@
       "primary_strategy": "cheap peer laggard",
       "production_factor_basket": "Neutral / Transition",
       "production_factor_score": 4.130726966672633,
+      "production_theme": "AI Infrastructure",
+      "primary_keyword_factor": "Commodities / Materials",
+      "primary_keyword_factor_score": 14.31144153615293,
+      "keyword_factor_baskets": "Commodities / Materials, AI Infrastructure, Cloud Software, Defense / Aerospace, Macro Rates / Inflation",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -5763,6 +6259,10 @@
       "primary_strategy": "cheap peer laggard",
       "production_factor_basket": "Broken Momentum / Avoid",
       "production_factor_score": 2.899321608743587,
+      "production_theme": "AI Infrastructure",
+      "primary_keyword_factor": "Macro Rates / Inflation",
+      "primary_keyword_factor_score": 8.4184170618582,
+      "keyword_factor_baskets": "Macro Rates / Inflation, Commodities / Materials, AI Infrastructure",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -5809,6 +6309,10 @@
       "primary_strategy": "shorted near lows / peer lag",
       "production_factor_basket": "Broken Momentum / Avoid",
       "production_factor_score": 3.4871286104096164,
+      "production_theme": "Consumer / Retail",
+      "primary_keyword_factor": "Housing / Real Estate",
+      "primary_keyword_factor_score": 25.043278033170886,
+      "keyword_factor_baskets": "Housing / Real Estate, Consumer / Retail",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -5855,6 +6359,10 @@
       "primary_strategy": "RSI inflection + value",
       "production_factor_basket": "Broken Momentum / Avoid",
       "production_factor_score": 4.13949132269542,
+      "production_theme": "Housing / Real Estate",
+      "primary_keyword_factor": "Housing / Real Estate",
+      "primary_keyword_factor_score": 15.558914171530867,
+      "keyword_factor_baskets": "Housing / Real Estate",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -5901,6 +6409,10 @@
       "primary_strategy": "RSI inflection + value",
       "production_factor_basket": "Quality / Low-Vol Uptrend",
       "production_factor_score": 7.201174154917141,
+      "production_theme": "Consumer / Retail",
+      "primary_keyword_factor": "Housing / Real Estate",
+      "primary_keyword_factor_score": 31.581966852855075,
+      "keyword_factor_baskets": "Housing / Real Estate, Consumer / Retail, Macro Rates / Inflation",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -5947,6 +6459,10 @@
       "primary_strategy": "RSI inflection + value",
       "production_factor_basket": "Quality / Low-Vol Uptrend",
       "production_factor_score": 7.9384463594993155,
+      "production_theme": "AI Infrastructure",
+      "primary_keyword_factor": "Housing / Real Estate",
+      "primary_keyword_factor_score": 8.077030810434557,
+      "keyword_factor_baskets": "Housing / Real Estate, AI Infrastructure, Consumer / Retail",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -5993,6 +6509,10 @@
       "primary_strategy": "RSI inflection + value",
       "production_factor_basket": "Neutral / Transition",
       "production_factor_score": 4.669249736363115,
+      "production_theme": "Healthcare / Biotech",
+      "primary_keyword_factor": "Housing / Real Estate",
+      "primary_keyword_factor_score": 22.663731899040712,
+      "keyword_factor_baskets": "Housing / Real Estate, Healthcare / Biotech, Energy Transition",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -6039,6 +6559,10 @@
       "primary_strategy": "RSI inflection + value",
       "production_factor_basket": "Neutral / Transition",
       "production_factor_score": 4.922539525296581,
+      "production_theme": null,
+      "primary_keyword_factor": "Macro Rates / Inflation",
+      "primary_keyword_factor_score": 6.894096696194191,
+      "keyword_factor_baskets": "Macro Rates / Inflation",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -6085,6 +6609,10 @@
       "primary_strategy": "RSI inflection + value",
       "production_factor_basket": "Broken Momentum / Avoid",
       "production_factor_score": 5.1048246093099925,
+      "production_theme": "Energy Transition",
+      "primary_keyword_factor": "Oil & Gas",
+      "primary_keyword_factor_score": 12.602912721074599,
+      "keyword_factor_baskets": "Oil & Gas, Energy Transition",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -6131,6 +6659,10 @@
       "primary_strategy": "RSI inflection + value",
       "production_factor_basket": "Neutral / Transition",
       "production_factor_score": 4.971875074327484,
+      "production_theme": "Energy Transition",
+      "primary_keyword_factor": "Energy Transition",
+      "primary_keyword_factor_score": 4.709294638856528,
+      "keyword_factor_baskets": "Energy Transition, Macro Rates / Inflation",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -6177,6 +6709,10 @@
       "primary_strategy": "RSI inflection + value",
       "production_factor_basket": "Neutral / Transition",
       "production_factor_score": 5.976989482799062,
+      "production_theme": "AI Infrastructure",
+      "primary_keyword_factor": "Oil & Gas",
+      "primary_keyword_factor_score": 12.602912721074599,
+      "keyword_factor_baskets": "Oil & Gas, Defense / Aerospace, AI Infrastructure",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     },
     {
@@ -6223,6 +6759,10 @@
       "primary_strategy": "RSI inflection + value",
       "production_factor_basket": "Broken Momentum / Avoid",
       "production_factor_score": 4.652247628599365,
+      "production_theme": "Industrial Automation",
+      "primary_keyword_factor": "Industrial Automation",
+      "primary_keyword_factor_score": 7.70502691241052,
+      "keyword_factor_baskets": "Industrial Automation, Oil & Gas",
       "four_h_timestamp": "2026-06-09 08:00:00-04:00"
     }
   ],
