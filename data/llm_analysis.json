@@ -1,64 +1,64 @@
 [
   {
-    "ticker": "CELH",
-    "cache_key": "web-v4:CELH:1781006400000:96.21:shorted near lows / peer lag",
-    "generated_at": "2026-06-13T00:31:03.655471+00:00",
+    "ticker": "SBRA",
+    "cache_key": "web-v4:SBRA:1781006400000:93.04:shorted near lows / peer lag",
+    "generated_at": "2026-06-16T00:30:43.248015+00:00",
     "input": {
-      "ticker": "CELH",
-      "company": "Celsius Holdings, Inc. Common Stock",
-      "sector": "Consumer Staples",
-      "industry": "Beverages - Non-Alcoholic",
+      "ticker": "SBRA",
+      "company": "Sabra Healthcare REIT, Inc.",
+      "sector": "Real Estate",
+      "industry": "REIT - Healthcare Facilities",
       "primary_strategy": "shorted near lows / peer lag",
-      "price": 28.245,
-      "market_cap_bn": 8.49,
-      "opportunity_score": 96.2,
-      "rsi_value_score": 36.2,
-      "squeeze_laggard_score": 96.2,
-      "value_laggard_score": 68.1,
-      "composite_value_score": 38.5,
-      "rsi_acceleration_score": 35.0,
-      "rsi_current": 35.7,
-      "rsi_delta_1": -8.9,
-      "prior_rsi_delta_3_bar_avg": -0.6,
-      "rsi_acceleration": -8.3,
-      "short_pct_float": 12.3,
-      "from_52w_low_pct": 2.8,
-      "from_52w_high_pct": -57.7,
-      "ret_1m_pct": -4.1,
-      "sector_ret_1m_median": 3.4,
-      "peer_lag_1m_pct": 7.5,
-      "forward_pe": 13.79,
-      "trailing_pe": 65.12,
-      "price_to_book": 5.74,
-      "peg": 0.3,
-      "sentiment_score": 0.1
+      "price": 18.32,
+      "market_cap_bn": 5.11,
+      "opportunity_score": 93.0,
+      "rsi_value_score": 72.2,
+      "squeeze_laggard_score": 93.0,
+      "value_laggard_score": 66.4,
+      "composite_value_score": 39.3,
+      "rsi_acceleration_score": 89.8,
+      "rsi_current": 41.8,
+      "rsi_delta_1": 15.3,
+      "prior_rsi_delta_3_bar_avg": -7.6,
+      "rsi_acceleration": 22.9,
+      "short_pct_float": 11.6,
+      "from_52w_low_pct": 6.7,
+      "from_52w_high_pct": -13.9,
+      "ret_1m_pct": -11.2,
+      "sector_ret_1m_median": 5.0,
+      "peer_lag_1m_pct": 16.3,
+      "forward_pe": 24.43,
+      "trailing_pe": 28.83,
+      "price_to_book": 1.64,
+      "peg": 5.28,
+      "sentiment_score": 0.33
     },
     "sources": [
       {
-        "title": "Celsius Holdings Inc. (CELH) Exceeds Market Returns: Some Facts to Consider",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/celsius-holdings-inc-celh-exceeds-214505836.html",
-        "excerpt": "In the latest close session, Celsius Holdings Inc. (CELH) was up +2.75% at $29.18. The stock's performance was ahead of the S&P 500's daily gain of 0.5%. Meanwhile, the Dow experienced a rise of 0.7%, and the technology-dominated Nasdaq saw an increase of 0.31%. Prior to today's trading, shares of the company had lost 2.1% lagged the Consumer Staples sector's gain of 1.95% and the S&P 500's loss of 0.23%. The upcoming earnings release of Celsius Holdings Inc. will be of great interest to investors. The company's upcoming EPS is projected at $0.43, signifying a 8.51% drop compared to the same quarter of the previous year. Meanwhile, our latest consensus estimate is calling for revenue of $901.25 million, up 21.91% from the prior-year quarter. Looking at the full year, the Zacks Consensus Estimates suggest analysts are expecting earnings of $1.59 per share and revenue of $3.35 billion. These totals would mark changes of +18.66% and +33.01%, respectively, from last year. Additionally, investors should keep an eye on any recent revisions to analyst forecasts for Celsius Holdings Inc. These revisions help to show the ever- changing nature of near-term business trends. Therefore, positive revisions in estimates convey analysts' confidence in the business performance and profit potential. Our research demonstrates that these adjustments in estimates directly associate with imminent stock price performance. To exploit this, we've formed the Zacks Rank, a quantitative model that includes these estimate changes and presents a viable rating system. Ranging from #1 (Strong Buy) to #5 (Strong Sell), the Zacks Rank system has a proven, outside-audited track record of outperformance, with #1 stocks returning an average of +25% annually since 1988. Over the last 30 days, the Zacks Cons",
+        "title": "SBRA vs. CUBE: Which Stock Is the Better Value Option?",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/sbra-vs-cube-stock-better-154004131.html",
+        "excerpt": "Investors looking for stocks in the REIT and Equity Trust - Other sector might want to consider either Sabra Healthcare (SBRA) or CubeSmart (CUBE). But which of these two stocks offers value investors a better bang for their buck right now? We'll need to take a closer look. Everyone has their own methods for finding great value opportunities, but our model includes pairing an impressive grade in the Value category of our Style Scores system with a strong Zacks Rank. The proven Zacks Rank emphasizes companies with positive estimate revision trends, and our Style Scores highlight stocks with specific traits. Sabra Healthcare has a Zacks Rank of #2 (Buy), while CubeSmart has a Zacks Rank of #3 (Hold) right now. Investors should feel comfortable knowing that SBRA likely has seen a stronger improvement to its earnings outlook than CUBE has recently. But this is only part of the picture for value investors. Value investors also tend to look at a number of traditional, tried-and-true figures to help them find stocks that they believe are undervalued at their current share price levels. Our Value category grades stocks based on a number of key metrics, including the tried-and-true P/E ratio, the P/S ratio, earnings yield, and cash flow per share, as well as a variety of other fundamentals that value investors frequently use. SBRA currently has a forward P/E ratio of 11.91, while CUBE has a forward P/E of 15.61. We also note that SBRA has a PEG ratio of 1.35. This metric is used similarly to the famous P/E ratio, but the PEG ratio also takes into account the stock's expected earnings growth rate. CUBE currently has a PEG ratio of 6.95. Another notable valuation metric for SBRA is its P/B ratio of 1.67. The P/B ratio is used to compare a stock's market value with its book value,",
         "search_snippet": "Zacks"
       },
       {
-        "title": "Is Celsius Holdings, Inc. (CELH) A Good Stock To Buy Now?",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/celsius-holdings-inc-celh-good-181746448.html",
-        "excerpt": "**Is CELH a good stock to buy?** We came across a [bullish thesis ](https://thevaluenerds.substack.com/p/5-stocks-im-watching-right-now-that)on Celsius Holdings, Inc. on TheValueNerd\u2019s Substack. In this article, we will summarize the bulls\u2019 thesis on CELH. Celsius Holdings, Inc.'s share was trading at $28.00 as of June 8th. CELH\u2019s trailing and forward P/E were 65.12 and 18.80 respectively according to Yahoo Finance. Celsius Holdings, Inc. develops, processes, manufactures, markets, sells, and distributes functional energy drinks in the United States and internationally. CELH is emerging as one of the few companies to meaningfully challenge the long-standing dominance of Monster Beverage and Red Bull in the global energy drink market. **Read More:**[**15 AI Stocks That Are Quietly Making Investors Rich**](https://www.insidermonkey.com/blog/15-ai-stocks-that-are-quietly- making-investors-rich-1714967/) **Read More:** [**Undervalued AI Stock Poised For Massive Gains: 10000% Upside Potential**](https://www.insidermonkey.com/blog/undervalued-ai-stock-poised- for-massive-gains-10000-upside-19/) Unlike traditional competitors, Celsius differentiated itself by targeting a health-conscious consumer demographic with a fitness-oriented brand image, functional ingredients, and placement closer to wellness products rather than conventional energy drinks. This differentiated positioning enabled the company to build strong momentum with younger consumers and expand rapidly across retail channels. Despite the stock declining nearly 70% from its peak near $100 to around $30, the underlying growth narrative appears intact and potentially misunderstood by the market. Over the last year, Celsius has significantly strengthened its long-term growth infrastructure through several strategic in",
-        "search_snippet": "Insider Monkey"
+        "title": "How The Sabra Health Care REIT (SBRA) Investment Story Is Evolving With Recent Updates",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/sabra-health-care-reit-sbra-010837171.html",
+        "excerpt": "[Find your next quality investment](https://simplywall.st/features/stock- screener?utm_medium=finance_user&utm_campaign=screener_head_cta&utm_source=yahoo&blueprint=4607936) with Simply Wall St's easy and powerful screener, trusted by over 7 million individual investors worldwide. Sabra Health Care REIT's latest analyst update comes with no changes to the existing price target, keeping the current valuation view intact for now. Even without fresh target moves or new commentary, this pause is still a data point you can use as you weigh the stock against other income oriented real estate options. Read on to see how to track these kinds of updates and use them to follow the evolving narrative around Sabra Health Care REIT. Stay updated as the Fair Value for [Sabra Health Care REIT](https://www.simplywall.st//company/id/b1eebd00-19bd-40f7-8d2a-9b17636e9571/valuation?utm_medium=finance_user&utm_campaign=stay_updated_cta&utm_source=yahoo) shifts by adding it to your [watchlist](https://simplywall.st/features/stock- watchlist?utm_medium=finance_user&utm_campaign=stay_updated_cta&utm_source=yahoo&blueprint=4607936) or [portfolio](https://simplywall.st/features/portfolio?utm_medium=finance_user&utm_campaign=stay_updated_cta&utm_source=yahoo&blueprint=4607936). Alternatively, explore our [Community](https://simplywall.st/stock/NasdaqGS/SBRA?utm_medium=finance_user&utm_campaign=stay_updated_cta&utm_source=yahoo&blueprint=4607936) to discover new perspectives on Sabra Health Care REIT. Do your thoughts align with the Bull or Bear Analysts? Perhaps you think there's more to the story. [Head to the Simply Wall St Community to discover more perspectives!](https://simplywall.st/features/community- narratives?utm_medium=finance_user&utm_campaign=cta_community_contributor&utm_source=yaho",
+        "search_snippet": "Simply Wall St."
       },
       {
-        "title": "Brokers Suggest Investing in Celsius (CELH): Read This Before Placing a Bet",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/brokers-suggest-investing-celsius-celh-133003597.html",
-        "excerpt": "The recommendations of Wall Street analysts are often relied on by investors when deciding whether to buy, sell, or hold a stock. Media reports about these brokerage-firm-employed (or sell-side) analysts changing their ratings often affect a stock's price. Do they really matter, though? Let's take a look at what these Wall Street heavyweights have to say about **Celsius Holdings Inc.** (CELH) before we discuss the reliability of brokerage recommendations and how to use them to your advantage. Celsius currently has an average brokerage recommendation (ABR) of 1.24, on a scale of 1 to 5 (Strong Buy to Strong Sell), calculated based on the actual recommendations (Buy, Hold, Sell, etc.) made by 21 brokerage firms. An ABR of 1.24 approximates between Strong Buy and Buy. Of the 21 recommendations that derive the current ABR, 18 are Strong Buy and one is Buy. Strong Buy and Buy respectively account for 85.7% and 4.8% of all recommendations. ## Brokerage Recommendation Trends for CELH Broker Rating Breakdown Chart for CELH Check price target & stock forecast for Celsius here>>> The ABR suggests buying Celsius, but making an investment decision solely on the basis of this information might not be a good idea. According to several studies, brokerage recommendations have little to no success guiding investors to choose stocks with the most potential for price appreciation. Are you wondering why? The vested interest of brokerage firms in a stock they cover often results in a strong positive bias of their analysts in rating it. Our research shows that for every \"Strong Sell\" recommendation, brokerage firms assign five \"Strong Buy\" recommendations. This means that the interests of these institutions are not always aligned with those of retail investors, giving little insight into the",
+        "title": "FVR vs. SBRA: Which Stock Is the Better Value Option?",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/fvr-vs-sbra-stock-better-154003627.html",
+        "excerpt": "Investors with an interest in REIT and Equity Trust - Other stocks have likely encountered both FrontView REIT, Inc. (FVR) and Sabra Healthcare (SBRA). But which of these two stocks is more attractive to value investors? We'll need to take a closer look to find out. There are plenty of strategies for discovering value stocks, but we have found that pairing a strong Zacks Rank with an impressive grade in the Value category of our Style Scores system produces the best returns. The Zacks Rank favors stocks with strong earnings estimate revision trends, and our Style Scores highlight companies with specific traits. Right now, FrontView REIT, Inc. is sporting a Zacks Rank of #2 (Buy), while Sabra Healthcare has a Zacks Rank of #3 (Hold). The Zacks Rank favors stocks that have recently seen positive revisions to their earnings estimates, so investors should rest assured that FVR has an improving earnings outlook. But this is just one piece of the puzzle for value investors. Value investors also tend to look at a number of traditional, tried-and-true figures to help them find stocks that they believe are undervalued at their current share price levels. Our Value category highlights undervalued companies by looking at a variety of key metrics, including the popular P/E ratio, as well as the P/S ratio, earnings yield, cash flow per share, and a variety of other fundamentals that have been used by value investors for years. FVR currently has a forward P/E ratio of 13.38, while SBRA has a forward P/E of 13.57. We also note that FVR has a PEG ratio of 0.79. This popular figure is similar to the widely-used P/E ratio, but the PEG ratio also considers a company's expected EPS growth rate. SBRA currently has a PEG ratio of 1.63. Another notable valuation metric for FVR is its P/B rati",
         "search_snippet": "Zacks"
       }
     ],
-    "analysis": "- **External commentary:** Analysts highlight Celsius as a rare challenger to Monster/Red Bull in energy drinks, with a health-conscious brand and functional ingredients [2]. The average brokerage recommendation (ABR) is 1.24 (Strong Buy to Buy) from 21 firms, though the source warns such ratings often have a positive bias [3]. Consensus estimates project 2024 EPS of $1.59 (+18.66% YoY) and revenue of $3.35B (+33.01% YoY) [1]. The stock is down ~70% from its peak, but the growth narrative is considered intact [2].\n\n- **Why it can work:** The stock trades at a forward P/E of 13.79 and a PEG of 0.3, suggesting potential undervaluation relative to expected earnings growth. Revenue growth of 33% is forecast for the full year [1], and the company is gaining shelf space in a duopoly market [2]. The high short interest (12.3% of float) could fuel a squeeze if positive catalysts emerge.\n\n- **What can break it:** The upcoming quarter\u2019s EPS is projected to drop 8.51% YoY [1], indicating near-term earnings pressure. The stock has lagged its sector by 7.5% in the past month [warehouse], and the RSI acceleration is sharply negative (-8.3), signaling continued downside momentum. The trailing P/E of 65.12 is elevated, and the sentiment score is very low (0.1), suggesting broad bearishness.\n\n- **Confirming evidence to watch:** Watch for upward revisions to analyst estimates over the next 30 days, as positive revisions have historically correlated with price performance [1]. Also monitor the upcoming earnings report for revenue growth above the $901M consensus and any guidance that reverses the EPS decline. A reduction in short interest or a break above recent price resistance would signal changing sentiment.\n\n- **Bottom line:** The setup combines deep value metrics (low forward P/E, low PEG) with a high short float and a strong long-term growth narrative, but near-term earnings weakness and negative price momentum are clear risks. The bullish case depends on the company delivering on revenue growth and analysts revising estimates upward; without that, the stock may remain a laggard. No trade recommendation is made."
+    "analysis": "- **External commentary:** Source [1] notes SBRA has a Zacks Rank of #2 (Buy) and a forward P/E of 11.91, which is lower than CubeSmart\u2019s 15.61, and a PEG ratio of 1.35 versus CUBE\u2019s 6.95, suggesting relative value appeal. Source [3] shows a conflicting Zacks Rank of #3 (Hold) for SBRA, with a forward P/E of 13.57 and a PEG of 1.63, indicating analyst sentiment is mixed and may depend on the comparison set. Source [2] reports no recent changes to SBRA\u2019s price target, implying a neutral near-term catalyst outlook from analysts.\n\n- **Why it can work:** The stock is a significant 1-month laggard (ret_1m_pct -11.2%) versus its sector median (+5.0%) and peers (peer_lag_1m_pct 16.3%), creating a potential mean-reversion setup. The RSI acceleration (22.9) from a prior negative average (-7.6) suggests momentum may be turning. Short interest is elevated at 11.6% of float, which could fuel a squeeze if positive catalysts emerge. Source [1] highlights a low forward P/E (11.91) and PEG (1.35) relative to a peer, supporting a value argument.\n\n- **What can break it:** The stock is only 6.7% above its 52-week low, indicating persistent weakness. The forward P/E of 24.43 in the warehouse data is much higher than the 11.91 cited in source [1], suggesting valuation is unclear or data is inconsistent. The PEG ratio of 5.28 (warehouse) implies expensive growth expectations, conflicting with the value thesis. Source [3] assigns a Hold rating, and source [2] shows no analyst catalyst. The REIT sector\u2019s 1-month median return of +5.0% suggests SBRA\u2019s underperformance may be company-specific (e.g., healthcare facility headwinds) rather than a broad sector issue.\n\n- **Confirming evidence to watch:** Look for upward earnings estimate revisions or an upgrade in Zacks Rank (currently mixed between Buy and Hold per sources). Monitor short interest changes\u2014a decline would reduce squeeze potential. Watch for price action breaking above the 52-week high distance (-13.9%) or a sustained RSI move above 50. Any positive analyst commentary on occupancy rates or lease renewals for healthcare facilities would be key, but this is unknown from supplied data.\n\n- **Bottom line:** SBRA shows a contrarian long setup based on severe 1-month underperformance, high short interest, and mixed value signals from external sources. However, conflicting valuation data (P/E ranges from 11.91 to 24.43), a Hold rating from one source, and no recent analyst catalyst create significant uncertainty. The setup is speculative and depends on a reversal of company-specific weakness, which is not confirmed by current commentary. No trade recommendation."
   },
   {
     "ticker": "LYFT",
-    "cache_key": "web-v4:LYFT:1781006400000:91.85:shorted near lows / peer lag",
-    "generated_at": "2026-06-13T00:31:13.947410+00:00",
+    "cache_key": "web-v4:LYFT:1781006400000:92.58:shorted near lows / peer lag",
+    "generated_at": "2026-06-16T00:30:57.581650+00:00",
     "input": {
       "ticker": "LYFT",
       "company": "Lyft, Inc. Class A Common Stock",
@@ -67,10 +67,10 @@
       "primary_strategy": "shorted near lows / peer lag",
       "price": 14.14,
       "market_cap_bn": 5.2,
-      "opportunity_score": 91.9,
+      "opportunity_score": 92.6,
       "rsi_value_score": 34.5,
-      "squeeze_laggard_score": 91.9,
-      "value_laggard_score": 73.5,
+      "squeeze_laggard_score": 92.6,
+      "value_laggard_score": 74.5,
       "composite_value_score": 70.4,
       "rsi_acceleration_score": 15.2,
       "rsi_current": 53.4,
@@ -80,9 +80,9 @@
       "short_pct_float": 23.6,
       "from_52w_low_pct": 13.5,
       "from_52w_high_pct": -44.6,
-      "ret_1m_pct": -1.2,
-      "sector_ret_1m_median": 7.4,
-      "peer_lag_1m_pct": 8.6,
+      "ret_1m_pct": -1.0,
+      "sector_ret_1m_median": 9.7,
+      "peer_lag_1m_pct": 10.8,
       "forward_pe": 6.91,
       "trailing_pe": 2.05,
       "price_to_book": 1.77,
@@ -93,7 +93,7 @@
       {
         "title": "How Investors Are Reacting To Lyft (LYFT) Illinois Driver Unionization And Governance Overhaul",
         "url": "https://finance.yahoo.com/markets/stocks/articles/investors-reacting-lyft-lyft-illinois-221526174.html",
-        "excerpt": "* In early June 2026, Illinois lawmakers passed a bill allowing Uber and Lyft drivers to unionize and bargain collectively, potentially reshaping labor relations and cost structures for rideshare platforms in a state with more than 100,000 drivers. * At the same time, Lyft has been updating its corporate charter and expanding safety disclosures and in\u2011app protections, signaling a broader recalibration of governance, risk management, and stakeholder commitments as regulatory scrutiny intensifies. * We\u2019ll now examine how Illinois\u2019 move to allow rideshare driver unionization could affect Lyft\u2019s investment narrative and longer-term economics. Invest in the nuclear renaissance through our list of [88 elite nuclear energy infrastructure plays](https://simplywall.st/discover/investing- ideas/473644/nuclear- renaissance/global?utm_medium=finance_user&utm_campaign=intro&utm_source=yahoo&blueprint=4623146) powering the global AI revolution. ## Lyft Investment Narrative Recap To own Lyft, you need to believe its urban rideshare and AV partnerships can support sustainable profits despite regulation, competition, and shifting mobility habits. Illinois\u2019 move to allow rideshare driver unionization squarely targets labor costs, which ties directly into the key near term catalyst of improving profitability and the biggest current risk around regulatory and labor driven margin pressure. The impact may be material over time, but the specifics are still uncertain. The AGM-approved amendments to Lyft\u2019s Restated Certificate of Incorporation are technically modest, but they sit alongside heavier regulatory and labor scrutiny. While they do not alter the core catalyst of scaling AV partnerships and higher margin usage through deals with players like Baidu, United, and DoorDash, they highlight",
+        "excerpt": "* In early June 2026, Illinois lawmakers passed a bill allowing Uber and Lyft drivers to unionize and bargain collectively, potentially reshaping labor relations and cost structures for rideshare platforms in a state with more than 100,000 drivers. * At the same time, Lyft has been updating its corporate charter and expanding safety disclosures and in\u2011app protections, signaling a broader recalibration of governance, risk management, and stakeholder commitments as regulatory scrutiny intensifies. * We'll now examine how Illinois' move to allow rideshare driver unionization could affect Lyft's investment narrative and longer-term economics. Invest in the nuclear renaissance through our list of [88 elite nuclear energy infrastructure plays](https://simplywall.st/discover/investing- ideas/473644/nuclear- renaissance/global?utm_medium=finance_user&utm_campaign=intro&utm_source=yahoo&blueprint=4623146) powering the global AI revolution. ## Lyft Investment Narrative Recap To own Lyft, you need to believe its urban rideshare and AV partnerships can support sustainable profits despite regulation, competition, and shifting mobility habits. Illinois' move to allow rideshare driver unionization squarely targets labor costs, which ties directly into the key near term catalyst of improving profitability and the biggest current risk around regulatory and labor driven margin pressure. The impact may be material over time, but the specifics are still uncertain. The AGM-approved amendments to Lyft's Restated Certificate of Incorporation are technically modest, but they sit alongside heavier regulatory and labor scrutiny. While they do not alter the core catalyst of scaling AV partnerships and higher margin usage through deals with players like Baidu, United, and DoorDash, they highlight",
         "search_snippet": "Simply Wall St."
       },
       {
@@ -109,7 +109,7 @@
         "search_snippet": "GuruFocus.com"
       }
     ],
-    "analysis": "- **External commentary**: [1] Illinois driver unionization bill and Lyft\u2019s governance overhaul introduce regulatory and labor-cost uncertainty; [2] consensus estimates project 56% YoY EPS growth and 13.6% revenue growth next quarter, with full-year EPS growth of +227%; [3] Lyft and Uber are suing NYC over a driver retention law that could force retention of unsafe drivers and impose rehiring obligations, with Lyft facing 54 active sexual misconduct lawsuits.\n\n- **Why it can work**: Forward P/E of 6.9x and PEG of 0.15 imply deeply discounted valuation relative to projected earnings growth; the 23.6% short float creates potential for a squeeze if positive catalysts emerge; analyst estimates show strong upward revisions [2], suggesting improving business momentum.\n\n- **What can break it**: Labor cost increases from Illinois unionization [1] could compress margins; NYC driver retention lawsuit [3] may force higher operating costs or legal liabilities; regulatory overhang across multiple states remains unresolved; the RSI acceleration score of -30.1 and recent -19.8 RSI delta indicate weakening short-term momentum.\n\n- **Confirming evidence to watch**: Next quarterly earnings report for actual margin performance vs. consensus; outcome of NYC lawsuit and any expansion of unionization to other states; changes in short interest levels; sustained analyst estimate revisions upward.\n\n- **Bottom line**: The setup combines deep value metrics with high short interest and strong earnings growth forecasts, but regulatory and labor risks are material and unquantified. The low forward P/E and PEG reflect market skepticism that may be justified. No trade recommendation."
+    "analysis": "- **External commentary**: Illinois passed a bill allowing rideshare driver unionization, which could increase Lyft\u2019s labor costs and reshape its cost structure [1]. Lyft and Uber are suing New York City over a driver retention law that they argue forces retention of unsafe drivers and violates constitutional rights [3]. Analyst estimates project 56% year-over-year EPS growth and 13.6% revenue growth for the upcoming quarter [2].\n\n- **Why it can work**: Forward P/E of 6.91 and PEG of 0.15 suggest the market is pricing in very low growth expectations relative to projected earnings growth of 227% year-over-year for full-year [2]. The stock has underperformed its sector by ~10.8% over the past month, creating potential mean-reversion opportunity if sentiment shifts.\n\n- **What can break it**: Illinois unionization law could materially increase driver costs, directly pressuring margins [1]. The New York City lawsuit adds legal uncertainty and potential operational restrictions [3]. Short interest at 23.6% of float indicates heavy bearish positioning, but this could reflect genuine fundamental concerns rather than just sentiment.\n\n- **Confirming evidence to watch**: Upcoming earnings report for actual margin performance and management commentary on labor cost impacts [2]. Resolution or escalation of the New York City lawsuit [3]. Any additional state-level unionization bills or regulatory actions. Changes in analyst estimates post-earnings.\n\n- **Bottom line**: The setup combines low valuation multiples with high projected earnings growth, but faces material regulatory and labor cost risks that are not yet quantifiable. The Illinois unionization bill and NYC lawsuit represent known unknowns that could fundamentally alter the cost structure. Without source data on competitive positioning or AV partnership economics, the bull case remains speculative."
   },
   {
     "ticker": "MTG",
@@ -168,65 +168,115 @@
     "analysis": "- **External commentary**: [1] notes analyst price targets are static with no revisions, implying a lack of near-term catalyst from sell-side coverage. [2] reports Q1 2026 earnings beat EPS estimates by 4.1% but revenues missed, with net premiums earned down 3.4% YoY and primary delinquency up 6.2%. [3] highlights management\u2019s emphasis on rising new insurance written and a fresh $750M share repurchase authorization through 2028, framing the investment case around capital return rather than organic growth.\n\n- **Why it can work**: The stock trades at a forward P/E of 7.64 and price-to-book of 1.07, with a PEG ratio of 0.4, suggesting deep value relative to earnings growth. The RSI acceleration score of 100.0 and RSI delta of +27.0 indicate a sharp reversal from oversold conditions, potentially signaling momentum shift. The $750M buyback authorization (over 13% of market cap) provides a tangible floor, as management is committed to reducing share count, which could support EPS even if revenue stagnates.\n\n- **What can break it**: Revenue is declining (down 3% YoY) and net premiums earned are shrinking, while primary delinquency rose 6.2%, hinting at credit quality deterioration. Persistency fell 70 bps to 84%, meaning policies are lapsing faster, which could cap insurance in force growth. The stock is down 3.7% since earnings and underperforming the sector (peer lag of 6.9% over 1 month), suggesting market skepticism. Without analyst upgrades or revenue acceleration, the buyback alone may not sustain upside.\n\n- **Confirming evidence to watch**: Monitor next quarter\u2019s net premiums earned and delinquency trends for stabilization or improvement. Track share buyback execution pace\u2014if the company aggressively repurchases stock, it could tighten supply. Watch for any analyst target revisions or commentary on housing market conditions, as mortgage insurance demand is tied to home purchase activity. Also, check if RSI holds above 50 and price breaks above the 52-week high of -15.1% range.\n\n- **Bottom line**: MTG presents a value-oriented long setup supported by cheap valuation and a large buyback, but the fundamental narrative is mixed\u2014revenue and premium income are softening, and credit metrics are weakening. The RSI inflection is sharp, but the stock lacks analyst catalyst and has been a sector laggard. The long thesis hinges on capital return outweighing organic headwinds, which is uncertain without confirming evidence of revenue stabilization. No trade recommendation."
   },
   {
-    "ticker": "FNB",
-    "cache_key": "web-v4:FNB:1781006400000:88.3:RSI inflection + value",
-    "generated_at": "2026-06-13T00:31:38.693603+00:00",
+    "ticker": "ACI",
+    "cache_key": "web-v4:ACI:1781006400000:89.12:shorted near lows / peer lag",
+    "generated_at": "2026-06-16T00:31:34.773889+00:00",
     "input": {
-      "ticker": "FNB",
-      "company": "F.N.B. Corp",
-      "sector": "Financials",
-      "industry": "Banks - Regional",
-      "primary_strategy": "RSI inflection + value",
-      "price": 18.02,
-      "market_cap_bn": 6.25,
-      "opportunity_score": 88.3,
-      "rsi_value_score": 88.3,
-      "squeeze_laggard_score": 53.7,
-      "value_laggard_score": 58.8,
-      "composite_value_score": 66.6,
-      "rsi_acceleration_score": 100.0,
-      "rsi_current": 69.2,
-      "rsi_delta_1": 33.8,
-      "prior_rsi_delta_3_bar_avg": -11.6,
-      "rsi_acceleration": 45.4,
-      "short_pct_float": 8.3,
-      "from_52w_low_pct": 33.1,
-      "from_52w_high_pct": -5.8,
-      "ret_1m_pct": 4.1,
-      "sector_ret_1m_median": 4.7,
-      "peer_lag_1m_pct": 0.6,
-      "forward_pe": 9.03,
-      "trailing_pe": 10.93,
-      "price_to_book": 0.93,
-      "peg": 1.05,
-      "sentiment_score": 1.0
+      "ticker": "ACI",
+      "company": "Albertsons Companies, Inc.",
+      "sector": "Consumer Staples",
+      "industry": "Grocery Stores",
+      "primary_strategy": "shorted near lows / peer lag",
+      "price": 15.98,
+      "market_cap_bn": 7.87,
+      "opportunity_score": 89.1,
+      "rsi_value_score": 74.8,
+      "squeeze_laggard_score": 89.1,
+      "value_laggard_score": 71.3,
+      "composite_value_score": 52.6,
+      "rsi_acceleration_score": 86.8,
+      "rsi_current": 50.1,
+      "rsi_delta_1": 13.2,
+      "prior_rsi_delta_3_bar_avg": -8.4,
+      "rsi_acceleration": 21.6,
+      "short_pct_float": 9.3,
+      "from_52w_low_pct": 6.5,
+      "from_52w_high_pct": -29.9,
+      "ret_1m_pct": -6.8,
+      "sector_ret_1m_median": 5.2,
+      "peer_lag_1m_pct": 12.1,
+      "forward_pe": 6.55,
+      "trailing_pe": 40.35,
+      "price_to_book": 4.39,
+      "peg": 1.44,
+      "sentiment_score": 0.3
     },
     "sources": [
       {
-        "title": "FNB Insider Sold Shares Worth $352,070, According to a Recent SEC Filing",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/fnb-insider-sold-shares-worth-212754281.html",
-        "excerpt": "Gary L Guerrieri, Chief Credit Officer, on June 12, 2026, sold 19,000 shares in FNB (FNB) for $352,0 Upgrade to read this MT Newswires article and get so much more. A Silver or Gold subscription plan is required to access premium news articles.",
-        "search_snippet": "MT Newswires"
+        "title": "Albertsons Companies (ACI) Stock Valuation Check After Recent Weak Performance",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/albertsons-companies-aci-stock-valuation-090810078.html",
+        "excerpt": "[Track your investments for FREE](https://simplywall.st/features/portfolio?utm_medium=finance_user&utm_campaign=portfolio_head_cta&utm_source=yahoo&blueprint=4624793) with Simply Wall St, the portfolio command center trusted by over 7 million individual investors worldwide. ## Albertsons Companies stock: recent performance snapshot Albertsons Companies (ACI) has drawn investor attention after recent trading, with the stock closing at US$15.41. Shares are down over the past week, month and past 3 months, alongside weaker one year and three year total returns. [See our latest analysis for Albertsons Companies.](https://www.simplywall.st/company/id/91865560-1493-4b6b-b8d5-6055549899f7?utm_medium=finance_user&utm_campaign=cta_company_latest_analysis&utm_source=yahoo) For context, the recent share price weakness, including a 7 day share price return that is down 5.81% and a one year total shareholder return that is down 24.86%, points to fading momentum and a more cautious view of the company's prospects. If recent moves in Albertsons Companies have you thinking more broadly about your portfolio, this could be a useful moment to scan [20 top founder-led companies](https://simplywall.st/discover/investing-ideas/473625/top-founder- led- companies/us?utm_medium=finance_user&utm_campaign=cta_screener_founder_led&utm_source=yahoo&blueprint=4624793) With Albertsons Companies trading at US$15.41 alongside weaker recent returns, investors now face a key question: is the stock trading below its underlying value, or is the market already pricing in future growth? ## Most Popular Narrative: 26.4% Undervalued Albertsons Companies most followed narrative points to a fair value of $20.94 per share, compared with the latest close at $15.41. This frames a sizable valuation gap that rests on",
+        "search_snippet": "Simply Wall St."
       },
       {
-        "title": "FNB Invests in Future Talent, Welcomes Summer Bank Internship Cohort",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/fnb-invests-future-talent-welcomes-134000089.html",
-        "excerpt": "_Next Generation of Financial Professionals Receive Hands-On Experience and Access to FNB's Award-Winning Culture_ PITTSBURGH, June 2, 2026 /PRNewswire/ -- F.N.B. Corporation (NYSE: FNB) announced today its 2026 summer internship class is its largest to date, part of nearly 150 seasonal team members the Company will welcome in the coming weeks. FNB will welcome interns in a variety of departments \u2014 including Consumer Banking, Corporate Banking, Capital Markets, Credit Administration, Risk Management, Compliance, Audit, Finance, Marketing, Information Technology and Data \u2014 where they will gain hands-on experience by working directly with leaders on real-world projects while learning about the financial services industry. According to the Department of Labor, Generation Z now represents a growing share of the U.S. workforce, surpassing Baby Boomers. The demographic shift presents opportunities for employers like FNB to use internship and development programs to further strengthen capabilities, spark innovation and build a more resilient, future-ready employee. In line with its commitment to maintain a culture where employees at all levels can thrive, FNB provides clear, comprehensive career pathways spanning the journey from entry-level to seasoned professional. For example, many interns are hired as full-time employees, where they may progress through thoughtfully curated programs such as the: * [FNB Development Program](https://www.fnb-online.com/about-us/careers/students-and-graduates). The 12-month program serves as a springboard into banking or financial services careers by combining meaningful work experience with professional growth opportunities. FNB offers Development Programs for Advisory Business, Capital Markets, Commercial Credit, Consumer Banking, Corporate",
-        "search_snippet": "PR Newswire"
+        "title": "3 Reasons to Sell ACI and 1 Stock to Buy Instead",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/3-reasons-sell-aci-1-153728829.html",
+        "excerpt": "3 Reasons to Sell ACI and 1 Stock to Buy Instead Over the past six months, Albertsons's shares (currently trading at $15.73) have posted a disappointing 7.8% loss, well below the S&P 500's 7.5% gain. This may have investors wondering how to approach the situation. Is there a buying opportunity in Albertsons, or does it present a risk to your portfolio? [See what our analysts have to say in our full research report, it's free](https://stockstory.org/us/stocks/nyse/aci?utm_source=threeReasons&utm_medium=yahoo&utm_campaign=underperformIntroCTA&utm_article=Cll1amIBYkc%3D&utm_ticker=ACI). ## Why Do We Think Albertsons Will Underperform? Even with the cheaper entry price, we're swiping left on Albertsons for now. Here are three reasons you should be careful with ACI, plus one stock we'd rather own. ### 1\\. Lack of New Stores, a Headwind for Revenue A retailer's store count influences how much it can sell and how quickly revenue can grow. Albertsons listed 2,243 locations in the latest quarter and has kept its store count flat over the last two years while other consumer retail businesses have opted for growth. When a retailer keeps its store footprint steady, it usually means demand is stable and it's focusing on operational efficiency to increase profitability. Albertsons Operating Locations ### 2\\. Low Gross Margin Reveals Weak Structural Profitability At StockStory, we prefer high gross margin businesses because they indicate pricing power or differentiated products, giving the company a chance to generate higher operating profits. Albertsons has bad unit economics for a retailer, signaling it operates in a competitive market and lacks pricing power because its inventory is sold in many places. As you can see below, it averaged a 27.5% gross margin over the last two years.",
+        "search_snippet": "StockStory"
+      }
+    ],
+    "analysis": "- **External commentary**: [1] notes ACI closed at $15.41, with shares down over the past week, month, and three months, and a one-year total shareholder return down 24.86%. It cites a \u201cmost followed narrative\u201d fair value of $20.94 per share, implying a 26.4% undervaluation. [2] argues ACI will underperform due to flat store count over two years (2,243 locations) and a low average gross margin of 27.5%, indicating weak pricing power and structural profitability issues.\n\n- **Why it can work**: The stock trades at a forward P/E of 6.55, well below the sector median, and the RSI has accelerated sharply (delta +21.6 from a prior 3-bar average of -8.4), suggesting a potential reversal from oversold conditions. The 9.3% short float could fuel a squeeze if sentiment shifts. The valuation gap cited in [1] ($20.94 fair value vs. $15.41) may attract value-oriented buyers if fundamentals stabilize.\n\n- **What can break it**: [2] highlights stagnant store growth and low gross margins, which limit revenue expansion and profitability in a competitive grocery sector. The trailing P/E of 40.35 is elevated, implying recent earnings weakness. The stock is down 6.8% in the past month while the sector median gained 5.2%, showing persistent underperformance. Without a catalyst (e.g., margin improvement or M&A), the valuation gap may not close.\n\n- **Confirming evidence to watch**: Look for same-store sales growth or gross margin expansion in upcoming quarterly reports. A reduction in short interest from 9.3% would signal fading bearish conviction. Any news on store expansion, cost-cutting, or strategic partnerships (e.g., delivery deals) could support the long thesis. The RSI at 50.1 is neutral; a sustained move above 60 would confirm momentum shift.\n\n- **Bottom line**: ACI offers a deep value entry (forward P/E 6.55) and a potential short squeeze setup, but the bear case from [2]\u2014flat store count and low margins\u2014is credible and unsupported by recent price action. The long thesis depends on a catalyst that is not evident in the supplied data. No trade recommendation."
+  },
+  {
+    "ticker": "OWL",
+    "cache_key": "web-v4:OWL:1781006400000:88.04:shorted near lows / peer lag",
+    "generated_at": "2026-06-16T00:31:50.145334+00:00",
+    "input": {
+      "ticker": "OWL",
+      "company": "Blue Owl Capital Inc.",
+      "sector": "Financials",
+      "industry": "Asset Management",
+      "primary_strategy": "shorted near lows / peer lag",
+      "price": 9.655,
+      "market_cap_bn": 6.85,
+      "opportunity_score": 88.0,
+      "rsi_value_score": 23.6,
+      "squeeze_laggard_score": 88.0,
+      "value_laggard_score": 61.0,
+      "composite_value_score": 47.1,
+      "rsi_acceleration_score": 11.0,
+      "rsi_current": 44.5,
+      "rsi_delta_1": -23.6,
+      "prior_rsi_delta_3_bar_avg": 9.1,
+      "rsi_acceleration": -32.8,
+      "short_pct_float": 20.6,
+      "from_52w_low_pct": 21.4,
+      "from_52w_high_pct": -54.2,
+      "ret_1m_pct": -0.9,
+      "sector_ret_1m_median": 8.1,
+      "peer_lag_1m_pct": 9.0,
+      "forward_pe": 9.58,
+      "trailing_pe": 78.5,
+      "price_to_book": 3.03,
+      "peg": 0.14,
+      "sentiment_score": -0.6
+    },
+    "sources": [
+      {
+        "title": "Is Blue Owl Capital Still Worth Holding for Income-Seeking Investors?",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/blue-owl-capital-still-worth-143200329.html",
+        "excerpt": "**Blue Owl Capital Corporation** OBDC is one of the largest publicly traded business development companies (BDCs), providing financing solutions to upper middle-market businesses across a wide range of industries. As a leading participant in the growing private-credit market, it generates income primarily through debt investments and is known for its attractive dividend yield. The portfolio is heavily weighted toward senior secured loans, which are generally considered lower-risk assets and help support stability across market cycles. Over the past six months, OBDC shares have lost 13.8% compared with a 14.9% decline for the broader industry. The stock currently trades at a forward P/E ratio of 9.92X, above the industry average of 8.75X and its five-year median of 8.63X. This valuation suggests that the market continues to assign a premium to OBDC compared with both its peers and its historical trading levels. Blue Owl Capital currently carries a Zacks Rank #3 (Hold) and a Value Score of A. ## Where Do Estimates for OBDC Stand? The Zacks Consensus Estimate for Blue Owl Capital's 2026 earnings is pegged at $1.27 per share, which has witnessed two downward revisions in the past 30 days with no movement in the opposite direction. The consensus estimate for 2026 revenues is pegged at $1.58 billion. OBDC beat on earnings in two of the trailing four quarters and missed in the other two. ## Blue Owl Capital Corporation Price, Consensus and EPS Surprise Blue Owl Capital Corporation Price, Consensus and EPS Surprise Blue Owl Capital Corporation price-consensus-eps-surprise-chart | Blue Owl Capital Corporation Quote ## OBDC's Business Tailwinds Blue Owl Capital has built one of the industry's largest private-credit platforms through a series of transformative transactions, includ",
+        "search_snippet": "Zacks"
       },
       {
-        "title": "FNB Builds on Record of Workplace Excellence with Additional Awards",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/fnb-builds-record-workplace-excellence-134000876.html",
-        "excerpt": "_Company Recognized as a Top Employer in South Carolina and for Military Spouses_ CHARLESTON, S.C., May 18, 2026 /PRNewswire/ -- F.N.B. Corporation (NYSE: FNB) announced today that it has been named a Top Workplace in South Carolina for 2026, the third time FNB has been listed among the state's most dynamic and people-centric companies. In addition, FNB has been recognized as a Top Employer for Military Spouses. \"We are proud to be recognized for our focus on building a workplace culture that supports employee engagement, strong performance and a meaningful impact for our stakeholders. Our employees bring our culture to life, and FNB could not find a better source of talent than the spouses of those who serve in the U.S. military because of their dedication and commitment,\" said Vincent J. Delie, Jr., Chairman, President and Chief Executive Officer of F.N.B. Corporation and First National Bank. \"Exciting, high-growth markets such as South Carolina are important to our continued growth, and our success is a direct reflection of our investments in our people and the local communities we serve.\" **Top Workplaces South Carolina ** The Top Workplaces awards are administered by Energage, an independent research firm committed to studying workplaces and identifying companies that foster a healthy and fulfilled workforce. Anonymous employee feedback is used to measure workplaces in various categories, including values, communication and leadership, with only the highest-ranking companies recognized for their culture. FNB has earned Top Workplaces awards nationally and regionally, as well as honors for financial services, national culture excellence, leadership, innovation, employee well-being and professional development, among others. As highlighted in FNB's 2025 [branch expan",
+        "title": "Blue Owl Capital Taps Abu Dhabi Hub As Valuation And Dividend Questions Linger",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/blue-owl-capital-taps-abu-090832324.html",
+        "excerpt": "[Never miss an important update on your stock portfolio](https://simplywall.st/features/portfolio?utm_medium=finance_user&utm_campaign=updates_head_cta&utm_source=yahoo&blueprint=4624797) and cut through the noise. Over 7 million investors trust Simply Wall St to stay informed where it matters for FREE. * Blue Owl Capital (NYSE:OWL) has opened a new regional headquarters in Abu Dhabi. * The move signals an expansion into the Middle East and closer ties with sovereign wealth funds in the region. * The announcement comes as the company reports growth in assets under management and increased activity in private credit and data infrastructure. For you as an investor, this Abu Dhabi hub puts NYSE:OWL closer to a pool of large, long term capital providers at a time when private credit and data infrastructure are drawing more attention globally. Blue Owl focuses on alternative assets, and the Middle East has been gaining importance as local sovereign wealth funds commit more capital to these areas. As the new office begins operating, it may influence how Blue Owl sources capital, structures partnerships and originates deals in the region. Investors watching the stock can track future disclosures on fund launches, financing activity and any region specific mandates linked to the Abu Dhabi headquarters. Stay updated on the most important news stories for [Blue Owl Capital](https://www.simplywall.st//company/id/74d3ff7e-911d-4a5a-879b-849c094acdec/valuation?utm_medium=finance_user&utm_campaign=news_stay_updated_cta&utm_source=yahoo) by adding it to your [watchlist](https://simplywall.st/features/stock- watchlist?utm_medium=finance_user&utm_campaign=news_stay_updated_cta&utm_source=yahoo&blueprint=4624797) or [portfolio](https://simplywall.st/features/portfolio?utm_medium=finance_",
+        "search_snippet": "Simply Wall St."
+      },
+      {
+        "title": "Blue Owl Strengthens Global Presence with Opening of Abu Dhabi Office",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/blue-owl-strengthens-global-presence-120000581.html",
+        "excerpt": "NEW YORK and ABU DHABI, United Arab Emirates, June 9, 2026 /PRNewswire/ -- Blue Owl Capital (\"Blue Owl\") (NYSE: OWL) today announced the opening of its new office in ADGM, the international financial center strategically located in Abu Dhabi, the capital of the United Arab Emirates (UAE). The office opening strengthens Blue Owl's global and regional footprint and underscores its long-term commitment to the Middle East and focus on best supporting clients in the region. Al Maryah Tower \"Over the last decade, the Middle East has emerged as both a strategic global market and a sophisticated investor across asset classes, particularly alternatives,\" said Haitham Abdulkarim, Managing Director, Senior Executive Officer of Blue Owl's Abu Dhabi office. \"We believe proximity to clients is fundamental to understanding their objectives and building lasting partnerships. As our platform continues to grow, expanding into Abu Dhabi \u2013 one of the region's leading financial centers \u2013 was a natural evolution for the firm, enabling us to meet clients where they are and in a jurisdiction that supports long-term partnerships and institutional growth.\" Doug Ostrover and Marc Lipschultz, Co-Chief Executive Officers of Blue Owl, said: \"With longstanding relationships in the Middle East, establishing an office in Abu Dhabi was a natural next step as we continue to deepen our work and relationships in both the UAE and the broader region. Today's announcement reflects our conviction in this incredibly important area and our commitment to strengthening the relationships we have developed over many years. This is not a new market for us; it represents the next phase of our growth in the region.\" Comprised of members of Blue Owl's Institutional Capital and GP Stakes teams, the new Abu Dhabi office w",
         "search_snippet": "PR Newswire"
       }
     ],
-    "analysis": "- **External commentary**: The only actionable external data is an insider sale by the Chief Credit Officer on June 12, 2026, of 19,000 shares worth ~$352,070 [1]. No other insider buying or selling is cited. The remaining excerpts are positive PR about internship programs [2] and workplace awards [3]; these are not financial catalysts and do not address earnings, loan growth, or credit quality. No analyst ratings, earnings revisions, or macroeconomic commentary are present in the supplied sources.\n\n- **Why it can work**: The quantitative setup shows a sharp RSI acceleration (delta +33.8 vs. prior 3-bar avg of -11.6) and a forward P/E of 9.03 with a price-to-book below 1.0 (0.93), suggesting the stock is cheap relative to book value. The composite value score of 66.6 and sentiment score of 1.0 (maximum) indicate the model sees a favorable risk/reward. A long thesis would rely on mean reversion in a beaten-down regional bank sector, with the low valuation providing a margin of safety if earnings hold.\n\n- **What can break it**: The insider sale by a senior credit officer is a potential red flag, as it may signal internal concern about credit quality or valuation [1]. The stock is only 5.8% off its 52-week high, limiting upside from a pure bounce. Regional banks face headwinds from commercial real estate exposure, net interest margin compression, and potential regulatory changes\u2014none of which are addressed in the supplied sources. The high RSI (69.2) is near overbought territory, and the 1-month return (4.1%) slightly lags the sector median (4.7%), suggesting no relative strength catalyst.\n\n- **Confirming evidence to watch**: Look for insider buying (none cited), positive earnings revisions, or commentary on net interest income and loan growth from FNB\u2019s next quarterly report. A decline in short interest from the current 8.3% of float would suggest bearish sentiment easing. Any analyst upgrades or price target increases would strengthen the case; none are present in the supplied data.\n\n- **Bottom line**: The long setup is purely quantitative\u2014low valuation, RSI acceleration, and high sentiment score\u2014with no supporting qualitative catalyst from the supplied web excerpts. The insider sale [1] is a cautionary signal, and the positive PR [2][3] is irrelevant to near-term financial performance. Without evidence of improving fundamentals or sector tailwinds, the thesis is speculative and relies entirely on mean reversion. No trade recommendation is made."
+    "analysis": "- **External commentary**: Source [1] highlights Blue Owl Capital Corporation (OBDC) as a large BDC with a senior secured loan focus, trading at a forward P/E of 9.92X\u2014above its industry and historical median\u2014and carrying a Zacks Rank #3 (Hold). Source [2] and [3] report Blue Owl Capital (OWL) opened a new Abu Dhabi office to expand into the Middle East, targeting sovereign wealth fund capital for private credit and data infrastructure. The excerpts do not directly address OWL\u2019s valuation, dividend sustainability, or short interest.\n\n- **Why it can work**: The Abu Dhabi expansion [2][3] could open new capital sources from sovereign wealth funds, potentially driving AUM growth and fee income. OWL\u2019s focus on alternative assets (private credit, data infrastructure) aligns with growing institutional demand. The low forward P/E (9.58) and PEG (0.14) suggest the stock is cheap relative to earnings growth, though this is based on warehouse data, not commentary.\n\n- **What can break it**: Source [1] notes downward earnings estimate revisions for OBDC (a related entity) and a premium valuation vs. peers, which may signal headwinds for the broader Blue Owl ecosystem. OWL\u2019s high short interest (20.6% of float) and negative sentiment score (-0.6) indicate bearish positioning. The 54.2% drop from 52-week high and 1-month peer lag (9.0%) suggest persistent underperformance. Unknown: whether OWL\u2019s dividend is sustainable or if credit losses could rise.\n\n- **Confirming evidence to watch**: Track OWL\u2019s AUM growth, especially any fund launches or mandates tied to the Abu Dhabi office [2][3]. Monitor earnings estimate revisions (currently negative per [1] for OBDC) and short interest changes. Watch for disclosures on Middle East capital commitments or partnership structures. Unknown: specific OWL earnings trends or credit quality metrics from the excerpts.\n\n- **Bottom line**: The long setup relies on OWL\u2019s cheap valuation and expansion into Middle East capital pools, but high short interest, negative sentiment, and recent underperformance create significant risk. The excerpts provide limited support for a bullish thesis\u2014they highlight a premium valuation and downward estimate revisions for a related entity, while the Abu Dhabi expansion is a long-term narrative with no near-term catalysts confirmed. No trade recommendation."
   },
   {
     "ticker": "CAG",
-    "cache_key": "web-v4:CAG:1781006400000:88.24:shorted near lows / peer lag",
-    "generated_at": "2026-06-13T00:31:56.898139+00:00",
+    "cache_key": "web-v4:CAG:1781006400000:87.67:shorted near lows / peer lag",
+    "generated_at": "2026-06-16T00:32:15.787708+00:00",
     "input": {
       "ticker": "CAG",
       "company": "Conagra Brands, Inc.",
@@ -235,10 +285,10 @@
       "primary_strategy": "shorted near lows / peer lag",
       "price": 13.18,
       "market_cap_bn": 6.4,
-      "opportunity_score": 88.2,
+      "opportunity_score": 87.7,
       "rsi_value_score": 80.6,
-      "squeeze_laggard_score": 88.2,
-      "value_laggard_score": 77.0,
+      "squeeze_laggard_score": 87.7,
+      "value_laggard_score": 76.2,
       "composite_value_score": 63.1,
       "rsi_acceleration_score": 90.0,
       "rsi_current": 56.5,
@@ -248,9 +298,9 @@
       "short_pct_float": 10.3,
       "from_52w_low_pct": 5.2,
       "from_52w_high_pct": -41.4,
-      "ret_1m_pct": -3.9,
-      "sector_ret_1m_median": 3.4,
-      "peer_lag_1m_pct": 7.4,
+      "ret_1m_pct": -2.5,
+      "sector_ret_1m_median": 5.2,
+      "peer_lag_1m_pct": 7.7,
       "forward_pe": 8.11,
       "trailing_pe": null,
       "price_to_book": 0.77,
@@ -261,72 +311,28 @@
       {
         "title": "Do Analyst Downgrades And Insider Buying Send Conflicting Signals About Conagra\u2019s (CAG) Dividend Strategy?",
         "url": "https://finance.yahoo.com/markets/stocks/articles/analyst-downgrades-insider-buying-send-090713891.html",
-        "excerpt": "* In recent days, Conagra Brands has faced a series of analyst downgrades highlighting pressure from higher freight, agriculture and packaging costs, as well as concerns about its elevated dividend payout ratio and operational headwinds. * At the same time, insider share purchases and fresh equity awards to directors suggest that some company leaders still see value in Conagra\u2019s long-term prospects despite these challenges. * We\u2019ll now examine how these cost pressures and dividend concerns may reshape Conagra\u2019s investment narrative and what they could mean for investors. The future of work is here. Discover the [33 top robotics and automation stocks](https://simplywall.st/discover/investing-ideas/473746/robotics-andamp- automation- stocks/global?utm_medium=finance_user&utm_campaign=intro&utm_source=yahoo&blueprint=4612088) leading the charge in AI-driven automation and industrial transformation. ## Conagra Brands Investment Narrative Recap To own Conagra today, you need to believe that its packaged and frozen brands can weather higher input costs while maintaining enough cash flow to support reinvestment and the dividend. The most important near term catalyst is how incoming CEO John Brase manages spending and pricing against rising freight, agriculture and packaging costs, while the biggest current risk is that the nearly 90% dividend payout ratio comes under pressure. Recent downgrades and trimmed profit guidance make that risk more immediate. Against that backdrop, Bernstein\u2019s downgrade to Underperform, with a lower price target and explicit concern around a potential dividend cut, feels especially important. It directly links persistent commodity inflation to Conagra\u2019s elevated payout ratio and hints that higher investment under new leadership could further squeeze",
+        "excerpt": "* In recent days, Conagra Brands has faced a series of analyst downgrades highlighting pressure from higher freight, agriculture and packaging costs, as well as concerns about its elevated dividend payout ratio and operational headwinds. * At the same time, insider share purchases and fresh equity awards to directors suggest that some company leaders still see value in Conagra's long-term prospects despite these challenges. * We'll now examine how these cost pressures and dividend concerns may reshape Conagra's investment narrative and what they could mean for investors. The future of work is here. Discover the [33 top robotics and automation stocks](https://simplywall.st/discover/investing-ideas/473746/robotics-andamp- automation- stocks/global?utm_medium=finance_user&utm_campaign=intro&utm_source=yahoo&blueprint=4612088) leading the charge in AI-driven automation and industrial transformation. ## Conagra Brands Investment Narrative Recap To own Conagra today, you need to believe that its packaged and frozen brands can weather higher input costs while maintaining enough cash flow to support reinvestment and the dividend. The most important near term catalyst is how incoming CEO John Brase manages spending and pricing against rising freight, agriculture and packaging costs, while the biggest current risk is that the nearly 90% dividend payout ratio comes under pressure. Recent downgrades and trimmed profit guidance make that risk more immediate. Against that backdrop, Bernstein's downgrade to Underperform, with a lower price target and explicit concern around a potential dividend cut, feels especially important. It directly links persistent commodity inflation to Conagra's elevated payout ratio and hints that higher investment under new leadership could further squeeze",
         "search_snippet": "Simply Wall St."
       },
       {
-        "title": "Conagra Brands to Release Fiscal 2026 Fourth Quarter and Full Year Earnings on July 15, 2026 - Financial Times",
-        "url": "https://markets.ft.com/data/announce/detail?dockey=600-202606090745PR_NEWS_USPRX____LA78795-1",
-        "excerpt": "CHICAGO , June 9, 2026 /PRNewswire/ -- Conagra Brands, Inc. (NYSE: CAG) will release its fiscal 2026 fourth quarter and full year results on Wednesday, July 15, 2026. A press release and supplemental materials, including pre- recorded remarks, will be issued that morning prior to a 30-minute live question-and-answer session with the investment community at 9:30 a.m. ET. The pre-recorded remarks, transcript, press release, presentation slides, and live audio Q&A can be accessed at [conagrabrands.com/investor- relations](https://edge.prnewswire.com/c/link/?t=0&l=en&o=4706809-1&h=1939995502&u=http%3A%2F%2Fwww.conagrabrands.com%2Finvestor- relations&a=conagrabrands.com%2Finvestor-relations) under Events & Presentations. The live audio Q&A can also be accessed by dialing 1-877-883-0383 for participants in the U.S. and 1-412-902-6506 for all other participants using passcode: 4873871. Please dial in 10 to 15 minutes prior to the call start time. **About Conagra Brands ** Conagra Brands, Inc. (NYSE: CAG), is one of North America's leading branded food companies. We combine a 100-year history of making quality food with agility and a relentless focus on collaboration and innovation. The company's portfolio is continuously evolving to satisfy consumers' ever-changing food preferences. Conagra's brands include Birds Eye\u00ae, Duncan Hines\u00ae, Healthy Choice\u00ae, Marie Callender's\u00ae, Reddi-wip\u00ae, Slim Jim\u00ae, Angie's\u00ae BOOMCHICKAPOP\u00ae, and many more. As a corporate citizen, we aim to do what's right for our business, our employees, our communities and the world. Headquartered in Chicago, Conagra Brands generated fiscal 2025 net sales of nearly $12 billion. For more information, visit [www.conagrabrands.com](https://edge.prnewswire.com/c/link/?t=0&l=en&o=4706809-1&h=2260067245&u=https%3A%2F%2Fwww",
-        "search_snippet": "About Conagra BrandsConagra Brands, Inc. (NYSE: CAG), is one of North America's leading branded food companies. We combine a 100-year history of making quality food with agility and a relentless focus on collaboration and innovation. The company's portfolio is continuously evolving to satisfy consumers' ever-changing food preferences. Conagra's brands include Birds Eye\u00ae, Duncan Hines\u00ae, Healthy Choice\u00ae, Marie Callender's\u00ae, Reddi-wip\u00ae, Slim Jim\u00ae, A"
-      }
-    ],
-    "analysis": "- **External commentary:** Analyst downgrades and a Bernstein Underperform rating cite persistent cost inflation (freight, agriculture, packaging) and an elevated dividend payout ratio near 90%, raising explicit concerns about a potential dividend cut [1]. Insider buying and equity awards suggest some leadership sees long-term value, but the downgrades directly link commodity inflation to payout pressure [1]. No source provides bullish fundamental catalysts or margin recovery forecasts.\n\n- **Why it can work:** The stock trades at a forward P/E of 8.11 and price-to-book of 0.77, indicating deep value territory if earnings stabilize. The RSI acceleration from -4.7 to +22.8 and a 10.3% short float could fuel a squeeze if sentiment shifts. A new CEO (John Brase) may implement cost controls or portfolio changes that improve cash flow, though no source confirms specific plans [1].\n\n- **What can break it:** The primary risk is a dividend cut, which would likely trigger further selling and destroy the income thesis [1]. Cost pressures from freight, agriculture, and packaging are ongoing and not yet resolved. The 1-month return of -3.9% versus sector median +3.4% shows persistent underperformance. The PEG ratio of 10.86 suggests expensive growth expectations relative to earnings growth, implying low earnings visibility.\n\n- **Confirming evidence to watch:** The July 15, 2026 earnings release is the next catalyst [2]. Key watchpoints: (1) management\u2019s commentary on cost trends and pricing power, (2) any change to dividend policy or payout ratio guidance, (3) free cash flow generation relative to dividend obligations. Insider buying patterns post-earnings would be a secondary signal. No source provides specific margin or volume targets.\n\n- **Bottom line:** CAG is a deep-value, high-short-interest name facing real operational headwinds and dividend risk. The long setup depends entirely on a fundamental turnaround that is not yet supported by external commentary. The RSI acceleration and low valuation are technical/quantitative signals, but the qualitative sources highlight cost pressure and payout risk as dominant themes. Without evidence of margin improvement or cost relief, the risk of a dividend cut outweighs the value argument."
-  },
-  {
-    "ticker": "ACI",
-    "cache_key": "web-v4:ACI:1781006400000:87.68:shorted near lows / peer lag",
-    "generated_at": "2026-06-13T00:32:14.435286+00:00",
-    "input": {
-      "ticker": "ACI",
-      "company": "Albertsons Companies, Inc.",
-      "sector": "Consumer Staples",
-      "industry": "Grocery Stores",
-      "primary_strategy": "shorted near lows / peer lag",
-      "price": 15.98,
-      "market_cap_bn": 7.87,
-      "opportunity_score": 87.7,
-      "rsi_value_score": 74.8,
-      "squeeze_laggard_score": 87.7,
-      "value_laggard_score": 69.3,
-      "composite_value_score": 52.6,
-      "rsi_acceleration_score": 86.8,
-      "rsi_current": 50.1,
-      "rsi_delta_1": 13.2,
-      "prior_rsi_delta_3_bar_avg": -8.4,
-      "rsi_acceleration": 21.6,
-      "short_pct_float": 9.3,
-      "from_52w_low_pct": 6.5,
-      "from_52w_high_pct": -29.9,
-      "ret_1m_pct": -3.3,
-      "sector_ret_1m_median": 3.4,
-      "peer_lag_1m_pct": 6.8,
-      "forward_pe": 6.55,
-      "trailing_pe": 40.35,
-      "price_to_book": 4.39,
-      "peg": 1.44,
-      "sentiment_score": 0.3
-    },
-    "sources": [
-      {
-        "title": "3 Reasons to Sell ACI and 1 Stock to Buy Instead",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/3-reasons-sell-aci-1-153728829.html",
-        "excerpt": "Over the past six months, Albertsons\u2019s shares (currently trading at $15.73) have posted a disappointing 7.8% loss, well below the S&P 500\u2019s 7.5% gain. This may have investors wondering how to approach the situation. Is there a buying opportunity in Albertsons, or does it present a risk to your portfolio? [See what our analysts have to say in our full research report, it\u2019s free](https://stockstory.org/us/stocks/nyse/aci?utm_source=threeReasons&utm_medium=yahoo&utm_campaign=underperformIntroCTA&utm_article=Cll1amIBYkc%3D&utm_ticker=ACI). ## Why Do We Think Albertsons Will Underperform? Even with the cheaper entry price, we\u2019re swiping left on Albertsons for now. Here are three reasons you should be careful with ACI, plus one stock we\u2019d rather own. ### 1\\. Lack of New Stores, a Headwind for Revenue A retailer\u2019s store count influences how much it can sell and how quickly revenue can grow. Albertsons listed 2,243 locations in the latest quarter and has kept its store count flat over the last two years while other consumer retail businesses have opted for growth. When a retailer keeps its store footprint steady, it usually means demand is stable and it\u2019s focusing on operational efficiency to increase profitability. Albertsons Operating Locations ### 2\\. Low Gross Margin Reveals Weak Structural Profitability At StockStory, we prefer high gross margin businesses because they indicate pricing power or differentiated products, giving the company a chance to generate higher operating profits. Albertsons has bad unit economics for a retailer, signaling it operates in a competitive market and lacks pricing power because its inventory is sold in many places. As you can see below, it averaged a 27.5% gross margin over the last two years. That means Albertsons paid its suppliers a lot o",
-        "search_snippet": "StockStory"
+        "title": "Conagra Brands (NYSE:CAG) Stock Forecast & Analyst Predictions",
+        "url": "https://simplywall.st/stocks/us/food-beverage-tobacco/nyse-cag/conagra-brands/future",
+        "excerpt": "Announcement \u2022 May 19 ### Conagra Brands Brings Exciting Array of Snacks and Sweet Treats to Sweets and Snacks Expo Conagra Brands, Inc. was prepping a collection of satisfying snacks and tempting sweets for the bright lights of Las Vegas and the National Confectioners Association's 2026 Sweets & Snacks Expo. Meat snacks, sweet treats, and salty snacks comprise the company's $3,300 million snacks portfolio, highlighted by several industry-leading brands. The Sweets & Snacks Expo takes place May 19\u201321, at the Las Vegas Convention Center. The average American enjoys 1,200 snacking occasions a year, underscoring the need for a broad range of new snacks. Visitors to Conagra Brands' booth at the Expo \u2013 #3205 \u2013 will find innovative new treats and exciting partnerships from several industry-leading brands, including the following: DAVID Seeds is bringing that legacy full circle by teaming up with baseball superstar Aaron Judge to introduce limited-edition Aaron Judge packs that fans are sure to love. Beginning in June, fans can grab DAVID Seeds Sweet & Spicy packs featuring the three-time league MVP and enjoy them in the dugout, the bleachers, or wherever they crack seeds. The partnership extends beyond the game: a portion of proceeds will support the Aaron Judge All Rise Foundation, helping inspire the next generation of kids to lead, learn, and thrive\u2014just as mentors once did for them. BiGS Sunflower Seeds is delivering an epic blast of flavor with the arrival of a new collection of sunflower seeds. Visitors to the booth can get a sneak peek of BiGS new Triple Blast sunflower seeds. Available in Pickle Ranch and Spicy Sweet Chili, these jumbo sunflower seeds are seasoned three times and roasted for an extra blast of the biggest, boldest flavors. BiGS Triple Blast Seeds will",
+        "search_snippet": "Discover Conagra Brands' earnings and revenue growth rates, forecasts, and the latest analyst predictions while comparing them to its"
       },
       {
-        "title": "How The Albertsons Companies (ACI) Investment Story Is Evolving Without New Analyst Commentary",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/albertsons-companies-aci-investment-story-181119121.html",
-        "excerpt": "[Find your next quality investment](https://simplywall.st/features/stock- screener?utm_medium=finance_user&utm_campaign=screener_head_cta&utm_source=yahoo&blueprint=4605700) with Simply Wall St's easy and powerful screener, trusted by over 7 million individual investors worldwide. Albertsons Companies is currently in focus with price targets holding steady, as analysts have not issued any new revisions. With no fresh commentary shaping expectations, the existing targets reflect the latest available views already on record. Ahead, you will see how to track new updates and keep up with shifts in the analyst story around this stock. [Analyst Price Targets don't always capture the full story. Head over to our Company Report to find new ways to value Albertsons Companies.](https://www.simplywall.st/company/id/91865560-1493-4b6b-b8d5-6055549899f7/valuation?utm_medium=finance_user&utm_campaign=cta_valuation_alternatives&utm_source=yahoo) Do your thoughts align with the Bull or Bear Analysts? Perhaps you think there's more to the story. [Head to the Simply Wall St Community to discover more perspectives!](https://simplywall.st/features/community- narratives?utm_medium=finance_user&utm_campaign=cta_community_contributor&utm_source=yahoo&blueprint=4605700) NYSE:ACI 1-Year Stock Price Chart [We've flagged 5 risks for Albertsons Companies. See which could impact your investment.](https://www.simplywall.st/company/id/91865560-1493-4b6b-b8d5-6055549899f7?utm_medium=finance_user&utm_campaign=cta_news_risk_alert&utm_source=yahoo) ## How This Changes the Fair Value For Albertsons Companies * Fair value estimate shows no recorded changes * Revenue growth assumptions show no recorded changes * Net profit margin assumptions show no recorded changes * P/E ratio inputs show no recorded chang",
-        "search_snippet": "Simply Wall St."
+        "title": "Conagra Reaffirms 2026 Outlook, Highlights Strong Cash Generation",
+        "url": "https://www.theglobeandmail.com/investing/markets/stocks/CAG/pressreleases/279781/conagra-reaffirms-2026-outlook-highlights-strong-cash-generation/",
+        "excerpt": "Conagra Brands ( [(CAG)](https://www.tipranks.com/stocks/cag?utm_source=theglobeandmail.com&utm_medium=referral) ) has provided an update. On February 16, 2026, [Conagra Brands](https://www.tipranks.com/stocks/cag?utm_source=theglobeandmail.com&utm_medium=referral) reaffirmed its fiscal 2026 guidance ahead of its presentation at the Consumer Analyst Group of New York conference, signaling confidence in its current strategy despite a modest sales outlook. The company maintained expectations for organic net sales to range from a 1% decline to 1% growth versus fiscal 2025, an adjusted operating margin of about 11.0% to 11.5%, and adjusted EPS of $1.70 to $1.85. Conagra also raised its forecast for free cash flow conversion to approximately 100% for the full year, up from a prior target of about 90%, indicating improved cash generation relative to earnings. The company plans to showcase new product innovations launching in calendar 2026, reinforcing its emphasis on branded innovation to support margins and sustain its competitive position in the packaged food sector. The most recent analyst rating on [(CAG)](https://www.tipranks.com/stocks/cag?utm_source=theglobeandmail.com&utm_medium=referral) stock is a Hold with a $20.00 price target. To see the full list of analyst forecasts on Conagra Brands stock, see the CAG [Stock Forecast page](https://www.tipranks.com/stocks/cag/forecast?utm_source=theglobeandmail.com&utm_medium=referral). **_Spark\u2019s Take on CAG Stock_** According to Spark, TipRanks\u2019 [AI](https://www.tipranks.com/compare- stocks/artificial- intelligence?utm_source=theglobeandmail.com&utm_medium=referral) Analyst, CAG is a Neutral. Conagra Brands\u2019 overall stock score reflects significant challenges in financial performance, particularly declining revenue and profit",
+        "search_snippet": "Detailed price information for Conagra Brands (CAG-N) from The Globe and Mail including charting and trades."
       }
     ],
-    "analysis": "- **External commentary:** Source [1] explicitly argues Albertsons will underperform, citing a flat store count over two years (2,243 locations) as a headwind to revenue growth, and a low average gross margin of 27.5% over the last two years, which it interprets as weak structural profitability and lack of pricing power in a competitive market. Source [2] notes that analysts have issued no new revisions or commentary, with price targets and fair value estimates showing no recorded changes, implying a static or uncertain outlook.\n\n- **Why it can work:** The long setup relies on a potential mean-reversion or value play: the stock trades near its 52-week low (only 6.5% above it), has a forward P/E of 6.55, and shows a sharp RSI acceleration (+21.6) from a deeply oversold prior 3-bar average (-8.4). Short interest is elevated at 9.3% of float, which could fuel a squeeze if positive catalysts emerge. However, the external commentary does not support any fundamental catalyst for a reversal\u2014it explicitly warns of structural issues.\n\n- **What can break it:** Source [1] directly contradicts the long thesis: flat store count limits revenue growth, and low gross margins suggest Albertsons operates in a highly competitive, low-pricing-power environment. Without new analyst revisions (source [2]), there is no fresh positive catalyst to shift sentiment. The trailing P/E of 40.35 is elevated, indicating recent earnings weakness. The stock has underperformed its sector by 6.8 percentage points over the past month, and the sector median return was positive 3.4%, suggesting company-specific headwinds.\n\n- **Confirming evidence to watch:** Unknown from supplied data. The excerpts do not provide any specific metrics or events that would confirm a long setup. To validate the thesis, one would need to see evidence of improving gross margins, new store openings or acquisitions, positive analyst revisions, or a catalyst such as a buyback or cost-cutting initiative. None of these are mentioned in the sources.\n\n- **Bottom line:** The long setup is a contrarian value/squeeze play based on technical oversold conditions and low valuation, but the external commentary provides no fundamental support\u2014it highlights flat store growth, weak margins, and a lack of analyst interest. The high short interest could amplify a move, but the risk is that the stock remains cheap for structural reasons. No trade recommendation."
+    "analysis": "- **External commentary:** Analyst downgrades cite persistent cost inflation (freight, agriculture, packaging) and an elevated dividend payout ratio near 90%, with Bernstein downgrading to Underperform and explicitly flagging dividend-cut risk [1]. Insider purchases and equity awards suggest some leadership sees long-term value, but the downgrades and trimmed profit guidance make the dividend risk \u201cmore immediate\u201d [1]. The company reaffirmed fiscal 2026 guidance (organic sales -1% to +1%, adjusted operating margin ~11.0%-11.5%, adjusted EPS $1.70-$1.85) and raised free cash flow conversion to ~100% [3]. Analyst consensus is Hold with a $20 price target [3].\n\n- **Why it can work:** The stock trades at a forward P/E of 8.11 and price-to-book of 0.77, well below sector averages, offering a deep-value entry if earnings stabilize. The reaffirmed 2026 guidance and improved free cash flow conversion (~100%) signal management\u2019s confidence in cash generation despite modest top-line growth [3]. Insider buying, while not a guarantee, may indicate belief that current headwinds are cyclical rather than structural [1]. The 10.3% short interest creates potential for a squeeze if sentiment shifts.\n\n- **What can break it:** The primary risk is a dividend cut, which Bernstein\u2019s downgrade explicitly ties to persistent commodity inflation and the ~90% payout ratio [1]. Higher input costs could further compress margins, making the 11.0%-11.5% operating margin target difficult to achieve. New CEO John Brase\u2019s strategy on pricing and spending is untested; increased investment could squeeze cash flow [1]. The stock is down 41.4% from its 52-week high and lagged its sector by 7.7% in the past month, indicating persistent negative momentum.\n\n- **Confirming evidence to watch:** Look for quarterly earnings reports showing stable or improving adjusted operating margins (target 11.0%-11.5%) and free cash flow conversion at or above 100% [3]. Any insider buying beyond current levels would strengthen the case. A reduction in the dividend payout ratio (e.g., through a cut or higher earnings) could remove the overhang. Conversely, further analyst downgrades or guidance cuts would confirm the bearish thesis.\n\n- **Bottom line:** CAG is a deep-value play with a low forward P/E and book value, but the setup is fragile. The qualitative commentary highlights serious near-term risks\u2014cost inflation, a stretched dividend, and analyst skepticism\u2014that outweigh the insider buying signal. The reaffirmed guidance provides a floor, but the stock\u2019s poor recent performance and sector lag suggest the market is pricing in further deterioration. Without clear evidence of margin stabilization or a dividend resolution, the long case remains speculative."
   },
   {
     "ticker": "TTD",
-    "cache_key": "web-v4:TTD:1781006400000:87.26:shorted near lows / peer lag",
-    "generated_at": "2026-06-13T00:32:25.183960+00:00",
+    "cache_key": "web-v4:TTD:1781006400000:84.18:shorted near lows / peer lag",
+    "generated_at": "2026-06-16T00:32:31.417652+00:00",
     "input": {
       "ticker": "TTD",
       "company": "The Trade Desk, Inc.",
@@ -335,10 +341,10 @@
       "primary_strategy": "shorted near lows / peer lag",
       "price": 19.63,
       "market_cap_bn": 10.0,
-      "opportunity_score": 87.3,
+      "opportunity_score": 84.2,
       "rsi_value_score": 23.1,
-      "squeeze_laggard_score": 87.3,
-      "value_laggard_score": 72.6,
+      "squeeze_laggard_score": 84.2,
+      "value_laggard_score": 68.4,
       "composite_value_score": 51.0,
       "rsi_acceleration_score": 8.1,
       "rsi_current": 36.5,
@@ -346,155 +352,43 @@
       "prior_rsi_delta_3_bar_avg": 6.6,
       "rsi_acceleration": -35.0,
       "short_pct_float": 16.3,
-      "from_52w_low_pct": 6.9,
+      "from_52w_low_pct": 7.2,
       "from_52w_high_pct": -78.5,
-      "ret_1m_pct": -10.6,
-      "sector_ret_1m_median": -2.0,
-      "peer_lag_1m_pct": 8.6,
+      "ret_1m_pct": -5.9,
+      "sector_ret_1m_median": -2.7,
+      "peer_lag_1m_pct": 3.2,
       "forward_pe": 9.04,
       "trailing_pe": 22.08,
       "price_to_book": 3.73,
       "peg": 0.95,
-      "sentiment_score": -0.5
+      "sentiment_score": -0.6
     },
     "sources": [
       {
-        "title": "The Trade Desk (TTD) Beats Stock Market Upswing: What Investors Need to Know",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/trade-desk-ttd-beats-stock-214504092.html",
-        "excerpt": "In the latest close session, The Trade Desk (TTD) was up +1.93% at $19.27. This change outpaced the S&P 500's 0.5% gain on the day. At the same time, the Dow added 0.7%, and the tech-heavy Nasdaq gained 0.31%. Shares of the digital-advertising platform operator have depreciated by 7.4% over the course of the past month, underperforming the Computer and Technology sector's loss of 0.42%, and the S&P 500's loss of 0.23%. Analysts and investors alike will be keeping a close eye on the performance of The Trade Desk in its upcoming earnings disclosure. The company's earnings per share (EPS) are projected to be $0.4, reflecting a 2.44% decrease from the same quarter last year. Our most recent consensus estimate is calling for quarterly revenue of $751.76 million, up 8.32% from the year-ago period. Regarding the entire year, the Zacks Consensus Estimates forecast earnings of $1.87 per share and revenue of $3.18 billion, indicating changes of +5.65% and +9.81%, respectively, compared to the previous year. Additionally, investors should keep an eye on any recent revisions to analyst forecasts for The Trade Desk. These latest adjustments often mirror the shifting dynamics of short-term business patterns. As a result, we can interpret positive estimate revisions as a good sign for the business outlook. Empirical research indicates that these revisions in estimates have a direct correlation with impending stock price performance. To exploit this, we've formed the Zacks Rank, a quantitative model that includes these estimate changes and presents a viable rating system. The Zacks Rank system ranges from #1 (Strong Buy) to #5 (Strong Sell). It has a remarkable, outside-audited track record of success, with #1 stocks delivering an average annual return of +25% since 1988. Over the past",
+        "title": "Is Trade Desk\u2019s Publicis Truce And Leadership Shuffle Altering The Investment Case For TTD?",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/trade-desk-publicis-truce-leadership-181124003.html",
+        "excerpt": "* In recent weeks, The Trade Desk resolved its high-profile billing dispute with Publicis, appointed Nate Olmstead as CFO, added veteran executive David Haddad to its board, and hired former Zendesk leader Sarah Gavin as CMO and Executive Vice President. * These moves collectively reduce a key agency relationship risk while bolstering financial, marketing, and governance leadership at a moment when the company's role in the digital ad ecosystem is under close scrutiny. * Now we'll examine how resolving the Publicis dispute may reshape The Trade Desk's investment narrative and investors' perception of its platform. Capitalize on the AI infrastructure supercycle with our selection of the [48 best 'picks and shovels' of the AI gold rush](https://simplywall.st/discover/investing-ideas/473744/ai-infrastructure- stocks/global?utm_medium=finance_user&utm_campaign=intro&utm_source=yahoo&blueprint=4626176) converting record-breaking demand into massive cash flow. ## Trade Desk Investment Narrative Recap The core Trade Desk thesis still rests on the open internet gaining share in data driven, measurable advertising, particularly in connected TV. Resolving the Publicis billing dispute directly addresses the biggest near term risk around agency concentration, while the key short term catalyst remains whether major brands actually sustain or increase spend on the platform after this resolution. Among the new announcements, the settlement with Publicis is most relevant, as it restores the agency's recommendation of Trade Desk's platform to clients at a time when stock-specific concerns, technical pressure, and questions about long term growth have weighed heavily on sentiment and valuation. Yet while the Publicis dispute is resolved, investors should be aware that agency audits and f",
+        "search_snippet": "Simply Wall St."
+      },
+      {
+        "title": "Can TTD Capitalize on Agoda's High-Intent Travel Audience Across APAC?",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/ttd-capitalize-agodas-high-intent-133700168.html",
+        "excerpt": "The digital advertising landscape in the Asia-Pacific (APAC) region is evolving rapidly, driven by the convergence of first-party data, programmatic advertising and changing consumer travel behaviors. Against this backdrop, the alliance between **The Trade Desk, Inc.** TTD and Agoda presents a compelling opportunity to transform travel advertising across the region. The collaboration allows advertisers to leverage Agoda's rich first-party travel data through Agoda Media Solutions, part of **Booking Holdings Inc.** BKNG advertising network, enabling marketers to target high-intent travelers more effectively across premium digital channels. Through this initiative, Agoda becomes The Trade Desk's first online travel agency partner in APAC to extend audience targeting beyond its own platform. By integrating with TTD's advertising platform, brands gain access to audience segments built from Agoda's first-party travel data, allowing them to engage consumers throughout the travel planning process. The combined efforts now allow advertisers to reach travelers much earlier in their journey. Brands can connect with audiences across various digital platforms, including CTV, OTT streaming services, streaming music platforms, podcasts, display ads, mobile apps and digital out-of-home advertising. Agoda's platform collects significant amounts of first-party travel data from users actively researching and planning trips. This information provides advertisers with insights into travel interests, destination preferences, booking behaviors, seasonal travel patterns, geographic trends and consumer engagement signals. When paired with TTD's advanced audience targeting and media buying tools, advertisers can create highly targeted campaigns that reach consumers with remarkable relevance. Th",
         "search_snippet": "Zacks"
       },
       {
-        "title": "Investors Heavily Search The Trade Desk (TTD): Here is What You Need to Know",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/investors-heavily-search-trade-desk-130004901.html",
-        "excerpt": "**The Trade Desk** (TTD) has been one of the most searched-for stocks on Zacks.com lately. So, you might want to look at some of the facts that could shape the stock's performance in the near term. Over the past month, shares of this digital-advertising platform operator have returned -5.9%, compared to the Zacks S&P 500 composite's no change. During this period, the Zacks Internet - Services industry, which The Trade Desk falls in, has lost 8.8%. The key question now is: What could be the stock's future direction? While media releases or rumors about a substantial change in a company's business prospects usually make its stock 'trending' and lead to an immediate price change, there are always some fundamental facts that eventually dominate the buy-and-hold decision-making. ## Revisions to Earnings Estimates Rather than focusing on anything else, we at Zacks prioritize evaluating the change in a company's earnings projection. This is because we believe the fair value for its stock is determined by the present value of its future stream of earnings. Our analysis is essentially based on how sell-side analysts covering the stock are revising their earnings estimates to take the latest business trends into account. When earnings estimates for a company go up, the fair value for its stock goes up as well. And when a stock's fair value is higher than its current market price, investors tend to buy the stock, resulting in its price moving upward. Because of this, empirical studies indicate a strong correlation between trends in earnings estimate revisions and short-term stock price movements. The Trade Desk is expected to post earnings of $0.40 per share for the current quarter, representing a year-over-year change of -2.4%. Over the last 30 days, the Zacks Consensus Estimate",
-        "search_snippet": "Zacks"
-      },
-      {
-        "title": "ADBE, CRM, TTD Stocks Hit 52-Week Lows Today: What's Driving The Selloff? - Yahoo Finance",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/adbe-crm-ttd-stocks-hit-034110112.html",
-        "excerpt": "* Adobe shares fell to a seven-year low on Thursday despite reporting a 13% jump in Q1 revenue of $6.62 billion. * Salesforce shares fell to a three-year low of $163.31 as investors reacted to AI-driven workforce reductions. * The Trade Desk shares extended their decline as investors remain concerned about slowing growth and significant executive turnover. Adobe (ADBE), Salesforce (CRM), and The Trade Desk (TTD) stocks slumped to new 52-week lows on Thursday as investors continued to pull money from traditional software businesses and redirect capital toward companies building artificial intelligence infrastructure. Investors are questioning whether generative AI will strengthen the competitive positions of legacy software companies or weaken their pricing power by making existing products easier to replace. [See what 10M+ investors are talking about. Get the Stocktwits Daily Rip for what retail is watching right now, free to your inbox](https://stocktwits.com/newsletters) Adobe Stock tumbled over 6%, while Salesforce and The Trade Desk stocks fell over 2% each. ## ADBE Faces Leadership And Competitive Pressures Adobe came under heavy selling pressure on Thursday, pushing the stock to a seven-year low of $218.1. Though the company reported record quarterly revenue of $6.62 billion, representing a 13% increase from a year earlier. The company also posted adjusted earnings per share (EPS) of $5.95 and raised its full-year forecast. Both revenue and EPS beta Street estimates of $6.45 billion and $5.81, according to Fiscal AI data. Even so, investors remained focused on broader questions about whether generative AI tools could weaken the long-term value of premium software subscriptions. Another issue weighing on sentiment was the planned departure of CFO Dan Durn. The lead",
-        "search_snippet": "## TTD Confronts Growth Concerns Shares of The Trade Desk (TTD) fell to a six-year low of $18.37 on Thursday, extending a prolonged decline that has erased nearly 74% of the digital advertising company's market value over the past year. Investor concerns have increasingly centered on slowing business momentum, leadership instability and intensifying competition in the online advertising market. Fiscal Q1 revenue expansion moderated into the low d"
-      }
-    ],
-    "analysis": "- **External commentary:** Sources highlight slowing growth concerns, significant executive turnover, and a 52-week low as key investor worries [3]. The stock has underperformed its sector and the S&P 500 over the past month [1][2]. Earnings per share are projected to decline 2.44% year-over-year for the upcoming quarter [1][2].\n\n- **Why it can work:** The stock trades at a forward P/E of 9.04 and a PEG of 0.95, which could attract value-oriented investors if growth stabilizes. The Zacks Rank system historically rewards positive estimate revisions, and any upward revision to current consensus (EPS $1.87, revenue $3.18B for the year) could act as a catalyst [1]. The short interest of 16.3% of float creates potential for a squeeze if sentiment shifts.\n\n- **What can break it:** The primary risk is continued fundamental deterioration. The company faces structural questions about generative AI weakening its competitive position and pricing power [3]. Executive turnover and slowing revenue growth (projected +8.32% quarterly) may persist. The RSI acceleration of -35.0 and negative sentiment score (-0.5) suggest ongoing selling pressure. A further miss on earnings or guidance cuts would likely extend the decline.\n\n- **Confirming evidence to watch:** Look for upward revisions to earnings estimates from sell-side analysts, as this is the strongest near-term positive signal [1][2]. Also monitor any stabilization in revenue growth rates above 10% and announcements regarding executive team stability. A sustained move above the 52-week low with increasing volume would suggest the selling climax may be over.\n\n- **Bottom line:** TTD is a deeply out-of-favor name with a low valuation and high short interest, but the fundamental headwinds (slowing growth, AI disruption risk, executive turnover) are significant and well-documented. The long setup depends entirely on a reversal in earnings estimate momentum, which is currently unknown. Without confirmed estimate upgrades, the risk of further downside remains elevated."
-  },
-  {
-    "ticker": "T",
-    "cache_key": "web-v4:T:1781006400000:78.74:cheap peer laggard",
-    "generated_at": "2026-06-13T00:32:38.735212+00:00",
-    "input": {
-      "ticker": "T",
-      "company": "AT&T Inc.",
-      "sector": "Communication Services",
-      "industry": "Telecom Services",
-      "primary_strategy": "cheap peer laggard",
-      "price": 22.5901,
-      "market_cap_bn": 172.87,
-      "opportunity_score": 78.7,
-      "rsi_value_score": 54.6,
-      "squeeze_laggard_score": 59.2,
-      "value_laggard_score": 78.7,
-      "composite_value_score": 65.1,
-      "rsi_acceleration_score": 49.0,
-      "rsi_current": 28.0,
-      "rsi_delta_1": -3.9,
-      "prior_rsi_delta_3_bar_avg": -6.8,
-      "rsi_acceleration": 2.9,
-      "short_pct_float": 1.8,
-      "from_52w_low_pct": 2.0,
-      "from_52w_high_pct": -24.2,
-      "ret_1m_pct": -8.8,
-      "sector_ret_1m_median": -2.0,
-      "peer_lag_1m_pct": 6.9,
-      "forward_pe": 8.82,
-      "trailing_pe": 7.4,
-      "price_to_book": 1.43,
-      "peg": 1.59,
-      "sentiment_score": 0.1
-    },
-    "sources": [
-      {
-        "title": "Can AT&T's Unlimited Day Pass for iPads Boost Wireless Growth?",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/ts-unlimited-day-pass-ipads-150800839.html",
-        "excerpt": "**AT &T Inc.** T has launched a new wireless connectivity solution called Unlimited Day Pass, designed to give eligible U.S. iPad users instant cellular access without requiring a long-term plan or subscription. The offering provides a convenient and flexible way for iPad users to stay connected without committing to a monthly data plan. AT&T\u2019s Unlimited Day Pass delivers unlimited wireless data for 24 hours at just $3 per day, with no contracts or subscriptions required, and the first day is free for each customer. Users can easily activate the service directly from their iPad through the Settings app by selecting Cellular Data and choosing the AT&T Unlimited Day Pass, with service starting shortly after payment. With the latest option, AT&T becomes the first major U.S. wireless provider to offer on-demand Internet access for eligible iPads, even allowing rival subscribers to connect if their device supports eSIM technology. This service is useful for travelers, remote workers and users who need reliable Internet when Wi-Fi is unavailable. The company plans to expand it to more 5G devices in the future. The introduction of this new product is likely to support AT&T\u2019s future growth by attracting more users and generating additional revenues. By expanding its digital offerings and enhancing user experience, the company is further strengthening its position in the wireless market. ## How Are Competitors Performing to Improve Connectivity? AT&T faces stiff competition from **Verizon Communications, Inc.** VZ and **T-Mobile, US, Inc.** TMUS. Verizon has been expanding its 5G network to provide faster and more reliable connectivity across the country. The company is investing in network infrastructure to improve coverage in both urban and rural areas. These efforts aim to en",
-        "search_snippet": "Zacks"
-      },
-      {
-        "title": "Fox Could Unlock 800+ World Cup Ad Spots",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/fox-could-unlock-800-world-121945881.html",
-        "excerpt": "This article first appeared on [GuruFocus](https://www.gurufocus.com/news/8913262/fox-could-unlock-800-world- cup-ad- spots?utm_source=yahoo_finance&utm_medium=syndication&utm_campaign=headlines&r=caf6fe0e0db70d936033da5461e60141). Fox Corp.'s ([NASDAQ:FOXA](https://finance.yahoo.com/quote/FOXA)) Fox channel could be [turning](https://www.bloomberg.com/news/articles/2026-06-11/fox- airs-four-commercials-during-world-cup-hydration-break) FIFA World Cup hydration breaks into a fresh advertising opportunity, after cutting to commercials during one of the newly added pauses in the tournament for the first time. During the opening match between Mexico and South Africa, Fox aired four commercials totaling about two minutes around 25 minutes into the game. The break was introduced as sponsored by Powerade, followed by ads from AT&T ([NYSE:T](https://finance.yahoo.com/quote/T)), Michelob Ultra, Lowe's ([NYSE:LOW](https://finance.yahoo.com/quote/LOW)), and FanDuel. If Fox keeps this pace across the tournament, the move could create more than 800 additional ad spots across 104 matches. Comcast ([NASDAQ:CMCSA](https://finance.yahoo.com/quote/CMCSA))'s Telemundo, which holds Spanish-language US rights, has said it will not run ads during hydration breaks, choosing instead to stay with the live match while thanking Coca-Cola ([NYSE:KO](https://finance.yahoo.com/quote/KO)).",
-        "search_snippet": "GuruFocus.com"
-      },
-      {
-        "title": "Uniti (UNIT) Surges 7.8%: Is This an Indication of Further Gains?",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/uniti-unit-surges-7-8-120500263.html",
-        "excerpt": "**Uniti Group** (UNIT) shares ended the last trading session 7.8% higher at $12.52. The jump came on an impressive volume with a higher-than-average number of shares changing hands in the session. This compares to the stock's 2.7% gain over the past four weeks. The increased investor optimism in the stock can be attributed to the favorable operating environment. This real estate investment trust is expected to post quarterly loss of $0.43 per share in its upcoming report, which represents a year-over-year change of -975%. Revenues are expected to be $883.47 million, up 193.8% from the year- ago quarter. While FFO and revenue growth expectations are important in evaluating the potential strength in a stock, empirical research shows a strong correlation between trends in FFO estimate revisions and near-term stock price movements. For Uniti, the consensus FFO per share estimate for the quarter has been revised 4.1% lower over the last 30 days to the current level. And a negative trend in FFO estimate revisions doesn't usually translate into price appreciation. So, make sure to keep an eye on UNIT going forward to see if this recent jump can turn into more strength down the road. The stock currently carries a Zacks Rank #3 (Hold). You can see the complete list of today's Zacks Rank #1 (Strong Buy) stocks here >>>> Uniti is a member of the Zacks Wireless National industry. One other stock in the same industry, **AT &T** (T), finished the last trading session 0.9% lower at $23. T has returned -6.2% over the past month. AT&T's consensus FFO per share estimate for the upcoming report has remained unchanged over the past month at $0.59. Compared to the company's year-ago FFO per share, this represents a change of +9.3%. AT&T currently boasts a Zacks Rank of #3 (Hold). Want the l",
-        "search_snippet": "Zacks"
-      }
-    ],
-    "analysis": "- **External commentary:** AT&T launched an Unlimited Day Pass for iPads, offering on-demand cellular access at $3/day with no contract, positioning it as the first major U.S. wireless provider to do so [1]. Separately, AT&T was an advertiser during a World Cup hydration break on Fox, which could create over 800 additional ad spots across the tournament [2]. A third source notes AT&T\u2019s FFO per share estimate is unchanged at $0.59, up 9.3% year-over-year, and the stock carries a Zacks Rank #3 (Hold) [3].\n\n- **Why it can work:** The Unlimited Day Pass targets incremental revenue from travelers, remote workers, and even rival subscribers via eSIM, without requiring long-term commitments [1]. This could attract new users and generate additional wireless revenue, supporting AT&T\u2019s growth narrative. The World Cup ad placement suggests AT&T is actively seeking brand exposure in high-visibility events, potentially boosting consumer engagement [2]. The unchanged FFO estimate and year-over-year growth of 9.3% indicate stable cash flow expectations [3].\n\n- **What can break it:** The Unlimited Day Pass faces stiff competition from Verizon and T-Mobile, which are also expanding 5G networks and improving connectivity [1]. The product\u2019s revenue impact is unknown; it may be too niche to materially move earnings. The World Cup ad opportunity is dependent on Fox\u2019s ability to sustain hydration breaks across 104 matches, which is uncertain [2]. AT&T\u2019s stock has returned -6.2% over the past month, and the Zacks Rank of #3 (Hold) suggests no strong near-term catalyst [3]. The low sentiment score (0.1) and recent price decline (-8.8% in 1 month) indicate market skepticism.\n\n- **Confirming evidence to watch:** Monitor AT&T\u2019s next earnings report for any mention of Unlimited Day Pass subscriber uptake or revenue contribution. Track wireless segment revenue growth and postpaid phone net additions in quarterly filings. Watch for expansion of the Day Pass to more 5G devices as planned [1]. Also, look for any official guidance changes or FFO estimate revisions, as the current estimate is unchanged [3].\n\n- **Bottom line:** AT&T shows a cheap valuation (forward P/E 8.82) and a new product launch that could incrementally boost wireless revenue, but the near-term price momentum is negative, competition is intense, and the catalyst from the Day Pass or World Cup ads is unproven in scale. The long setup relies on the market eventually recognizing value, but current data does not confirm a near-term inflection. No trade recommendation."
-  },
-  {
-    "ticker": "CMCSA",
-    "cache_key": "web-v4:CMCSA:1781006400000:78.41:cheap peer laggard",
-    "generated_at": "2026-06-13T00:32:52.909441+00:00",
-    "input": {
-      "ticker": "CMCSA",
-      "company": "Comcast Corp",
-      "sector": "Communication Services",
-      "industry": "Telecom Services",
-      "primary_strategy": "cheap peer laggard",
-      "price": 23.755,
-      "market_cap_bn": 89.88,
-      "opportunity_score": 78.4,
-      "rsi_value_score": 46.6,
-      "squeeze_laggard_score": 57.3,
-      "value_laggard_score": 78.4,
-      "composite_value_score": 72.3,
-      "rsi_acceleration_score": 32.8,
-      "rsi_current": 41.2,
-      "rsi_delta_1": -8.8,
-      "prior_rsi_delta_3_bar_avg": 3.3,
-      "rsi_acceleration": -12.1,
-      "short_pct_float": 2.3,
-      "from_52w_low_pct": 2.7,
-      "from_52w_high_pct": -35.2,
-      "ret_1m_pct": -3.7,
-      "sector_ret_1m_median": -2.0,
-      "peer_lag_1m_pct": 1.8,
-      "forward_pe": 6.28,
-      "trailing_pe": 4.66,
-      "price_to_book": 0.96,
-      "peg": 142.98,
-      "sentiment_score": -0.1
-    },
-    "sources": [
-      {
-        "title": "Comcast (CMCSA) Rises Higher Than Market: Key Facts",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/comcast-cmcsa-rises-higher-market-215004897.html",
-        "excerpt": "In the latest close session, Comcast (CMCSA) was up +2.21% at $24.50. The stock exceeded the S&P 500, which registered a gain of 0.5% for the day. Meanwhile, the Dow experienced a rise of 0.7%, and the technology-dominated Nasdaq saw an increase of 0.31%. Heading into today, shares of the cable provider had lost 4.77% over the past month, lagging the Consumer Discretionary sector's gain of 1.82% and the S&P 500's loss of 0.23%. Market participants will be closely following the financial results of Comcast in its upcoming release. The company plans to announce its earnings on July 23, 2026. On that day, Comcast is projected to report earnings of $0.98 per share, which would represent a year-over-year decline of 21.6%. Our most recent consensus estimate is calling for quarterly revenue of $29.32 billion, down 3.27% from the year-ago period. Looking at the full year, the Zacks Consensus Estimates suggest analysts are expecting earnings of $3.53 per share and revenue of $122.01 billion. These totals would mark changes of -18.1% and -1.38%, respectively, from last year. Investors should also note any recent changes to analyst estimates for Comcast. These latest adjustments often mirror the shifting dynamics of short- term business patterns. With this in mind, we can consider positive estimate revisions a sign of optimism about the business outlook. Research indicates that these estimate revisions are directly correlated with near-term share price momentum. To exploit this, we've formed the Zacks Rank, a quantitative model that includes these estimate changes and presents a viable rating system. Ranging from #1 (Strong Buy) to #5 (Strong Sell), the Zacks Rank system has a proven, outside-audited track record of outperformance, with #1 stocks returning an average of +25% annua",
-        "search_snippet": "Zacks"
-      },
-      {
-        "title": "Is Comcast Corporation (CMCSA) A Good Stock To Buy Now?",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/comcast-corporation-cmcsa-good-stock-161755913.html",
-        "excerpt": "**Is CMCSA a good stock to buy?** We came across a [bullish thesis ](https://www.reddit.com/r/ValueInvesting/comments/1tgv7eb/comcast_cmcsa_is_the_best_value_on_the_market/)on Comcast Corporation on r/ValueInvesting by CLE_Watches. In this article, we will summarize the bulls\u2019 thesis on CMCSA. Comcast Corporation's share was trading at $23.76 as of June 8th. CMCSA\u2019s trailing and forward P/E were 4.67 and 7.10 respectively according to Yahoo Finance. tiziano-brignoli-aTXxr0gfQzg-unsplash Comcast Corp (CMCSA) is a deeply undervalued connectivity and media leader with dominant exposure to broadband, wireless, and premium entertainment assets. Its connectivity franchise includes residential broadband, business services, cable, and a rapidly growing wireless business, while NBCUniversal houses Peacock, NBC, Universal Studios, and a leading theme park portfolio. **Read More:**[**15 AI Stocks That Are Quietly Making Investors Rich**](https://www.insidermonkey.com/blog/15-ai-stocks-that-are-quietly- making-investors-rich-1714967/) **Read More:** [**Undervalued AI Stock Poised For Massive Gains: 10000% Upside Potential**](https://www.insidermonkey.com/blog/undervalued-ai-stock-poised- for-massive-gains-10000-upside-19/) Despite this, the stock trades at roughly 5\u20136x free cash flow, reflecting fears of disruption from fiber, 5G, and satellite competitors. These concerns appear overstated given fiber\u2019s higher deployment costs, 5G\u2019s limited capacity versus fixed broadband, and Starlink\u2019s economics and rural focus. Operationally, broadband performance has stabilized with improving net subscriber losses supported by bundling strategies and wireless cross-sell, where lines have grown near 20% year over year. Business connectivity continues steady mid-single-digit growth. Peacock has s",
+        "title": "Is The Trade Desk, Inc. (TTD) A Good Stock To Buy Now?",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/trade-desk-inc-ttd-good-165708337.html",
+        "excerpt": "**Is TTD a good stock to buy?** We came across a [bullish thesis ](https://www.reddit.com/r/ValueInvesting/comments/1rxmshz/ttd_still_looks_dislocated_even_after_the/)on The Trade Desk, Inc. on r/ValueInvesting by NathanGuoKL. In this article, we will summarize the bulls' thesis on TTD. The Trade Desk, Inc.'s share was trading at $19.43 as of June 8th. TTD's trailing and forward P/E were 23.90 and 18.94 respectively according to Yahoo Finance. Needham Keeps Buy Rating on Klaviyo (KVYO), Highlights Strong Core Metrics, Successful Segment Execution The Trade Desk, Inc. operates as a technology company in the United States and internationally. TTD is currently trading at $23.55, compared to an estimated intrinsic value of $49.26 based on FCFF revenue assumptions, implying substantial upside and a market-implied free cash flow growth rate of just 0.92%, which appears overly pessimistic. The market is increasingly pricing in a negative narrative driven by the Publicis dispute, assuming it signals a broader agency revolt, margin compression, and a structural break in programmatic advertising and CTV growth. **Read More:**[**15 AI Stocks That Are Quietly Making Investors Rich**](https://www.insidermonkey.com/blog/15-ai-stocks-that-are-quietly- making-investors-rich-1714967/) **Read More:** [**Undervalued AI Stock Poised For Massive Gains: 10000% Upside Potential**](https://www.insidermonkey.com/blog/undervalued-ai-stock-poised- for-massive-gains-10000-upside-19/) However, this interpretation appears excessive relative to the underlying fundamentals. Publicis does represent a near-term risk, as TTD disclosed that two holding companies each account for more than 10% of gross billings and together represent roughly 30%, with Publicis believed to be one of them, creating a potenti",
         "search_snippet": "Insider Monkey"
-      },
-      {
-        "title": "Is Trending Stock Comcast Corporation (CMCSA) a Buy Now?",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/trending-stock-comcast-corporation-cmcsa-130001715.html",
-        "excerpt": "**Comcast** (CMCSA) is one of the stocks most watched by Zacks.com visitors lately. So, it might be a good idea to review some of the factors that might affect the near-term performance of the stock. Over the past month, shares of this cable provider have returned -4.8%, compared to the Zacks S&P 500 composite's -0.2% change. During this period, the Zacks Cable Television industry, which Comcast falls in, has lost 4.8%. The key question now is: What could be the stock's future direction? Although media reports or rumors about a significant change in a company's business prospects usually cause its stock to trend and lead to an immediate price change, there are always certain fundamental factors that ultimately drive the buy-and-hold decision. ## Earnings Estimate Revisions Rather than focusing on anything else, we at Zacks prioritize evaluating the change in a company's earnings projection. This is because we believe the fair value for its stock is determined by the present value of its future stream of earnings. We essentially look at how sell-side analysts covering the stock are revising their earnings estimates to reflect the impact of the latest business trends. And if earnings estimates go up for a company, the fair value for its stock goes up. A higher fair value than the current market price drives investors' interest in buying the stock, leading to its price moving higher. This is why empirical research shows a strong correlation between trends in earnings estimate revisions and near-term stock price movements. Comcast is expected to post earnings of $0.98 per share for the current quarter, representing a year-over-year change of -21.6%. Over the last 30 days, the Zacks Consensus Estimate has changed -1.8%. The consensus earnings estimate of $3.53 for the curren",
-        "search_snippet": "Zacks"
       }
     ],
-    "analysis": "- **External commentary**: Sources highlight Comcast as a \u201cdeeply undervalued connectivity and media leader\u201d trading at roughly 5\u20136x free cash flow, with fears of disruption from fiber, 5G, and satellite considered overstated [2]. The stock has lagged the S&P 500 and its sector over the past month, and analysts project a year-over-year earnings decline of 21.6% for the upcoming quarter [1][3]. Estimate revisions have been slightly negative over the last 30 days [3].\n\n- **Why it can work**: The stock trades at a forward P/E of 6.28 and price-to-book of 0.96, reflecting deep value territory. The \u201ccheap peer laggard\u201d strategy is supported by a value_laggard_score of 78.4 and composite_value_score of 72.3. If broadband subscriber losses stabilize and wireless growth (nearly 20% YoY) continues, the market may re-rate the stock upward [2]. The low short interest (2.3% of float) suggests limited bearish positioning.\n\n- **What can break it**: Earnings are projected to decline 21.6% YoY in the upcoming quarter, and full-year revenue is expected to fall 1.38% [1]. The PEG ratio of 142.98 indicates extreme overvaluation relative to growth. The RSI acceleration is negative (-12.1), and the stock is only 2.7% above its 52-week low, suggesting persistent weakness. If broadband subscriber losses worsen or competition from fiber/5G intensifies, the thesis could fail [2].\n\n- **Confirming evidence to watch**: Look for positive estimate revisions in the weeks before the July 23, 2026 earnings report [1]. Stabilization or improvement in broadband net additions and continued wireless subscriber growth would support the operational turnaround narrative [2]. A reversal in RSI acceleration (currently negative) and a move above the 52-week low by more than 5% could signal momentum shift.\n\n- **Bottom line**: Comcast presents a classic value laggard setup with low multiples and a diversified asset base, but near-term earnings headwinds and negative estimate revisions are significant risks. The stock\u2019s deep discount may appeal to contrarian value investors, but confirmation of operational stabilization is needed before the thesis can be validated. No trade recommendation is made."
+    "analysis": "- **External commentary**: [1] notes the Publicis billing dispute resolution, new CFO, and board additions reduce agency relationship risk. [2] highlights TTD\u2019s APAC partnership with Agoda for first-party travel data targeting across CTV/OTT. [3] cites a bullish thesis arguing the market overreacted to the Publicis dispute, with implied FCF growth of only 0.92% vs. estimated intrinsic value of $49.26. [1] also warns agency audits and concentration risk remain.\n\n- **Why it can work**: The Publicis truce removes a major near-term overhang, potentially restoring agency recommendations and client spend [1]. The Agoda partnership opens a new high-intent travel audience channel in APAC, leveraging first-party data for CTV and programmatic ads [2]. At a forward P/E of 9.04 and PEG of 0.95, the market may be pricing in excessive pessimism if the agency dispute was the primary drag [3]. Short interest at 16.3% of float could fuel a squeeze if sentiment shifts.\n\n- **What can break it**: Agency concentration risk persists\u2014two holding companies account for ~30% of gross billings, and audits or further disputes could re-emerge [1][3]. The 1-month return of -5.9% lags the sector median (-2.7%) and peers (+3.2%), indicating continued selling pressure. RSI acceleration of -35.0 and sentiment score of -0.6 suggest negative momentum. The Agoda partnership\u2019s revenue impact is unknown; no financial terms or scale are disclosed [2].\n\n- **Confirming evidence to watch**: Sustained increase in client spend post-Publicis resolution, as noted in [1]. Tangible revenue contribution or expanded partnerships from the Agoda deal [2]. A reversal in RSI acceleration (currently -35.0) and improvement in sentiment score (currently -0.6). Reduction in short interest from 16.3% or a positive earnings surprise that challenges the 0.92% implied FCF growth rate [3].\n\n- **Bottom line**: The setup hinges on whether the Publicis truce and new leadership can reverse negative sentiment and agency risk, while the Agoda partnership offers a growth catalyst. Valuation appears cheap on forward P/E and PEG, but the stock is underperforming peers with negative momentum. The thesis is plausible but unproven; key catalysts are unconfirmed. No trade recommendation."
   },
   {
     "ticker": "LKQ",
-    "cache_key": "web-v4:LKQ:1781006400000:76.82:cheap peer laggard",
-    "generated_at": "2026-06-13T00:33:05.330587+00:00",
+    "cache_key": "web-v4:LKQ:1781006400000:77.05:cheap peer laggard",
+    "generated_at": "2026-06-16T00:32:47.898203+00:00",
     "input": {
       "ticker": "LKQ",
       "company": "LKQ Corporation",
@@ -503,10 +397,10 @@
       "primary_strategy": "cheap peer laggard",
       "price": 25.605,
       "market_cap_bn": 6.99,
-      "opportunity_score": 76.8,
+      "opportunity_score": 77.0,
       "rsi_value_score": 59.5,
-      "squeeze_laggard_score": 66.1,
-      "value_laggard_score": 76.8,
+      "squeeze_laggard_score": 66.3,
+      "value_laggard_score": 77.0,
       "composite_value_score": 69.5,
       "rsi_acceleration_score": 54.1,
       "rsi_current": 48.4,
@@ -516,9 +410,9 @@
       "short_pct_float": 4.7,
       "from_52w_low_pct": 6.8,
       "from_52w_high_pct": -35.6,
-      "ret_1m_pct": -3.2,
-      "sector_ret_1m_median": 2.2,
-      "peer_lag_1m_pct": 5.5,
+      "ret_1m_pct": -0.6,
+      "sector_ret_1m_median": 3.6,
+      "peer_lag_1m_pct": 4.2,
       "forward_pe": 7.54,
       "trailing_pe": 12.53,
       "price_to_book": 0.99,
@@ -527,24 +421,136 @@
     },
     "sources": [
       {
+        "title": "LKQ (LKQ) Stock Valuation Check After Class Action Lawsuits On Acquisition Disclosures",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/lkq-lkq-stock-valuation-check-191145766.html",
+        "excerpt": "[Never miss an important update on your stock portfolio](https://simplywall.st/features/portfolio?utm_medium=finance_user&utm_campaign=updates_head_cta&utm_source=yahoo&blueprint=4624136) and cut through the noise. Over 7 million investors trust Simply Wall St to stay informed where it matters for FREE. Several law firms have launched securities class action lawsuits against LKQ (LKQ), accusing the company of misleading investors about the integration and prospects of its FinishMaster and Uni Select acquisitions. [See our latest analysis for LKQ.](https://www.simplywall.st/company/id/c3001cbb-8d41-49dc-81e9-ca7d8fad9196?utm_medium=finance_user&utm_campaign=cta_company_latest_analysis&utm_source=yahoo) The securities lawsuits and repeated guidance cuts have coincided with pressure on LKQ's shares, with the current price at $26.20 and the 1 year total shareholder return down 28.39%, while shorter term share price returns show some recent stabilisation but not a clear rebound. If this legal overhang has you reassessing your portfolio, it could be worth scanning the market for other repair and aftermarket related businesses or adjacent opportunities through the [20 top founder-led companies](https://simplywall.st/discover/investing-ideas/473625/top-founder- led- companies/us?utm_medium=finance_user&utm_campaign=cta_screener_founder_led&utm_source=yahoo&blueprint=4624136) With LKQ stock down 28.39% over the past year and trading at $26.20, yet sitting at a 56% discount to one analyst target and an indicated intrinsic estimate, you have to ask: is this legal overhang creating a buying opportunity, or is the market already pricing in future growth? ## Most Popular Narrative: 39.7% Undervalued According to the most followed narrative on LKQ, the fair value sits at $43.44 compar",
+        "search_snippet": "Simply Wall St."
+      },
+      {
+        "title": "Is LKQ Corporation (LKQ) A Good Stock To Buy Now?",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/lkq-corporation-lkq-good-stock-133937502.html",
+        "excerpt": "**Is LKQ a good stock to buy?** We came across a [bullish thesis ](https://mispricingdesk.substack.com/p/lkq-prices-a-trough-quarter-not-a)on LKQ Corporation on The Mispricing Desk's Substack. In this article, we will summarize the bulls' thesis on LKQ. LKQ Corporation's share was trading at $25.06 as of June 8th. LKQ's trailing and forward P/E were 12.61 and 8.43 respectively according to Yahoo Finance. Truist is Bullish on Camping World Holdings, Inc. (CWH) Copyright: [wihtgod / 123RF Stock Photo](http://www.123rf.com/profile_wihtgod) LKQ Corporation engages in the distribution of replacement parts, components, and systems used in the repair and maintenance of vehicles and specialty vehicle aftermarket products and accessories. LKQ is positioned as a compelling bullish setup as the market continues to misprice a live, board- driven value-unlock process as a simple cyclical earnings trough. **Read More:**[**15 AI Stocks That Are Quietly Making Investors Rich**](https://www.insidermonkey.com/blog/15-ai-stocks-that-are-quietly- making-investors-rich-1714967/) **Read More:** [**Undervalued AI Stock Poised For Massive Gains: 10000% Upside Potential**](https://www.insidermonkey.com/blog/undervalued-ai-stock-poised- for-massive-gains-10000-upside-19/) The company is currently being valued as though recent operational volatility defines its long-term earnings power, despite multiple explicit signals of strategic and capital structure change underway. LKQ has initiated a formal strategic review that explicitly includes a potential sale or merger of the entire business, while also advancing the planned divestiture of its Specialty segment in the first half of 2026. This dual-track framework creates a clear pathway toward portfolio simplification and potential monetization of em",
+        "search_snippet": "Insider Monkey"
+      },
+      {
         "title": "Q1 Rundown: LKQ (NASDAQ:LKQ) Vs Other Consumer Discretionary - Specialized Consumer Services Stocks",
         "url": "https://finance.yahoo.com/markets/stocks/articles/q1-rundown-lkq-nasdaq-lkq-184128868.html",
         "excerpt": "Q1 Rundown: LKQ (NASDAQ:LKQ) Vs Other Consumer Discretionary - Specialized Consumer Services Stocks As the craze of earnings season draws to a close, here's a look back at some of the most exciting (and some less so) results from Q1. Today, we are looking at consumer discretionary - specialized consumer services stocks, starting with LKQ (NASDAQ:LKQ). The Consumer Discretionary sector, by definition, is made up of companies selling non-essential goods and services. When economic conditions deteriorate or tastes shift, consumers can easily cut back or eliminate these purchases. For long-term investors with five-year holding periods, this creates a structural challenge: the sector is inherently hit-driven, with low switching costs and fickle customers. As a result, only a handful of companies can reliably grow demand and compound earnings over long periods, which is why our bar is high and High Quality ratings are rare.Some consumer discretionary companies don't fall neatly into a category because their products or services are unique. Although their offerings may be niche, these companies have often found more efficient or technology-enabled ways of doing or selling something that has existed for a while. Technology can be a double-edged sword, though, as it may lower the barriers to entry for new competitors and allow them to serve customers better. The 10 consumer discretionary - specialized consumer services stocks we track reported a mixed Q1. As a group, revenues beat analysts' consensus estimates by 1.5% while next quarter's revenue guidance was in line. In light of this news, share prices of the companies have held steady as they are up 1.1% on average since the latest earnings results. ## LKQ (NASDAQ:LKQ) A global distributor of vehicle parts and accessories, LKQ",
         "search_snippet": "StockStory"
-      },
+      }
+    ],
+    "analysis": "- **External commentary:** [1] notes securities class-action lawsuits over alleged misleading disclosures on FinishMaster and Uni Select acquisitions, with the stock down 28.4% over one year and trading at a 56% discount to one analyst\u2019s target. [2] cites a bullish thesis that the market is mispricing a \u201clive, board-driven value-unlock process\u201d as a cyclical trough, highlighting a formal strategic review that includes a potential sale or merger and a planned Specialty segment divestiture by H1 2026. [3] provides no specific LKQ commentary beyond generic sector risk.\n\n- **Why it can work:** The strategic review and potential sale/merger [2] could unlock shareholder value if a transaction materializes at a premium. The forward P/E of 7.54x and price-to-book of 0.99x suggest the market is pricing in depressed earnings, which may improve if operational headwinds prove temporary. The RSI acceleration (3.1) and positive RSI delta (7.3) indicate recent momentum improvement, though this is a technical observation, not a fundamental catalyst.\n\n- **What can break it:** The class-action lawsuits [1] create legal overhang and potential liability, which could delay or complicate any strategic transaction. Repeated guidance cuts [1] imply management credibility issues and ongoing operational challenges. The sector\u2019s cyclical nature [3] means any economic downturn could further pressure demand for non-essential auto parts. Short interest at 4.7% is moderate but not extreme, suggesting some bearish positioning.\n\n- **Confirming evidence to watch:** Resolution or dismissal of the securities lawsuits [1]; concrete progress on the strategic review, such as a formal sale process or binding offer [2]; stabilization or improvement in quarterly earnings guidance; reduction in the discount to analyst price targets; any insider buying or large institutional stake increases. Unknown: whether the strategic review will yield a transaction or simply be abandoned.\n\n- **Bottom line:** LKQ presents a potential value-unlock story via a strategic review and cheap valuation, but is clouded by litigation risk and repeated guidance cuts. The long setup depends on the market\u2019s ability to look past near-term legal and operational noise toward a catalyst (sale/merger) that may or may not materialize. No trade recommendation; the risk/reward is uncertain without clearer evidence of execution."
+  },
+  {
+    "ticker": "RITM",
+    "cache_key": "web-v4:RITM:1781006400000:75.74:cheap peer laggard",
+    "generated_at": "2026-06-16T00:33:03.874344+00:00",
+    "input": {
+      "ticker": "RITM",
+      "company": "Rithm Capital Corp.",
+      "sector": "Real Estate",
+      "industry": "REIT - Mortgage",
+      "primary_strategy": "cheap peer laggard",
+      "price": 9.23,
+      "market_cap_bn": 5.17,
+      "opportunity_score": 75.7,
+      "rsi_value_score": 71.6,
+      "squeeze_laggard_score": 61.0,
+      "value_laggard_score": 75.7,
+      "composite_value_score": 75.7,
+      "rsi_acceleration_score": 69.4,
+      "rsi_current": 55.5,
+      "rsi_delta_1": 18.3,
+      "prior_rsi_delta_3_bar_avg": 1.1,
+      "rsi_acceleration": 17.2,
+      "short_pct_float": 5.5,
+      "from_52w_low_pct": 9.5,
+      "from_52w_high_pct": -27.6,
+      "ret_1m_pct": 0.6,
+      "sector_ret_1m_median": 5.0,
+      "peer_lag_1m_pct": 4.4,
+      "forward_pe": 3.83,
+      "trailing_pe": 8.29,
+      "price_to_book": 0.72,
+      "peg": null,
+      "sentiment_score": 0.78
+    },
+    "sources": [
       {
-        "title": "Do Options Traders Know Something About LKQ Stock We Don't?",
-        "url": "https://finance.yahoo.com/markets/options/articles/options-traders-know-something-lkq-170300236.html",
-        "excerpt": "Investors in **LKQ** LKQ need to pay close attention to the stock based on moves in the options market lately. That is because the Dec 18, 2026 $17.50 Call had some of the highest implied volatility of all equity options today. ## What is Implied Volatility? Implied volatility shows how much movement the market is expecting in the future. Options with high levels of implied volatility suggest that investors in the underlying stocks are expecting a big move in one direction or the other. It could also mean there is an event coming up soon that may cause a big rally or a huge sell-off. However, implied volatility is only one piece of the puzzle when putting together an options trading strategy. ## What do the Analysts Think? Clearly, options traders are pricing in a big move for LKQ, but what is the fundamental picture for the company? Currently, LKQ is a Zacks Rank #3 (Hold) in the Automotive - Replacement Parts Industry that ranks in the Top 27% of our Zacks Industry Rank. Over the last 60 days, one analyst has increased his earnings estimate for the current quarter, while four have dropped their estimate. The net effect has taken our Zacks Consensus Estimate for the current quarter to move from 78 cents per share to 73 cents per share in the same time period. Given the way analysts feel about LKQ right now, this huge implied volatility could mean there's a trade developing. Oftentimes, options traders look for options with high levels of implied volatility to sell premium. This is a strategy many seasoned traders use because it captures decay. At expiration, the hope for these traders is that the underlying stock does not move as much as originally expected. Want the latest recommendations from Zacks Investment Research? Today, you can download 7 Best Stocks for the Ne",
+        "title": "Rithm (RITM) Stock Dips While Market Gains: Key Facts",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/rithm-ritm-stock-dips-while-221505959.html",
+        "excerpt": "Rithm (RITM) ended the recent trading session at $9.19, demonstrating a -1.29% change from the preceding day's closing price. The stock's performance was behind the S&P 500's daily gain of 1.65%. Elsewhere, the Dow gained 0.92%, while the tech-heavy Nasdaq added 3.07%. The real estate investment trust's stock has climbed by 1.97% in the past month, falling short of the Finance sector's gain of 2.86% and outpacing the S&P 500's gain of 0.48%. Analysts and investors alike will be keeping a close eye on the performance of Rithm in its upcoming earnings disclosure. In that report, analysts expect Rithm to post earnings of $0.54 per share. This would mark no growth from the prior-year quarter. Our most recent consensus estimate is calling for quarterly revenue of $1.47 billion, up 20.68% from the year-ago period. In terms of the entire fiscal year, the Zacks Consensus Estimates predict earnings of $2.27 per share and a revenue of $6.04 billion, indicating changes of -3.4% and +37.85%, respectively, from the former year. Investors should also take note of any recent adjustments to analyst estimates for Rithm. These revisions typically reflect the latest short-term business trends, which can change frequently. With this in mind, we can consider positive estimate revisions a sign of optimism about the business outlook. Research indicates that these estimate revisions are directly correlated with near-term share price momentum. To capitalize on this, we've crafted the Zacks Rank, a unique model that incorporates these estimate changes and offers a practical rating system. The Zacks Rank system ranges from #1 (Strong Buy) to #5 (Strong Sell). It has a remarkable, outside-audited track record of success, with #1 stocks delivering an average annual return of +25% since 1988. Over t",
         "search_snippet": "Zacks"
       },
       {
-        "title": "LKQ Publishes 2025 Global Sustainability Report",
-        "url": "https://finance.yahoo.com/sectors/technology/articles/lkq-publishes-2025-global-sustainability-130000202.html",
-        "excerpt": "LKQ Corporation ANTIOCH, Tenn., May 27, 2026 (GLOBE NEWSWIRE) -- LKQ Corporation (Nasdaq: LKQ) today announced the release of its 2025 Sustainability Report. The report highlights the Company\u2019s commitment to driving profitable growth through efficient, responsible, and ethical business practices, and demonstrates a disciplined approach to risk management across its operating segments. The report outlines LKQ\u2019s three-pillar strategy: (i) delivering sustainable solutions profitably, (ii) people-led performance, and (iii) strong governance and ethical practices. \u201cAt LKQ, sustainability starts with how we run the business, embedded in our strategy and reflected in our operating discipline focused on long-term value creation. By reducing inefficiencies and investing in our people, technology, and operations, we strengthen performance today and build resilience for the future,\u201d said Justin Jude, President and Chief Executive Officer. In 2025, LKQ achieved several key milestones, including: * Processing approximately 284,000 vehicles and reusing, refurbishing, or remanufacturing more than 4.9 million parts. * Reducing global Scope 1 and Scope 2 greenhouse gas emissions by 19% versus a 2022 baseline (relative to revenue), driven by increased renewable energy use, fleet fuel initiatives, energy efficiency upgrades, network optimization, and business integration efforts. * Donating $4 million through the LKQ Community Foundation to support health and wellness, education, veterans, global first responders, and environmental stewardship initiatives. * Launching a Global Talent function, introducing six global core competencies and expanding mentoring and coaching programs to better connect employees across regions and functions. To view the full report, visit: [https://www.lkqcorp.",
-        "search_snippet": "GlobeNewswire"
+        "title": "Assessing Rithm Capital (RITM) Valuation After Recent Share Price Weakness And Longer Term Gains",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/assessing-rithm-capital-ritm-valuation-181212992.html",
+        "excerpt": "[Find your next quality investment](https://simplywall.st/features/stock- screener?utm_medium=finance_user&utm_campaign=screener_head_cta&utm_source=yahoo&blueprint=4612813) with Simply Wall St's easy and powerful screener, trusted by over 7 million individual investors worldwide. ## Rithm Capital overview and recent share performance Rithm Capital (RITM) has drawn fresh attention after recent trading left the stock at US$9.17, with returns down 5% over the past month and down 10% over the past 3 months. [See our latest analysis for Rithm Capital.](https://www.simplywall.st/company/id/e1f32f9a-acdf-449b-aebb- bc87a77ef911?utm_medium=finance_user&utm_campaign=cta_company_latest_analysis&utm_source=yahoo) Looking beyond the latest move, Rithm Capital's 1 day share price return of 1.66% comes after a weaker spell. The year to date share price return is down 16.48% and the 1 year total shareholder return is down 10.18%. However, the 3 year and 5 year total shareholder returns of 36.41% and 35.56% suggest longer term holders have still seen gains, which points to fading momentum in the near term compared with the past few years. If Rithm's recent pullback has you thinking about where else capital could work harder, this is a good moment to scan [21 top founder-led companies](https://simplywall.st/discover/investing-ideas/473625/top-founder- led- companies/us?utm_medium=finance_user&utm_campaign=cta_screener_founder_led&utm_source=yahoo&blueprint=4612813) So with Rithm Capital trading at US$9.17, sitting at a discount to both analyst targets and some intrinsic estimates, is this recent weakness opening a window for value, or is the market already pricing in its future growth? ## Most Popular Narrative: 34.2% Undervalued Rithm Capital's most followed narrative points to a fair",
+        "search_snippet": "Simply Wall St."
+      },
+      {
+        "title": "Rithm (RITM) Outpaces Stock Market Gains: What You Should Know",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/rithm-ritm-outpaces-stock-market-221502314.html",
+        "excerpt": "In the latest close session, Rithm (RITM) was up +1.65% at $9.25. The stock's performance was ahead of the S&P 500's daily gain of 0.13%. On the other hand, the Dow registered a gain of 0.45%, and the technology-centric Nasdaq increased by 0.03%. The real estate investment trust's shares have seen a decrease of 5.6% over the last month, not keeping up with the Finance sector's gain of 0.68% and the S&P 500's gain of 5.25%. Analysts and investors alike will be keeping a close eye on the performance of Rithm in its upcoming earnings disclosure. The company is predicted to post an EPS of $0.54, indicating constancy compared to the equivalent quarter last year. Simultaneously, our latest consensus estimate expects the revenue to be $1.47 billion, showing a 20.68% escalation compared to the year-ago quarter. Regarding the entire year, the Zacks Consensus Estimates forecast earnings of $2.27 per share and revenue of $6.04 billion, indicating changes of -3.4% and +37.85%, respectively, compared to the previous year. Investors should also pay attention to any latest changes in analyst estimates for Rithm. These latest adjustments often mirror the shifting dynamics of short-term business patterns. Consequently, upward revisions in estimates express analysts' positivity towards the business operations and its ability to generate profits. Empirical research indicates that these revisions in estimates have a direct correlation with impending stock price performance. To benefit from this, we have developed the Zacks Rank, a proprietary model which takes these estimate changes into account and provides an actionable rating system. The Zacks Rank system, running from #1 (Strong Buy) to #5 (Strong Sell), holds an admirable track record of superior performance, independently audited, wi",
+        "search_snippet": "Zacks"
       }
     ],
-    "analysis": "- **External commentary**: Source [1] highlights that LKQ operates in a structurally challenged Consumer Discretionary sector, where demand is hit-driven and low switching costs make long-term compounding rare. Source [2] notes elevated implied volatility on deep out-of-the-money calls (Dec 2026 $17.50), which options traders may be using to sell premium, not necessarily signaling bullish conviction. Source [3] is a sustainability report with no direct financial or demand commentary.\n\n- **Why it can work**: LKQ trades at a forward P/E of 7.54 and price-to-book of 0.99, near book value, with a PEG of 0.92\u2014suggesting the market prices in low growth. The composite value score of 69.5 and opportunity score of 76.8 indicate it is a cheap laggard versus peers. If the company\u2019s operational efficiencies (e.g., 19% GHG reduction per revenue, 4.9M parts reused) translate into margin expansion or cost savings, earnings could stabilize without revenue growth. The short float of 4.7% is moderate, not extreme.\n\n- **What can break it**: Source [1] warns that technology lowers barriers to entry, allowing new competitors to serve customers better. The sector\u2019s inherent cyclicality means a consumer pullback could hit demand for non-essential auto parts. Source [2] shows analyst earnings estimates have been revised down (from $0.78 to $0.73 per share over 60 days), indicating deteriorating near-term fundamentals. The negative sentiment score (-1.0) and 1-month return of -3.2% (vs. sector median +2.2%) suggest ongoing selling pressure.\n\n- **Confirming evidence to watch**: Look for stabilization or reversal in analyst estimate revisions (e.g., no further cuts to Q2 EPS). Monitor revenue guidance in the next earnings report\u2014source [1] notes Q1 revenue beat but guidance was only in line. A sustained increase in RSI above 50 (currently 48.4) and a narrowing of the 35.6% drawdown from 52-week high would signal momentum shift. Also watch for insider buying or a reduction in short interest from 4.7%.\n\n- **Bottom line**: LKQ is a cheap, lagging auto parts distributor with a value tilt, but external commentary points to sector headwinds and downward estimate revisions. The sustainability report offers no demand catalyst. The long setup depends on mean reversion in earnings expectations, which is unconfirmed by current data. No trade recommendation."
+    "analysis": "- **External commentary**: [1] notes RITM underperformed the S&P 500 on the day (-1.29% vs. +1.65%) but has climbed 1.97% in the past month, lagging the Finance sector's 2.86% gain. [2] highlights a 5% decline over the past month and 10% over three months, with year-to-date returns down 16.48%, though longer-term holders (3- and 5-year) have seen gains. [3] reports a 5.6% drop over the last month versus the Finance sector's +0.68%. All three sources cite consensus EPS of $0.54 for the upcoming quarter (flat YoY) and revenue of $1.47B (+20.68% YoY), with full-year EPS expected to decline 3.4% and revenue up 37.85%. [2] claims the stock is \"34.2% undervalued\" based on a popular narrative, but the methodology is not provided.\n\n- **Why it can work**: The stock trades at a forward P/E of 3.83 and price-to-book of 0.72, suggesting deep value relative to earnings and book value. The composite value score of 75.7 and RSI acceleration (delta of 17.2 vs. prior 3-bar avg of 1.1) indicate recent momentum improvement from oversold levels. Revenue growth of 20.68% YoY (quarterly) and 37.85% (full-year) could signal operational expansion, and the sentiment score of 0.78 is positive. If the market re-rates the stock closer to sector norms or analyst targets, the discount could narrow.\n\n- **What can break it**: Earnings per share are expected to decline 3.4% for the full year, which may pressure valuations if revenue growth fails to translate to bottom-line gains. The stock has underperformed its sector and the S&P 500 over the past month (-5.6% vs. +0.68% and +5.25%, respectively, per [3]), indicating persistent weakness. Short interest at 5.5% of float is moderate but not negligible. The mortgage REIT sector is sensitive to interest rate changes and credit conditions; any adverse macro shift could widen the discount further. The \"34.2% undervalued\" claim in [2] is unsourced and may be based on a proprietary model with unknown assumptions.\n\n- **Confirming evidence to watch**: Upcoming earnings report (expected EPS $0.54, revenue $1.47B) \u2013 actual results vs. consensus will test the growth narrative. Analyst estimate revisions: positive changes would support the Zacks Rank thesis in [1] and [3]. Sector-relative performance: if RITM begins to close the 1-month lag vs. the Finance sector (currently -4.4% per warehouse data), it could signal a reversal. RSI sustaining above 55.5 and further acceleration in momentum scores would confirm the technical setup.\n\n- **Bottom line**: RITM presents a value-oriented"
+  },
+  {
+    "ticker": "T",
+    "cache_key": "web-v4:T:1781006400000:75.44:cheap peer laggard",
+    "generated_at": "2026-06-16T00:33:19.509611+00:00",
+    "input": {
+      "ticker": "T",
+      "company": "AT&T Inc.",
+      "sector": "Communication Services",
+      "industry": "Telecom Services",
+      "primary_strategy": "cheap peer laggard",
+      "price": 22.5901,
+      "market_cap_bn": 172.87,
+      "opportunity_score": 75.4,
+      "rsi_value_score": 55.0,
+      "squeeze_laggard_score": 56.9,
+      "value_laggard_score": 75.4,
+      "composite_value_score": 65.1,
+      "rsi_acceleration_score": 49.6,
+      "rsi_current": 28.0,
+      "rsi_delta_1": -3.9,
+      "prior_rsi_delta_3_bar_avg": -6.8,
+      "rsi_acceleration": 2.9,
+      "short_pct_float": 1.8,
+      "from_52w_low_pct": 2.0,
+      "from_52w_high_pct": -24.2,
+      "ret_1m_pct": -4.7,
+      "sector_ret_1m_median": -2.7,
+      "peer_lag_1m_pct": 2.0,
+      "forward_pe": 8.82,
+      "trailing_pe": 7.4,
+      "price_to_book": 1.43,
+      "peg": 1.59,
+      "sentiment_score": 0.1
+    },
+    "sources": [
+      {
+        "title": "AT&T (T) Stock Falls Amid Market Uptick: What Investors Need to Know",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/t-t-stock-falls-amid-214503938.html",
+        "excerpt": "In the latest trading session, AT&T (T) closed at $23.27, marking a -1.34% move from the previous day. This move lagged the S&P 500's daily gain of 1.65%. At the same time, the Dow added 0.92%, and the tech-heavy Nasdaq gained 3.07%. The telecommunications company's stock has dropped by 1.87% in the past month, falling short of the Computer and Technology sector's gain of 0.33% and the S&P 500's gain of 0.48%. Market participants will be closely following the financial results of AT&T in its upcoming release. The company plans to announce its earnings on July 22, 2026. The company's earnings per share (EPS) are projected to be $0.59, reflecting a 9.26% increase from the same quarter last year. Meanwhile, the Zacks Consensus Estimate for revenue is projecting net sales of $31.99 billion, up 3.71% from the year-ago period. In terms of the entire fiscal year, the Zacks Consensus Estimates predict earnings of $2.3 per share and a revenue of $129.78 billion, indicating changes of +8.49% and +3.29%, respectively, from the former year. Investors should also pay attention to any latest changes in analyst estimates for AT&T. Such recent modifications usually signify the changing landscape of near-term business trends. As a result, we can interpret positive estimate revisions as a good sign for the business outlook. Research indicates that these estimate revisions are directly correlated with near-term share price momentum. Investors can capitalize on this by using the Zacks Rank. This model considers these estimate changes and provides a simple, actionable rating system. The Zacks Rank system, spanning from #1 (Strong Buy) to #5 (Strong Sell), boasts an impressive track record of outperformance, audited externally, with #1 ranked stocks yielding an average annual return of +25%",
+        "search_snippet": "Zacks"
+      },
+      {
+        "title": "World Cup Opens Strong Despite $1,700 Ticket Shock",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/world-cup-opens-strong-despite-141110865.html",
+        "excerpt": "This article first appeared on [GuruFocus](https://www.gurufocus.com/news/8916216/world-cup-opens-strong- despite-1700-ticket- shock?utm_source=yahoo_finance&utm_medium=syndication&utm_campaign=headlines&r=caf6fe0e0db70d936033da5461e60141). The 2026 World Cup [opened](https://www.bloomberg.com/news/articles/2026-06-14/fifa-world- cup-2026-has-smooth-start-despite-transportation-and-ticket-prices?srnd=phx- latinamerica) on a stronger note than many expected, as concerns over extreme heat, transportation pressure, immigration tension, and record ticket prices did not appear to disrupt the tournament's early momentum. Mexico started with a 2-0 victory over South Africa, the US delivered a dominant win, and Canada secured a draw, helping lift the mood across the three host nations. In Mexico City, supporters poured into the streets despite heavy rain, while the tournament's energy even reached Fenway Park, where Scotland fans brought bagpipes and The Flower of Scotland to the struggling Red Sox. Still, the early optimism came with pressure points investors may want to watch closely. Empty seats were visible during Qatar's draw with Switzerland, South Korea's match against the Czech Republic in Guadalajara had large gaps in hospitality areas, and unsold pitch-side hospitality seats at AT&T ([NYSE:T](https://finance.yahoo.com/quote/T)) Stadium were filled with volunteers. Immigration concerns also remained part of the backdrop, with some Mexican-Americans reportedly staying away from public watch parties in Los Angeles after last year's Trump administration crackdown, while a Somali referee and several Iranian backroom staff members were denied entry to the US. FIFA's decision to expand the tournament to 48 teams from 32 added 40 matches and brought long-absent fan bases back",
+        "search_snippet": "GuruFocus.com"
+      },
+      {
+        "title": "R2 Launch, 5G Partnership, Georgia Expansion Might Change The Case For Investing In Rivian (RIVN)",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/r2-launch-5g-partnership-georgia-140631832.html",
+        "excerpt": "* Rivian Automotive has already begun public deliveries of its lower-priced R2 mid-size SUV from its Normal, Illinois plant, while extending its AT&T partnership to add built-in 5G connectivity and planning additional capacity at a future Georgia facility. * This move marks Rivian's push beyond the premium niche into the mass-market EV segment, where management is targeting gross margin positive R2 units and leveraging software-enabled features to support longer-term financial resilience. * We'll now examine how the R2's mass-market launch and planned Georgia expansion could reshape Rivian's investment narrative and risk profile. Uncover the next big thing with [24 elite penny stocks](https://simplywall.st/discover/investing-ideas/472945/elite-penny- stocks/us?utm_medium=finance_user&utm_campaign=intro&utm_source=yahoo&blueprint=4626066) that balance risk and reward. ## Rivian Automotive Investment Narrative Recap To own Rivian today, you need to believe it can broaden its EV footprint with R2 while steadily improving unit economics and cash burn. The immediate catalyst is clear execution on R2 deliveries and margins; the biggest risk remains high cash use and the possibility of further capital raises. The latest R2 launch and 5G connectivity news support the R2 rollout narrative, but do not remove the underlying financing and profitability risks. The most relevant recent announcement here is Rivian's plan to add up to 300,000 units of annual capacity at its future Georgia plant starting in 2028. That expansion could reinforce the R2 platform as the center of Rivian's growth story, but also amplifies execution and capital intensity risks if demand, pricing, or regulatory support fall short of expectations. Yet behind the optimism around R2 and Georgia, investors should",
+        "search_snippet": "Simply Wall St."
+      }
+    ],
+    "analysis": "- **External commentary**: [1] notes AT&T\u2019s recent underperformance vs. the S&P 500 and sector, with the stock down 1.87% in the past month. The same source highlights expected EPS growth of 9.26% YoY for the upcoming July 22, 2026 earnings release and full-year EPS growth of 8.49%. [2] mentions visible empty seats and volunteer-filled hospitality areas at AT&T Stadium during the 2026 World Cup, suggesting potential softness in event-related revenue or brand exposure. [3] references an AT&T partnership with Rivian for built-in 5G connectivity, but this is tangential to AT&T\u2019s core telecom business and its financial impact is unknown.\n\n- **Why it can work**: The forward P/E of 8.82 and trailing P/E of 7.4 are low, and the composite value score of 65.1 supports a \u201ccheap peer laggard\u201d thesis. The RSI of 28.0 is in oversold territory, and the RSI acceleration of +2.9 (from a prior -6.8 average) suggests selling pressure may be easing. If the July 22 earnings confirm the projected 9.26% EPS growth and 3.71% revenue growth [1], the stock could re-rate upward from its depressed valuation. The 1.8% short float is low, reducing short-squeeze risk but also implying limited bearish conviction to fuel a rally.\n\n- **What can break it**: The stock is down 24.2% from its 52-week high and has underperformed its sector by 2.0% in the past month, indicating persistent negative momentum. The sentiment score of 0.1 is neutral, offering no bullish tailwind. The World Cup attendance issues at AT&T Stadium [2] could signal weaker-than-expected ancillary revenue or brand perception problems, though the direct financial impact is unknown. If the July 22 earnings miss estimates or guidance disappoints, the oversold condition could deepen rather than reverse.\n\n- **Confirming evidence to watch**: The primary catalyst is the July 22, 2026 earnings report [1]. Watch for EPS and revenue beats vs. consensus ($0.59 EPS, $31.99B revenue), and any upward revision to full-year guidance ($2.3 EPS, $129.78B revenue). Also monitor RSI to see if it stabilizes above 30 and if the RSI acceleration continues positive. Any analyst estimate upgrades post-earnings would be a confirming signal, as [1] notes these are correlated with near-term price momentum.\n\n- **Bottom line**: AT&T is a cheap, oversold laggard with a near-term earnings catalyst that could justify a re-rating if results meet or beat expectations. However, the stock\u2019s persistent underperformance, neutral sentiment, and potential softness in event-related revenue (World Cup) create material downside risk. The long setup is conditional on the July 22 earnings outcome; without that confirmation, the current data does not support a favorable risk/reward. No trade recommendation is made."
   }
 ]
