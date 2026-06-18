@@ -87,6 +87,14 @@ with rsi_hist as (
   from rsi_hist where rn<=6 group by ticker
 ), latest_daily_ts as (
   select max(timestamp) as max_ts from daily_bars
+), latest_daily as (
+  select ticker, timestamp as daily_ts, close as daily_close
+  from (
+    select ticker, timestamp, close,
+           row_number() over(partition by ticker order by timestamp desc) rn
+    from daily_bars
+    where close is not null
+  ) where rn = 1
 ), daily_52w as (
   select d.ticker, min(d.low) low_52w, max(d.high) high_52w
   from daily_bars d, latest_daily_ts l
@@ -104,8 +112,8 @@ with rsi_hist as (
     s.sic_description,
     s.sentiment_score,
     s.short_pct_float,
-    coalesce(s.from_52w_high_pct, case when d.high_52w > 0 then ((p.close0 / d.high_52w) - 1.0) * 100.0 end) from_52w_high_pct,
-    coalesce(s.from_52w_low_pct, case when d.low_52w > 0 then ((p.close0 / d.low_52w) - 1.0) * 100.0 end) from_52w_low_pct,
+    coalesce(s.from_52w_high_pct, case when d.high_52w > 0 then ((case when ld.daily_ts > p.ts0 then ld.daily_close else p.close0 end / d.high_52w) - 1.0) * 100.0 end) from_52w_high_pct,
+    coalesce(s.from_52w_low_pct, case when d.low_52w > 0 then ((case when ld.daily_ts > p.ts0 then ld.daily_close else p.close0 end / d.low_52w) - 1.0) * 100.0 end) from_52w_low_pct,
     s.price_vs_sma20_pct,
     s.price_vs_sma50_pct,
     s.price_vs_sma200_pct,
@@ -134,6 +142,11 @@ with rsi_hist as (
     p.ts0,
     to_timestamp(p.ts0/1000) four_h_timestamp,
     p.close0 four_h_close,
+    ld.daily_ts latest_daily_ts,
+    to_timestamp(ld.daily_ts/1000) latest_daily_timestamp,
+    ld.daily_close latest_daily_close,
+    case when ld.daily_ts > p.ts0 then ld.daily_close else p.close0 end display_close,
+    case when ld.daily_ts > p.ts0 then 'daily_close_newer_than_4h' else '4h_close' end price_source,
     p.rsi0, p.rsi1, p.rsi2, p.rsi3, p.rsi4, p.rsi5,
     (p.rsi0-p.rsi1) rsi_delta_1,
     ((p.rsi1-p.rsi2)+(p.rsi2-p.rsi3)+(p.rsi3-p.rsi4))/3.0 prior_delta_3_avg,
@@ -144,8 +157,9 @@ with rsi_hist as (
   left join vti_daily_enriched_latest e on s.ticker=e.ticker
   left join v_vti_factor_production_scores_5b f on s.ticker=f.ticker
   left join daily_52w d on s.ticker=d.ticker
+  left join latest_daily ld on s.ticker=ld.ticker
   where s.market_cap >= 5000000000
-    and p.close0 < ?
+    and case when ld.daily_ts > p.ts0 then ld.daily_close else p.close0 end < ?
     and s.sector is not null and s.sector <> ''
     and p.n >= 5
 )
@@ -549,7 +563,7 @@ def analyze_top_inflections(df: pd.DataFrame, top_n: int, force_refresh: bool) -
             "sector": row.get("sector"),
             "industry": row.get("industry"),
             "primary_strategy": row.get("primary_strategy"),
-            "price": round(float(row.get("four_h_close")), 4),
+            "price": round(float(row.get("display_close")), 4),
             "market_cap_bn": round(float(row.get("market_cap")) / 1e9, 2),
             "opportunity_score": round(float(row.get("opportunity_score")), 1),
             "rsi_value_score": round(float(row.get("rsi_value_score")), 1),
@@ -620,7 +634,7 @@ def clean_float(value):
 
 def record(row) -> dict:
     keys = [
-        "global_rank", "rank_in_sector", "sector", "ticker", "company", "market_cap", "four_h_close",
+        "global_rank", "rank_in_sector", "sector", "ticker", "company", "market_cap", "four_h_close", "display_close", "price_source", "latest_daily_close",
         "opportunity_score", "rsi_value_score", "squeeze_laggard_score", "value_laggard_score",
         "rsi_acceleration_score", "composite_value_score", "rsi0", "rsi_delta_1",
         "prior_delta_3_avg", "rsi_accel", "inflection_flag", "yf_forward_pe", "yf_trailing_pe",
@@ -629,14 +643,14 @@ def record(row) -> dict:
         "sector_ret_1m_median", "peer_lag_1m_pct", "peer_lag_3m_pct",
         "near_low_score", "short_score", "peer_lag_score", "sentiment_score", "value_grade",
         "growth_grade", "momentum_grade", "primary_strategy", "production_factor_basket", "production_factor_score",
-        "production_theme", "primary_keyword_factor", "primary_keyword_factor_score", "keyword_factor_baskets", "four_h_timestamp",
+        "production_theme", "primary_keyword_factor", "primary_keyword_factor_score", "keyword_factor_baskets", "four_h_timestamp", "latest_daily_timestamp",
     ]
     out = {}
     for key in keys:
         value = row.get(key)
         if key in {"sector", "ticker", "company", "value_grade", "growth_grade", "momentum_grade", "primary_strategy", "production_factor_basket", "production_theme", "primary_keyword_factor", "keyword_factor_baskets"}:
             out[key] = None if pd.isna(value) else str(value)
-        elif key == "four_h_timestamp":
+        elif key in {"four_h_timestamp", "latest_daily_timestamp"}:
             out[key] = str(value)
         elif key in {"global_rank", "rank_in_sector", "inflection_flag"}:
             out[key] = None if pd.isna(value) else int(value)
@@ -837,7 +851,7 @@ def render_dashboard(df: pd.DataFrame, analyses: list[dict], price_filter: float
             f"<td>{int(r[rank_field]) if rank_field in r and not pd.isna(r[rank_field]) else ''}</td>"
             f"<td><strong>{ticker_link(r['ticker'])}</strong><small>{html.escape(str(r['company'])[:42])}</small></td>"
             f"<td>{html.escape(str(r['sector']))}<small>{html.escape(str(r.get('primary_strategy', '')))}</small></td>"
-            f"<td>{fmt_money(r['four_h_close'])}</td>"
+            f"<td>{fmt_money(r['display_close'])}<small>{html.escape(str(r.get('price_source', '')))}</small></td>"
             f"<td>{fmt_bn(r['market_cap'])}</td>"
             f"<td>{render_bar(r['opportunity_score'])}</td>"
             f"<td>{render_bar(r.get('rsi_value_score'), 'hot')}</td>"
@@ -885,7 +899,7 @@ def render_dashboard(df: pd.DataFrame, analyses: list[dict], price_filter: float
         items = []
         for _, r in sdf.iterrows():
             items.append(
-                f"<li><b>{ticker_link(r['ticker'])}</b> {fmt_money(r['four_h_close'])} "
+                f"<li><b>{ticker_link(r['ticker'])}</b> {fmt_money(r['display_close'])} "
                 f"score {fmt_num(r['opportunity_score'])} · {html.escape(str(r.get('primary_strategy')))} · short {fmt_num(r.get('short_pct_float'))}% · lag {fmt_num(r.get('peer_lag_1m_pct'))}%</li>"
             )
         sector_sections.append(f"<section class='sector'><h3>{html.escape(str(sector))}</h3><ol>{''.join(items)}</ol></section>")
