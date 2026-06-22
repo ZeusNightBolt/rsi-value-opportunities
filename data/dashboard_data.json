@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-20T20:31:14.049835-04:00",
+  "generated_at": "2026-06-21T20:30:55.984524-04:00",
   "latest_4h_timestamp": "2026-06-18 16:00:00-04:00",
   "price_filter": 30.0,
   "universe_count": 123,
@@ -7204,7 +7204,7 @@
     {
       "ticker": "GME",
       "cache_key": "web-v4:GME:1781726400000:92.51:shorted near lows / peer lag",
-      "generated_at": "2026-06-21T00:31:13.541773+00:00",
+      "generated_at": "2026-06-22T00:30:55.478827+00:00",
       "input": {
         "ticker": "GME",
         "company": "GameStop Corp. Class A",
