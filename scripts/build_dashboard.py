@@ -328,6 +328,40 @@ def score_candidates(df: pd.DataFrame) -> pd.DataFrame:
 
     score_cols = ["rsi_value_score", "squeeze_laggard_score", "value_laggard_score", "momentum_pullback_score"]
     df["opportunity_score"] = df[score_cols].max(axis=1)
+
+    # ── EV Master Score ──
+    # High-expected-value stocks: strong signals with cross-sleeve agreement
+    # and asymmetric risk/reward.  Combines signal strength, conviction,
+    # payoff asymmetry, and factor alignment into a single 0-100 score.
+    df["sleeve_rank_agreement"] = (
+        (pct_score(df["rsi_value_score"], lower_is_better=False).fillna(0)
+         + pct_score(df["squeeze_laggard_score"], lower_is_better=False).fillna(0)
+         + pct_score(df["value_laggard_score"], lower_is_better=False).fillna(0)
+         + pct_score(df["momentum_pullback_score"], lower_is_better=False).fillna(0))
+        / 4.0  # average percentile across all 4 sleeves
+    ).clip(0, 100)
+    # Asymmetric R:R: upside room (distance to 52w high) vs downside floor (distance to 52w low)
+    df["upside_potential"] = (-df["from_52w_high_pct"]).clip(lower=5, upper=100)
+    df["downside_risk"] = df["from_52w_low_pct"].clip(lower=5, upper=200)
+    df["rr_ratio"] = (df["upside_potential"] / df["downside_risk"]).clip(0, 10)
+    df["rr_score"] = pct_score(df["rr_ratio"], lower_is_better=False).fillna(30.0)
+    # Factor alignment: production factor score normalized
+    if "production_factor_score" in df.columns:
+        df["factor_align_score"] = pct_score(
+            pd.to_numeric(df["production_factor_score"], errors="coerce"),
+            lower_is_better=False,
+        ).fillna(50.0)
+    else:
+        df["factor_align_score"] = 50.0
+    df["ev_score"] = (
+        0.35 * df["opportunity_score"]
+        + 0.25 * df["sleeve_rank_agreement"]
+        + 0.25 * df["rr_score"]
+        + 0.15 * df["factor_align_score"]
+    ).clip(0, 100)
+    df["ev_master_eligible"] = df["ev_score"] >= 60
+
+    score_cols = ["rsi_value_score", "squeeze_laggard_score", "value_laggard_score", "momentum_pullback_score"]
     labels = {
         "rsi_value_score": "RSI inflection + value",
         "squeeze_laggard_score": "shorted near lows / peer lag",
@@ -879,6 +913,10 @@ def render_dashboard(df: pd.DataFrame, analyses: list[dict], price_filter: float
     squeeze = cap_by_sector(df.sort_values("squeeze_laggard_score", ascending=False), "squeeze_laggard_score", 15, 3)
     laggards = cap_by_sector(df.sort_values("value_laggard_score", ascending=False), "value_laggard_score", 15, 3)
     pullbacks = cap_by_sector(df[df["mom_pullback_eligible"]].sort_values("momentum_pullback_score", ascending=False), "momentum_pullback_score", 15, 3)
+    master_ev = cap_by_sector(
+        df[df["ev_master_eligible"]].sort_values("ev_score", ascending=False),
+        "ev_score", 20, 3,
+    )
 
     payload = {
         "generated_at": now_et.isoformat(),
@@ -892,6 +930,7 @@ def render_dashboard(df: pd.DataFrame, analyses: list[dict], price_filter: float
         "squeeze_laggards": [record(r) for _, r in squeeze.iterrows()],
         "value_laggards": [record(r) for _, r in laggards.iterrows()],
         "momentum_pullbacks": [record(r) for _, r in pullbacks.iterrows()],
+        "master_opportunities": [record(r) for _, r in master_ev.iterrows()],
         "by_sector": [record(r) for _, r in top_sector.iterrows()],
         "llm_analysis": analyses,
     }
@@ -928,6 +967,7 @@ def render_dashboard(df: pd.DataFrame, analyses: list[dict], price_filter: float
     squeeze_rows = [row_html(r) for _, r in squeeze.iterrows()]
     laggard_rows = [row_html(r) for _, r in laggards.iterrows()]
     pullback_rows = [row_html(r) for _, r in pullbacks.iterrows()]
+    master_rows = [row_html(r) for _, r in master_ev.iterrows()]
 
     analysis_cards = []
     for item in analyses:
@@ -1007,14 +1047,14 @@ def render_dashboard(df: pd.DataFrame, analyses: list[dict], price_filter: float
 .tab-nav label:hover{color:var(--amber);background:var(--panel2)}
 .tab-nav input:checked+label{background:var(--amber);color:#0a0a0a;border-color:var(--amber)}
 .tab-content{display:none}
-#tab-opps:checked~.tab-nav label.opps-tab,#tab-rsi:checked~.tab-nav label.rsi-tab,#tab-sqz:checked~.tab-nav label.sqz-tab,#tab-val:checked~.tab-nav label.val-tab,#tab-mom:checked~.tab-nav label.mom-tab,#tab-sector:checked~.tab-nav label.sector-tab{background:var(--amber);color:#0a0a0a;border-color:var(--amber)}
-#tab-opps:checked~#c-opps,#tab-rsi:checked~#c-rsi,#tab-sqz:checked~#c-sqz,#tab-val:checked~#c-val,#tab-mom:checked~#c-mom,#tab-sector:checked~#c-sector{display:block}
+#tab-opps:checked~.tab-nav label.opps-tab,#tab-rsi:checked~.tab-nav label.rsi-tab,#tab-sqz:checked~.tab-nav label.sqz-tab,#tab-val:checked~.tab-nav label.val-tab,#tab-mom:checked~.tab-nav label.mom-tab,#tab-master:checked~.tab-nav label.master-tab,#tab-sector:checked~.tab-nav label.sector-tab{background:var(--amber);color:#0a0a0a;border-color:var(--amber)}
+#tab-opps:checked~#c-opps,#tab-rsi:checked~#c-rsi,#tab-sqz:checked~#c-sqz,#tab-val:checked~#c-val,#tab-mom:checked~#c-mom,#tab-master:checked~#c-master,#tab-sector:checked~#c-sector{display:block}
 h2{margin-top:0}
 """
     content = f"""<!doctype html>
 <html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>RSI Value Opportunities</title><style>{css}</style></head>
-<body><header><h1>MULTI-SLEEVE VALUE OPPORTUNITIES</h1><div class="status"><span class="dot">● LIVE</span><span>generated {html.escape(now_et.strftime('%Y-%m-%d %H:%M %Z'))}</span><span>latest 4h {html.escape(latest_ts)}</span><span>price &lt; ${price_filter:.0f}</span><span>{len(df)} names / {df['sector'].nunique() if not df.empty else 0} sectors</span><span>top 10 capped at max 3/sector</span></div><nav class="nav"><a class="active" href="index.html">Opportunities</a><a href="factor-baskets.html">Factor basket inflections</a></nav></header>
+<title>Equity Screener</title><style>{css}</style></head>
+<body><header><h1>EQUITY SCREENER</h1><div class="status"><span class="dot">● LIVE</span><span>generated {html.escape(now_et.strftime('%Y-%m-%d %H:%M %Z'))}</span><span>latest 4h {html.escape(latest_ts)}</span><span>price &lt; ${price_filter:.0f}</span><span>{len(df)} names / {df['sector'].nunique() if not df.empty else 0} sectors</span><span>top 10 capped at max 3/sector</span></div><nav class="nav"><a class="active" href="index.html">Opportunities</a><a href="factor-baskets.html">Factor basket inflections</a></nav></header>
 <main>
 <div class="note"><span class="pill">Method</span> Multi-sleeve rank: RSI inflection + value, shorted-near-lows / peer lag, cheap peer laggards, and momentum pullbacks. The top 10 blends four sleeves and is diversified with a hard cap of 3 stocks per sector. Momentum pullbacks scan for strong 6-month uptrends that have pulled back 1-2 weeks and are coiling into moving averages — a continuation setup.</div>
 
@@ -1024,6 +1064,7 @@ h2{margin-top:0}
 <input type="radio" name="tab" id="tab-sqz">
 <input type="radio" name="tab" id="tab-val">
 <input type="radio" name="tab" id="tab-mom">
+<input type="radio" name="tab" id="tab-master">
 <input type="radio" name="tab" id="tab-sector">
 
 <nav class="tab-nav">
@@ -1032,6 +1073,7 @@ h2{margin-top:0}
 <label class="sqz-tab" for="tab-sqz">🔻 Squeeze Laggards</label>
 <label class="val-tab" for="tab-val">💰 Value Laggards</label>
 <label class="mom-tab" for="tab-mom">🚀 Momentum Pullbacks</label>
+<label class="master-tab" for="tab-master">⭐ Master Opportunities</label>
 <label class="sector-tab" for="tab-sector">🏭 By Sector</label>
 </nav>
 
@@ -1055,6 +1097,10 @@ h2{margin-top:0}
 
 <div class="tab-content" id="c-mom">
 <h2>Momentum pullback sleeve</h2>{header}{''.join(pullback_rows)}</tbody></table>
+</div>
+
+<div class="tab-content" id="c-master">
+<h2>⭐ Master Opportunities — High Expected Value</h2><p class="note"><span class="pill">EV Formula</span> 35% top sleeve signal + 25% cross-sleeve agreement + 25% asymmetric R:R + 15% factor alignment. Only stocks scoring ≥60 across all dimensions qualify. Sorted by EV score, capped at 3 per sector.</p>{header}{''.join(master_rows)}</tbody></table>
 </div>
 
 <div class="tab-content" id="c-sector">
