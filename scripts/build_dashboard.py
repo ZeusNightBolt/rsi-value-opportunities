@@ -344,9 +344,9 @@ def score_candidates(df: pd.DataFrame) -> pd.DataFrame:
     df["rel_strength_score_3m"] = pct_score(df["ret_3m_pct"], lower_is_better=False).fillna(50.0)
 
     # 3) Pullback magnitude (25%): ABS(ret_1w_pct), deeper = better entry, capped at 15%
-    df["rs_pullback_depth"] = (-df["ret_1w_pct"]).clip(lower=3, upper=15)
+    df["rs_pullback_depth"] = (-df["ret_1w_pct"]).clip(lower=1, upper=15)
     df["rs_pullback_entry_score"] = pct_score(
-        df["rs_pullback_depth"].where(df["ret_1w_pct"].lt(-3)), lower_is_better=False,
+        df["rs_pullback_depth"].where(df["ret_1w_pct"].lt(-1)), lower_is_better=False,
     ).fillna(0.0)
 
     # 4) Support proximity (20%): closeness to SMA50 + SMA200 (closer = better)
@@ -355,19 +355,21 @@ def score_candidates(df: pd.DataFrame) -> pd.DataFrame:
         + 0.4 * pct_score(df["price_vs_sma200_pct"].abs(), lower_is_better=True).fillna(50.0)
     ).clip(0, 100)
 
-    # 5) RSI reset (10%): RSI 35-50 = cooled off but not broken; peak at 42.5
+    # 5) RSI reset (10%): RSI 30-55 = cooled off; peak at 42.5
     df["rs_rsi_reset_score"] = np.where(
-        df["rsi0"].between(35, 50),
-        (100.0 - abs(df["rsi0"] - 42.5) * 6.0).clip(0, 100),
-        np.where(df["rsi0"].between(30, 55), 30.0, 0.0),
+        df["rsi0"].between(30, 55),
+        np.where(df["rsi0"].between(35, 50),
+                 (100.0 - abs(df["rsi0"] - 42.5) * 6.0).clip(0, 100),
+                 30.0),
+        0.0,
     )
 
-    # Gate (must pass all 4)
+    # Gate (must pass all 4) — relaxed for broader coverage
     df["rs_pullback_eligible"] = (
-        df["sector_ret_1m_median"].gt(0)
-        & df["ret_3m_pct"].gt(df["sector_ret_3m_median"])
-        & df["ret_1w_pct"].lt(-3)
-        & df["from_52w_low_pct"].lt(30)
+        df["sector_ret_1m_median"].gt(-2)
+        & df["ret_3m_pct"].gt(df["sector_ret_3m_median"] * 0.8)
+        & df["ret_1w_pct"].lt(-1)
+        & df["from_52w_low_pct"].lt(40)
     )
 
     df["rel_strength_pullback_score"] = np.where(
@@ -1154,7 +1156,7 @@ def render_dashboard(df: pd.DataFrame, analyses: list[dict], price_filter: float
     squeeze = cap_by_sector(df.sort_values("squeeze_laggard_score", ascending=False), "squeeze_laggard_score", 15, 3)
     laggards = cap_by_sector(df.sort_values("value_laggard_score", ascending=False), "value_laggard_score", 15, 3)
     pullbacks = cap_by_sector(df[df["mom_pullback_eligible"]].sort_values("momentum_pullback_score", ascending=False), "momentum_pullback_score", 15, 3)
-    rs_pullbacks = cap_by_sector(df[df["rs_pullback_eligible"]].sort_values("rel_strength_pullback_score", ascending=False), "rel_strength_pullback_score", 15, 3)
+    rs_pullbacks = cap_by_sector(df[df["rs_pullback_eligible"]].sort_values("rel_strength_pullback_score", ascending=False), "rel_strength_pullback_score", 25, 3)
     inflect_breakouts = cap_by_sector(df[df["inflect_breakout_eligible"]].sort_values("inflect_breakout_score", ascending=False), "inflect_breakout_score", 15, 3)
     master_ev = cap_by_sector(
         df[df["ev_master_eligible"]].sort_values("ev_score", ascending=False),
