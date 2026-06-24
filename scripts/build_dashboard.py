@@ -293,9 +293,15 @@ def score_candidates(df: pd.DataFrame) -> pd.DataFrame:
         df[c] = pd.to_numeric(df.get(c, np.nan), errors="coerce")
     df["dollar_vol"] = pd.to_numeric(df.get("dollar_volume_20d_polygon", 0), errors="coerce").fillna(0)
 
-    # Volume gate: top 60% by dollar volume AND volume > 0.8x average
-    dollar_median = df["dollar_vol"].median()
-    df["has_institutional_flow"] = (df["dollar_vol"] > dollar_median) & (df["volume_vs_20d"] > 0.8)
+    # Volume gate: top 60% by dollar volume (where available) OR volume > 0.8x avg
+    # Fallback to volume_vs_20d if dollar_vol is all NaN
+    dv_valid = df["dollar_vol"].gt(0).sum()
+    if dv_valid > 10:
+        dollar_median = df.loc[df["dollar_vol"] > 0, "dollar_vol"].median()
+        df["has_institutional_flow"] = (df["dollar_vol"] > dollar_median) & (df["volume_vs_20d"] > 0.8)
+    else:
+        # Fallback: above-average relative volume = institutional interest
+        df["has_institutional_flow"] = df["volume_vs_20d"] > 0.8
     # Relative momentum: percentile rank of 6-month return (higher = relatively stronger)
     df["ret_6m_rank"] = pct_score(df["ret_6m_pct"], lower_is_better=False).fillna(50.0)
     # Recent pullback: ret_1w < 0 and rank how deep (deeper = better entry)
