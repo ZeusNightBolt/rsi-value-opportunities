@@ -1426,15 +1426,15 @@ h2{margin-top:0}\n.mobile-cards{display:none}\n@media(max-width:768px){.tab-cont
 <input type="radio" name="tab" id="tab-sector">
 
 <nav class="tab-nav">
-<label class="opps-tab" for="tab-opps">🥇 Opportunities</label>
-<label class="rsi-tab" for="tab-rsi">📈 RSI Inflections</label>
-<label class="sqz-tab" for="tab-sqz">🔻 Squeeze Laggards</label>
-<label class="val-tab" for="tab-val">💰 Value Laggards</label>
-<label class="mom-tab" for="tab-mom">🚀 Momentum Pullbacks</label>
-<label class="brk-tab" for="tab-brk">📊 RSI Breakout</label>
-<label class="rspb-tab" for="tab-rspb">🎯 RS Pullbacks</label>
-<label class="master-tab" for="tab-master">⭐ Master Opportunities</label>
-<label class="sector-tab" for="tab-sector">🏭 By Sector</label>
+<label class="opps-tab" for="tab-opps">Opportunities</label>
+<label class="rsi-tab" for="tab-rsi">RSI Inflections</label>
+<label class="sqz-tab" for="tab-sqz">Squeeze Laggards</label>
+<label class="val-tab" for="tab-val">Value Laggards</label>
+<label class="mom-tab" for="tab-mom">Momentum Pullbacks</label>
+<label class="brk-tab" for="tab-brk">RSI Breakout</label>
+<label class="rspb-tab" for="tab-rspb">RS Pullbacks</label>
+<label class="master-tab" for="tab-master">Master Opportunities</label>
+<label class="sector-tab" for="tab-sector">By Sector</label>
 </nav>
 
 <div class="tab-content" id="c-opps">
@@ -1473,7 +1473,7 @@ h2{margin-top:0}\n.mobile-cards{display:none}\n@media(max-width:768px){.tab-cont
 
 <div class="tab-content" id="c-master">
 {''.join(master_cards)}
-<h2>⭐ Master Opportunities — High Expected Value</h2><p class="note"><span class="pill">EV Formula</span> 35% top sleeve signal + 25% cross-sleeve agreement + 25% asymmetric R:R + 15% factor alignment. Only stocks scoring ≥60 across all dimensions qualify. Sorted by EV score, capped at 3 per sector. All 6 sleeve scores shown side-by-side for direct comparison.</p>{master_header}{''.join(master_rows)}</tbody></table>
+<h2>Master Opportunities — High Expected Value</h2><p class="note"><span class="pill">EV Formula</span> 35% top sleeve signal + 25% cross-sleeve agreement + 25% asymmetric R:R + 15% factor alignment. Only stocks scoring ≥60 across all dimensions qualify. Sorted by EV score, capped at 3 per sector. All 6 sleeve scores shown side-by-side for direct comparison.</p>{master_header}{''.join(master_rows)}</tbody></table>
 </div>
 
 <div class="tab-content" id="c-sector">
