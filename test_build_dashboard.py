@@ -14,6 +14,7 @@ if str(SCRIPTS_DIR) not in sys.path:
 import pandas as pd
 
 from equity_screener.baskets import factor_basket_analysis, keyword_theme_analysis
+from equity_screener.combined import combined_top25_opportunities
 from equity_screener.polygon_overlay import enrich_latest_polygon_prices
 from equity_screener.divergence import top10_factor_alignment
 from equity_screener.scoring import score_candidates
@@ -21,6 +22,7 @@ from equity_screener.selection import build_diversified_top10, mark_diversified_
 from equity_screener.serialization import record
 
 build_dashboard = SimpleNamespace(
+    combined_top25_opportunities=combined_top25_opportunities,
     build_diversified_top10=build_diversified_top10,
     factor_basket_analysis=factor_basket_analysis,
     keyword_theme_analysis=keyword_theme_analysis,
@@ -148,6 +150,51 @@ class BuildDashboardContractTest(unittest.TestCase):
         self.assertIn('conflicts with Broken Momentum / Avoid', out.loc[0, 'alignment_takeaway'])
         self.assertIn('confirms', out.loc[1, 'alignment_takeaway'])
 
+    def test_combined_top25_prioritizes_confirming_high_composite_names(self):
+        rows = []
+        for i in range(24):
+            rows.append({
+                'ticker': f'C{i:02d}',
+                'company': f'Confirmed {i}',
+                'sector': f'S{i % 8}',
+                'production_factor_basket': 'Quality / Low-Vol Uptrend',
+                'production_factor_score': 92 - i * 0.4,
+                'primary_keyword_factor': 'Cloud Software',
+                'primary_keyword_factor_score': 88 - i * 0.2,
+                'primary_strategy': 'momentum leader',
+                'opportunity_score': 90 - i * 0.3,
+                'ev_score': 86 - i * 0.2,
+                'theme_reversal_score': 75,
+                'rsi0': 55,
+                'ret_1m_pct': 8,
+                'wave_stage': 'Wave 3 / markup leader',
+            })
+        rows.append({
+            'ticker': 'BROK',
+            'company': 'Broken But High Score',
+            'sector': 'S9',
+            'production_factor_basket': 'Broken Momentum / Avoid',
+            'production_factor_score': 5,
+            'primary_keyword_factor': 'Broken Theme',
+            'primary_keyword_factor_score': 20,
+            'primary_strategy': 'shorted near lows / peer lag',
+            'opportunity_score': 99,
+            'ev_score': 99,
+            'rsi0': 30,
+            'ret_1m_pct': -20,
+            'wave_stage': 'Wave 1 / accumulation',
+        })
+
+        out = build_dashboard.combined_top25_opportunities(pd.DataFrame(rows), limit=25, sector_cap=4)
+
+        self.assertEqual(len(out), 25)
+        self.assertIn('combined_rank_score', out.columns)
+        self.assertIn('alignment_status', out.columns)
+        self.assertEqual(out.iloc[0]['alignment_status'], 'CONFIRMATION')
+        self.assertLess(out.index[out['ticker'].eq('BROK')][0], len(out))
+        self.assertLess(out.loc[out['ticker'].eq('BROK'), 'combined_rank_score'].iloc[0], out.iloc[0]['combined_rank_score'])
+        self.assertLessEqual(out.groupby('sector').size().max(), 4)
+
     def test_generated_dashboard_has_revamp_navigation_and_jekyll_scaffold(self):
         index = (PROJECT_DIR / 'docs' / 'index.html').read_text()
         factor = (PROJECT_DIR / 'docs' / 'factor-baskets.html').read_text()
@@ -166,6 +213,11 @@ class BuildDashboardContractTest(unittest.TestCase):
             self.assertIn(marker, index)
         self.assertIn('Factor + Theme Map', factor)
         self.assertIn('href="divergence.html"', index)
+        self.assertIn('id="tab-top25"', index)
+        self.assertIn('Combined Top 25', index)
+        self.assertIn('Top 25 combined ranking', index)
+        self.assertIn('combined-rank-score', index)
+        self.assertNotIn('Top 25 diversified ranked opportunities', index)
         self.assertIn('href="divergence.html"', factor)
         self.assertIn('Top-10 Divergence Monitor', divergence)
         self.assertIn('DIVERGENCE', divergence)
