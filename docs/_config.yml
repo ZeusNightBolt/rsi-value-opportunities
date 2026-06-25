@@ -1,0 +1,17 @@
+title: Equity Screener
+description: Multi-sleeve equity opportunity dashboard generated from the local Polygon/DuckDB warehouse.
+baseurl: /equity-screener
+url: https://zeusnightbolt.github.io
+markdown: kramdown
+theme: minima
+include:
+  - dashboard_data.json
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+
+# GitHub Pages / Jekyll note:
+# The dashboard HTML is generated as complete static pages by scripts/build_dashboard.py.
+# This config keeps the site Jekyll-compatible and gives future docs pages a
+# theme/layout path without requiring the data pipeline to hand-roll routing.

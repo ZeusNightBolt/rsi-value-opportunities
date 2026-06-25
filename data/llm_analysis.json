@@ -320,14 +320,14 @@
   {
     "ticker": "AMTM",
     "cache_key": "web-v4:AMTM:1782388800000:79.02:cheap peer laggard",
-    "generated_at": "2026-06-25T17:40:25.698231+00:00",
+    "generated_at": "2026-06-25T18:06:10.626809+00:00",
     "input": {
       "ticker": "AMTM",
       "company": "Amentum Holdings, Inc.",
       "sector": "Industrials",
       "industry": "Specialty Business Services",
       "primary_strategy": "cheap peer laggard",
-      "price": 20.105,
+      "price": 20.04,
       "market_cap_bn": 5.82,
       "opportunity_score": 79.0,
       "rsi_value_score": 30.4,
