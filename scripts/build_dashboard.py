@@ -21,6 +21,7 @@ import pandas as pd
 PROJECT_DIR = Path(__file__).resolve().parents[1]
 DB_PATH = Path.home() / "market-data" / "market_data.duckdb"
 ENV_PATH = Path.home() / ".hermes" / ".env"
+MARKET_DATA_DIR = Path.home() / "market-data"
 DOCS_DIR = PROJECT_DIR / "docs"
 DATA_DIR = PROJECT_DIR / "data"
 
@@ -529,6 +530,79 @@ def score_candidates(df: pd.DataFrame) -> pd.DataFrame:
     sorted_df["diversified_top10"] = sorted_df.index.isin(diversified.index)
     return sorted_df
 
+def final_candidate_tickers(df: pd.DataFrame) -> list[str]:
+    """Return tickers that appear in final dashboard opportunity surfaces."""
+    if df.empty:
+        return []
+    frames = [
+        build_diversified_top10(df, 3),
+        cap_by_sector(df, "opportunity_score", 25, 3),
+        cap_by_sector(df[df["is_top_inflection"]], "rsi_value_score", 15, 3),
+        cap_by_sector(df.sort_values("squeeze_laggard_score", ascending=False), "squeeze_laggard_score", 15, 3),
+        cap_by_sector(df.sort_values("value_laggard_score", ascending=False), "value_laggard_score", 15, 3),
+        cap_by_sector(df[df["mom_pullback_eligible"]].sort_values("momentum_pullback_score", ascending=False), "momentum_pullback_score", 15, 3),
+        cap_by_sector(df[df["rs_pullback_eligible"]].sort_values("rel_strength_pullback_score", ascending=False), "rel_strength_pullback_score", 25, 3),
+        cap_by_sector(df[df["inflect_breakout_eligible"]].sort_values("inflect_breakout_score", ascending=False), "inflect_breakout_score", 15, 3),
+        cap_by_sector(df[df["ev_master_eligible"]].sort_values("ev_score", ascending=False), "ev_score", 20, 3),
+        df[df["rank_in_sector"] <= 5].sort_values(["sector", "rank_in_sector"]),
+    ]
+    tickers: dict[str, None] = {}
+    for frame in frames:
+        for ticker in frame.get("ticker", pd.Series(dtype=str)).dropna().astype(str):
+            tickers[ticker.upper()] = None
+    return list(tickers)
+
+
+def _load_polygon_client():
+    if str(MARKET_DATA_DIR) not in sys.path:
+        sys.path.insert(0, str(MARKET_DATA_DIR))
+    from polygon_client import PolygonClient
+    return PolygonClient(timeout=10, retries=2, max_workers=4)
+
+
+def enrich_latest_polygon_prices(df: pd.DataFrame, tickers: list[str], client=None) -> pd.DataFrame:
+    """Overlay latest Polygon snapshot prices for selected final candidates.
+
+    This is side-effect free and intentionally runs after deterministic scoring:
+    rankings remain warehouse-derived, while displayed prices are as fresh as
+    Polygon's snapshot endpoint can provide at build time.
+    """
+    out = df.copy()
+    out["warehouse_display_close"] = out.get("display_close", pd.Series(np.nan, index=out.index))
+    out["latest_polygon_price"] = np.nan
+    out["latest_polygon_price_source"] = None
+    out["latest_polygon_price_timestamp"] = None
+    out["latest_polygon_price_status"] = None
+    if out.empty or not tickers:
+        return out
+    symbols = list(dict.fromkeys(str(t).upper() for t in tickers if str(t).strip()))
+    if not symbols:
+        return out
+    try:
+        price_client = client or _load_polygon_client()
+        prices = price_client.latest_prices(symbols)
+    except Exception as exc:
+        print(f"WARN: Polygon latest-price enrichment skipped: {type(exc).__name__}: {exc}", file=sys.stderr)
+        out.loc[out["ticker"].astype(str).str.upper().isin(symbols), "latest_polygon_price_status"] = "SKIPPED"
+        return out
+    for ticker, payload in prices.items():
+        mask = out["ticker"].astype(str).str.upper() == ticker.upper()
+        if not mask.any():
+            continue
+        status = payload.get("status") if isinstance(payload, dict) else "ERROR"
+        out.loc[mask, "latest_polygon_price_status"] = status
+        if not isinstance(payload, dict) or status != "OK" or payload.get("price") is None:
+            continue
+        price = float(payload["price"])
+        source = str(payload.get("source") or "snapshot")
+        out.loc[mask, "latest_polygon_price"] = price
+        out.loc[mask, "latest_polygon_price_source"] = source
+        out.loc[mask, "latest_polygon_price_timestamp"] = payload.get("timestamp")
+        out.loc[mask, "display_close"] = price
+        out.loc[mask, "price_source"] = f"polygon.{source}"
+    return out
+
+
 def call_llm(prompt: str) -> str:
     deepseek_key = os.environ.get("DEEPSEEK_API_KEY")
     openrouter_key = os.environ.get("OPENROUTER_API_KEY")
@@ -873,6 +947,7 @@ def clean_float(value):
 def record(row) -> dict:
     keys = [
         "global_rank", "rank_in_sector", "sector", "ticker", "company", "market_cap", "four_h_close", "display_close", "price_source", "latest_daily_close",
+        "latest_polygon_price", "latest_polygon_price_source", "latest_polygon_price_timestamp", "latest_polygon_price_status", "warehouse_display_close",
         "diversified_source",
         "opportunity_score", "rsi_value_score", "squeeze_laggard_score", "value_laggard_score", "momentum_pullback_score", "rel_strength_pullback_score", "inflect_breakout_score", "ev_score",
         "rsi_acceleration_score", "composite_value_score", "rsi0", "rsi1", "rsi2", "rsi3", "rsi4", "rsi5", "rsi_delta_1",
@@ -887,7 +962,7 @@ def record(row) -> dict:
     out = {}
     for key in keys:
         value = row.get(key)
-        if key in {"sector", "ticker", "company", "price_source", "value_grade", "growth_grade", "momentum_grade", "primary_strategy", "diversified_source", "production_factor_basket", "production_theme", "primary_keyword_factor", "keyword_factor_baskets"}:
+        if key in {"sector", "ticker", "company", "price_source", "latest_polygon_price_source", "latest_polygon_price_status", "value_grade", "growth_grade", "momentum_grade", "primary_strategy", "diversified_source", "production_factor_basket", "production_theme", "primary_keyword_factor", "keyword_factor_baskets"}:
             out[key] = None if pd.isna(value) else str(value)
         elif key in {"four_h_timestamp", "latest_daily_timestamp"}:
             out[key] = str(value)
@@ -1505,6 +1580,8 @@ def main() -> int:
     load_env_file(ENV_PATH)
     df = query_candidates(args.price_filter)
     df = score_candidates(df)
+    final_tickers = final_candidate_tickers(df)
+    df = enrich_latest_polygon_prices(df, final_tickers)
     analyses = [] if args.no_llm else analyze_top_inflections(df, args.top_llm, args.force_llm)
     render_dashboard(df, analyses, args.price_filter)
     csv_path = DATA_DIR / "scored_candidates.csv"

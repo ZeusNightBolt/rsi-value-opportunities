@@ -27,9 +27,16 @@ class BuildDashboardContractTest(unittest.TestCase):
             'latest_daily_close': 10.5,
             'rel_strength_pullback_score': 77.7,
         })
+        row['latest_polygon_price'] = 10.75
+        row['latest_polygon_price_source'] = 'snapshot.lastTrade.p'
+        row['latest_polygon_price_timestamp'] = 1782400000000000000
+        row['warehouse_display_close'] = 10.5
         out = build_dashboard.record(row)
         self.assertEqual(out['price_source'], 'daily_close_newer_than_4h')
         self.assertEqual(out['rel_strength_pullback_score'], 77.7)
+        self.assertEqual(out['latest_polygon_price'], 10.75)
+        self.assertEqual(out['latest_polygon_price_source'], 'snapshot.lastTrade.p')
+        self.assertEqual(out['warehouse_display_close'], 10.5)
 
     def test_score_candidates_diversified_flag_matches_dynamic_top_builder(self):
         df = pd.DataFrame({
@@ -76,6 +83,33 @@ class BuildDashboardContractTest(unittest.TestCase):
         flagged_tickers = set(scored.loc[scored['diversified_top10'], 'ticker'])
         self.assertEqual(flagged_tickers, dynamic_tickers)
         self.assertFalse(df is scored)
+    def test_enrich_latest_polygon_prices_updates_only_selected_final_candidates(self):
+        class FakeClient:
+            def latest_prices(self, tickers):
+                self.requested = list(tickers)
+                return {
+                    'AAPL': {'status': 'OK', 'ticker': 'AAPL', 'price': 199.12, 'source': 'snapshot.lastTrade.p', 'timestamp': 1782400000000000000},
+                    'MSFT': {'status': 'ERROR', 'ticker': 'MSFT', 'price': None, 'source': None, 'timestamp': None, 'error': 'no usable price'},
+                }
+
+        df = pd.DataFrame({
+            'ticker': ['AAPL', 'MSFT', 'NVDA'],
+            'display_close': [190.0, 410.0, 500.0],
+            'price_source': ['4h_close', '4h_close', '4h_close'],
+        })
+        client = FakeClient()
+
+        enriched = build_dashboard.enrich_latest_polygon_prices(df, ['AAPL', 'MSFT'], client=client)
+
+        self.assertEqual(client.requested, ['AAPL', 'MSFT'])
+        self.assertEqual(enriched.loc[0, 'warehouse_display_close'], 190.0)
+        self.assertEqual(enriched.loc[0, 'display_close'], 199.12)
+        self.assertEqual(enriched.loc[0, 'price_source'], 'polygon.snapshot.lastTrade.p')
+        self.assertEqual(enriched.loc[0, 'latest_polygon_price'], 199.12)
+        self.assertEqual(enriched.loc[0, 'latest_polygon_price_timestamp'], 1782400000000000000)
+        self.assertEqual(enriched.loc[1, 'display_close'], 410.0)
+        self.assertEqual(enriched.loc[1, 'latest_polygon_price_status'], 'ERROR')
+        self.assertTrue(pd.isna(enriched.loc[2, 'latest_polygon_price']))
 
 
 if __name__ == '__main__':

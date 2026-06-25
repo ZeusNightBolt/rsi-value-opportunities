@@ -31,6 +31,8 @@ Equity Screener is a static GitHub Pages dashboard that ranks low-priced, $5B+ m
 scripts/build_dashboard.py
   ├─ query_candidates(price_filter)
   ├─ score_candidates(df)
+  ├─ final_candidate_tickers(df)                   dashboard-surface union only
+  ├─ enrich_latest_polygon_prices(df, tickers)     live Polygon snapshot overlay
   ├─ analyze_top_inflections(df, top_n, force)    optional LLM/web commentary
   ├─ render_dashboard(df, analyses, price_filter)
   └─ git_commit_push()                            only when --push is set
@@ -55,7 +57,9 @@ docs/*.html + docs/dashboard_data.json + data/*.json/csv
 
 ## Rendering model
 
-The dashboard is still a single-file renderer, but the repeated score metadata is centralized:
+The dashboard is still a single-file renderer, but the repeated score metadata is centralized. Prices shown for final dashboard candidates are overlaid at build time from Polygon snapshot data after deterministic scoring. The warehouse-derived `display_close` is preserved as `warehouse_display_close`; the rendered `display_close` and `price_source` use `polygon.snapshot.lastTrade.p`, `polygon.snapshot.min.c`, `polygon.snapshot.day.c`, or `polygon.snapshot.prevDay.c` when Polygon returns a usable snapshot price.
+
+Centralized metadata:
 
 - `SCORE_COLUMNS`: canonical scoring contract.
 - `DIVERSIFIED_TOP_PLAN`: per-sleeve quotas for diversified top 10 construction; selected rows carry `diversified_source` in the JSON payload.
@@ -85,6 +89,7 @@ src/equity_screener/deploy.py     git commit/push
 | Medium | `record()` omitted `rel_strength_pullback_score` and treated `price_source` as numeric, so JSON payloads lost both fields. | Added payload contract tests; `record()` now preserves `price_source` and RS pullback score. |
 | Medium | `diversified_top10` CSV flag used a different selection algorithm/index basis than the dashboard top-10 builder. | It is now computed from `build_diversified_top10()` after the final sort/reset. |
 | Medium | `call_llm()` had narrow exception handling for network/SSL edge cases. | It now fails soft on any LLM exception and returns a diagnostic string. |
+| Medium | Final dashboard rows could display stale warehouse 4h/daily fallback prices even though Polygon snapshot data was available at build time. | Added `final_candidate_tickers()` + `enrich_latest_polygon_prices()` and payload fields for latest Polygon snapshot price/status/source. |
 | Medium | Mobile cards omitted the Relative Strength Pullback score even though desktop/master views showed it. | Mobile score rows are generated dynamically from `SCORE_DISPLAY`, including `RS Pb`. |
 | Medium | Master opportunity comparison hard-coded six sleeve rows; future sleeves would require multiple edits. | Master comparison rows are generated from `SCORE_DISPLAY[1:]`. |
 | Medium | Dashboard note said the top 10 blended five sleeves; the model actually uses six. | Note now says six sleeves. |
