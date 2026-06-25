@@ -68,6 +68,15 @@ Centralized metadata:
 - `COLOR_RGB`: score heatmap colors.
 - `GIT_TRACKED_OUTPUTS`: files committed by `--push`.
 
+The June 25 full revamp changed the generated surface from a dense table-first page to a trader cockpit:
+
+- sticky hero with live freshness / price-filter state;
+- left navigation rail plus horizontally scrollable section chips;
+- KPI strip for universe, live Polygon price overlays, average opportunity score, average RSI, and commentary count;
+- card-first top opportunities on desktop and mobile, with tables retained as audit trails;
+- separate factor/theme map page using the same shell;
+- Jekyll/GitHub Pages scaffold under `docs/_config.yml` and `docs/_layouts/default.html` so future static docs can use layout/theme conventions instead of ad hoc pages.
+
 This is the first cleanup step toward a fully modular package. Next natural split:
 
 ```text
@@ -90,6 +99,7 @@ src/equity_screener/deploy.py     git commit/push
 | Medium | `diversified_top10` CSV flag used a different selection algorithm/index basis than the dashboard top-10 builder. | It is now computed from `build_diversified_top10()` after the final sort/reset. |
 | Medium | `call_llm()` had narrow exception handling for network/SSL edge cases. | It now fails soft on any LLM exception and returns a diagnostic string. |
 | Medium | Final dashboard rows could display stale warehouse 4h/daily fallback prices even though Polygon snapshot data was available at build time. | Added `final_candidate_tickers()` + `enrich_latest_polygon_prices()` and payload fields for latest Polygon snapshot price/status/source. |
+| High | Dashboard was table-first with weak information hierarchy and slow navigation across nine opportunity surfaces. | Full revamp to sticky hero, left rail, KPI strip, card-first opportunity cockpit, scrollable section chips, and matching factor/theme map shell. |
 | Medium | Mobile cards omitted the Relative Strength Pullback score even though desktop/master views showed it. | Mobile score rows are generated dynamically from `SCORE_DISPLAY`, including `RS Pb`. |
 | Medium | Master opportunity comparison hard-coded six sleeve rows; future sleeves would require multiple edits. | Master comparison rows are generated from `SCORE_DISPLAY[1:]`. |
 | Medium | Dashboard note said the top 10 blended five sleeves; the model actually uses six. | Note now says six sleeves. |

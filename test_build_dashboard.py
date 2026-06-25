@@ -4,6 +4,9 @@ import math
 import unittest
 from pathlib import Path
 
+
+PROJECT_DIR = Path(__file__).resolve().parent
+
 import pandas as pd
 
 MODULE_PATH = Path(__file__).resolve().parent / 'scripts' / 'build_dashboard.py'
@@ -110,6 +113,27 @@ class BuildDashboardContractTest(unittest.TestCase):
         self.assertEqual(enriched.loc[1, 'display_close'], 410.0)
         self.assertEqual(enriched.loc[1, 'latest_polygon_price_status'], 'ERROR')
         self.assertTrue(pd.isna(enriched.loc[2, 'latest_polygon_price']))
+    def test_generated_dashboard_has_revamp_navigation_and_jekyll_scaffold(self):
+        index = (PROJECT_DIR / 'docs' / 'index.html').read_text()
+        factor = (PROJECT_DIR / 'docs' / 'factor-baskets.html').read_text()
+        config = (PROJECT_DIR / 'docs' / '_config.yml').read_text()
+        layout = (PROJECT_DIR / 'docs' / '_layouts' / 'default.html').read_text()
+
+        for marker in [
+            'revamp-v3',
+            'class="site-hero"',
+            'class="rail"',
+            'class="kpi-strip"',
+            'Trader cockpit, not a spreadsheet',
+            'Factor / theme map',
+        ]:
+            self.assertIn(marker, index)
+        self.assertIn('Factor + Theme Map', factor)
+        self.assertIn('theme: minima', config)
+        self.assertIn('{{ content }}', layout)
+        self.assertNotIn('{{D_DATA}}', index)
+        self.assertNotIn('__DATA_PLACEHOLDER__', index)
+        self.assertNotIn('(top10)', index)
 
 
 if __name__ == '__main__':
