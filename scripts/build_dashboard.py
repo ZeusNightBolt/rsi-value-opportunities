@@ -18,7 +18,7 @@ from equity_screener.polygon_overlay import enrich_latest_polygon_prices
 from equity_screener.render import render_dashboard
 from equity_screener.render_helpers import *
 from equity_screener.scoring import grade_to_score, pct_score, score_candidates
-from equity_screener.selection import build_diversified_top10, cap_by_sector, final_candidate_tickers
+from equity_screener.selection import build_diversified_top10, cap_by_sector, final_candidate_tickers, mark_diversified_top10
 from equity_screener.serialization import clean_float, record
 
 

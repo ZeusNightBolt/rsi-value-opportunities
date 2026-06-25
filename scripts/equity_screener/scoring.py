@@ -4,7 +4,6 @@ import numpy as np
 import pandas as pd
 
 from .config import SCORE_COLUMNS, SLEEVE_LABELS
-from .selection import build_diversified_top10
 
 def pct_score(series: pd.Series, lower_is_better: bool) -> pd.Series:
     s = series.astype(float).copy()
@@ -323,6 +322,4 @@ def score_candidates(df: pd.DataFrame) -> pd.DataFrame:
     df["global_rank"] = df["opportunity_score"].rank(method="first", ascending=False).astype(int)
     df["is_top_inflection"] = (df["inflection_flag"] == 1) & (df["rsi_delta_1"] > 0) & (df["rsi_accel"] > 0)
     sorted_df = df.sort_values("opportunity_score", ascending=False).reset_index(drop=True)
-    diversified = build_diversified_top10(sorted_df, 3)
-    sorted_df["diversified_top10"] = sorted_df.index.isin(diversified.index)
     return sorted_df

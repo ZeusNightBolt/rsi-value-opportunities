@@ -53,6 +53,18 @@ def build_diversified_top10(df: pd.DataFrame, per_sector_cap: int = 3) -> pd.Dat
     out["portfolio_rank"] = range(1, len(out) + 1)
     return out
 
+def mark_diversified_top10(df: pd.DataFrame, per_sector_cap: int = 3) -> pd.DataFrame:
+    """Return a copy with diversified_top10 set from the shared selector."""
+    if df.empty:
+        out = df.copy()
+        out["diversified_top10"] = False
+        return out
+    out = df.copy()
+    diversified = build_diversified_top10(out, per_sector_cap)
+    out["diversified_top10"] = out.index.isin(diversified.index)
+    return out
+
+
 def final_candidate_tickers(df: pd.DataFrame) -> list[str]:
     """Return tickers that appear in final dashboard opportunity surfaces."""
     if df.empty:

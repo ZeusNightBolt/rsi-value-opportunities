@@ -8,7 +8,7 @@ from .git_ops import git_commit_push
 from .polygon_overlay import enrich_latest_polygon_prices
 from .render import render_dashboard
 from .scoring import score_candidates
-from .selection import final_candidate_tickers
+from .selection import final_candidate_tickers, mark_diversified_top10
 
 def main() -> int:
     parser = argparse.ArgumentParser()
@@ -20,7 +20,7 @@ def main() -> int:
     args = parser.parse_args()
     load_env_file(ENV_PATH)
     df = query_candidates(args.price_filter)
-    df = score_candidates(df)
+    df = mark_diversified_top10(score_candidates(df))
     final_tickers = final_candidate_tickers(df)
     df = enrich_latest_polygon_prices(df, final_tickers)
     analyses = [] if args.no_llm else analyze_top_inflections(df, args.top_llm, args.force_llm)

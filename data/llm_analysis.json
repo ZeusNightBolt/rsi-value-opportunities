@@ -213,17 +213,17 @@
   },
   {
     "ticker": "KMX",
-    "cache_key": "web-v4:KMX:1782331200000:80.3:momentum leader / wave 3",
-    "generated_at": "2026-06-25T19:16:40.862068+00:00",
+    "cache_key": "web-v4:KMX:1782331200000:64.83:momentum pullback / wave 2-4",
+    "generated_at": "2026-06-25T19:20:42.418815+00:00",
     "input": {
       "ticker": "KMX",
       "company": "CarMax Inc.",
       "sector": "Consumer Discretionary",
       "industry": "Auto & Truck Dealerships",
-      "primary_strategy": "momentum leader / wave 3",
-      "price": 52.135,
+      "primary_strategy": "momentum pullback / wave 2-4",
+      "price": 52.19,
       "market_cap_bn": 5.99,
-      "opportunity_score": 80.3,
+      "opportunity_score": 64.8,
       "rsi_value_score": 46.8,
       "squeeze_laggard_score": 48.9,
       "value_laggard_score": 37.8,
@@ -250,17 +250,17 @@
   },
   {
     "ticker": "TGTX",
-    "cache_key": "web-v4:TGTX:1782388800000:79.37:momentum leader / wave 3",
-    "generated_at": "2026-06-25T19:16:53.824318+00:00",
+    "cache_key": "web-v4:TGTX:1782388800000:70.24:RSI breakout inflection",
+    "generated_at": "2026-06-25T19:20:55.896959+00:00",
     "input": {
       "ticker": "TGTX",
       "company": "TG Therapeutics, Inc.",
       "sector": "Health Care",
       "industry": "Biotechnology",
-      "primary_strategy": "momentum leader / wave 3",
-      "price": 53.46,
+      "primary_strategy": "RSI breakout inflection",
+      "price": 53.485,
       "market_cap_bn": 5.94,
-      "opportunity_score": 79.4,
+      "opportunity_score": 70.2,
       "rsi_value_score": 35.9,
       "squeeze_laggard_score": 48.8,
       "value_laggard_score": 25.5,
@@ -302,7 +302,7 @@
         "search_snippet": "Simply Wall St."
       }
     ],
-    "analysis": "- **External commentary:** Source [1] highlights a bullish thesis centered on BRIUMVI\u2019s commercial traction, durable recurring revenue, and expanding adoption among neurologists. Source [2] notes positive Phase 1 data for BRIUMVI in myasthenia gravis (MG) and a 10.6% upward revision in consensus EPS estimates over the past 30 days. Source [3] emphasizes the potential of an at-home subcutaneous formulation of BRIUMVI, with a Phase 3 readout expected in late 2026 or early 2027, and notes the ENHANCE trial showing bioequivalence for a simplified dosing regimen.\n\n- **Why it can work:** The company has a single approved product (BRIUMVI) with growing prescription trends and expanding label potential (MG, subcutaneous formulation). Earnings and revenue growth expectations are strong (+147% and +63% year-over-year, respectively) [2], and the stock has shown recent price momentum (+37.9% over one month) despite a high short interest (18.4% of float). The forward P/E of 14.26 is low relative to growth rates, suggesting potential for re-rating if commercial execution continues.\n\n- **What can break it:** The primary risk is single-product concentration; any negative regulatory, competitive, or commercial setback for BRIUMVI would have outsized impact [3]. The Phase 3 subcutaneous trial is not expected to read out until late 2026/early 2027, leaving a long period without a major catalyst. Additionally, the RSI acceleration is negative (-5.2), and the stock is only 7% off its 52-week high, implying limited near-term upside if momentum stalls. The high short interest could also lead to sharp downside if the thesis weakens.\n\n- **Confirming evidence to watch:** Monitor quarterly prescription data for BRIUMVI, upcoming earnings reports (expected EPS of $0.42, revenue of $230.64M) [2], and any updates on the MG Phase 2 trial or subcutaneous Phase 3 enrollment. Sustained upward earnings estimate revisions would be a positive signal. Also watch for changes in short interest and insider trading activity, which are not provided in the data.\n\n- **Bottom line:** TGTX presents a speculative long setup based on a single-product commercial-stage biotech with strong near-term revenue growth and a promising pipeline expansion (MG, subcutaneous). However, the lack of near-term catalysts beyond earnings, negative RSI momentum, and high short interest introduce significant risk. The thesis depends entirely on continued commercial execution and positive trial data, which are not guaranteed. No investment recommendation is made."
+    "analysis": "- **External commentary:** [1] highlights a bullish thesis centered on BRIUMVI\u2019s commercial traction, recurring revenue, and expanding adoption among neurologists, while [2] notes positive Phase 1 data for BRIUMVI in myasthenia gravis (MG) and a 10.6% upward revision in consensus EPS estimates over 30 days. [3] emphasizes the potential of an at-home subcutaneous BRIUMVI formulation, with a Phase 3 readout expected in late 2026 or early 2027, and mentions the Phase 3 ENHANCE trial showing bioequivalence for a simplified IV initiation.\n\n- **Why it can work:** BRIUMVI\u2019s growing prescription base and patient persistence (per [1]) provide a revenue foundation, while pipeline expansion into MG and subcutaneous dosing (per [2] and [3]) could broaden the addressable market. The forward P/E of 14.26 and trailing P/E of 14.32 suggest moderate valuation relative to earnings, and the 1-month return of +37.9% (warehouse data) may reflect recent positive catalysts. The short float of 18.4% could amplify upside if positive news triggers a squeeze.\n\n- **What can break it:** The company remains a single-product story (BRIUMVI) per [3], making it vulnerable to competitive pressure, regulatory setbacks, or slower-than-expected adoption. The Phase 3 subcutaneous trial is not expected to read out until late 2026/early 2027, leaving a long gap without major catalysts. The RSI acceleration score of -5.2 (warehouse data) suggests recent momentum is fading, and the stock is only 7% off its 52-week high, limiting near-term upside potential.\n\n- **Confirming evidence to watch:** Monitor quarterly earnings and revenue growth (expected +63.4% YoY per [2]) for actual vs. consensus beats. Track prescription trends for BRIUMVI and any updates on the MG Phase 2 trial initiation. Watch for regulatory or payer decisions on the subcutaneous formulation. The warehouse data shows a sentiment score of 1.0 (maximum), which may already be priced in; any deterioration in sentiment could be a warning.\n\n- **Bottom line:** The long setup relies on BRIUMVI\u2019s commercial momentum and pipeline expansion, but the single-product risk and long timeline to the next major catalyst (subcutaneous Phase 3 readout) create uncertainty. The stock\u2019s recent run-up and high sentiment suggest limited margin of safety. No trade recommendation is made."
   },
   {
     "ticker": "CMC",
@@ -462,17 +462,17 @@
   },
   {
     "ticker": "TRU",
-    "cache_key": "web-v4:TRU:1782331200000:79.46:wave-stage setup",
-    "generated_at": "2026-06-25T19:17:45.933805+00:00",
+    "cache_key": "web-v4:TRU:1782331200000:78.39:shorted near lows / peer lag",
+    "generated_at": "2026-06-25T19:21:13.668929+00:00",
     "input": {
       "ticker": "TRU",
       "company": "TransUnion",
       "sector": "Financials",
       "industry": "Financial Data & Stock Exchanges",
-      "primary_strategy": "wave-stage setup",
-      "price": 67.875,
+      "primary_strategy": "shorted near lows / peer lag",
+      "price": 67.93,
       "market_cap_bn": 12.45,
-      "opportunity_score": 79.5,
+      "opportunity_score": 78.4,
       "rsi_value_score": 69.7,
       "squeeze_laggard_score": 78.4,
       "value_laggard_score": 70.5,
@@ -502,6 +502,6 @@
         "search_snippet": "StockStory"
       }
     ],
-    "analysis": "- **External commentary:** Source [1] highlights TransUnion\u2019s strong five-year revenue CAGR of 11.6% and sell-side expectations for 11.3% revenue growth over the next 12 months, calling the recent 22% price decline a potential entry point. The same source notes one unspecified negative (\u201c1 Not So Much\u201d), but the excerpt does not reveal what that risk is. No other external commentary was provided.\n\n- **Why it can work:** The company\u2019s historical revenue growth (11.6% annualized) is above the average business services peer, and forward revenue estimates remain near that pace, suggesting demand momentum is intact. The forward P/E of 12.33 is below the trailing P/E of 19.06, implying expected earnings growth. The RSI acceleration score of 82.3 and RSI delta of +8.2 (vs. prior 3-bar average of +2.8) indicate short-term momentum improvement from oversold levels. Short interest at 5.1% of float provides moderate squeeze potential if positive catalysts emerge.\n\n- **What can break it:** The stock is 31.6% below its 52-week high and underperformed its sector by ~9.7 percentage points in the past month (TRU -3.8% vs. sector median +5.9%). The single negative factor from [1] is unknown, which could be a fundamental headwind (e.g., regulatory, competitive, or margin pressure). The PEG ratio of 1.13 is not obviously cheap, and the composite value score of 52.3 is neutral. If forward revenue growth decelerates or the unknown risk materializes, the setup could fail.\n\n- **Confirming evidence to watch:** Monitor upcoming quarterly revenue and earnings reports for confirmation of the 11.3% growth forecast. Watch for any disclosure of the negative factor referenced in [1]. Track RSI to see if it sustains above 55 and continues to accelerate; a drop back below 50 would negate the momentum signal. Also watch for relative strength vs. sector peers (e.g., Equifax, Experian) to confirm a reversal of the recent lag.\n\n- **Bottom line:** The long setup relies on a combination of strong historical revenue growth, bullish forward estimates, and improving near-term momentum after a significant drawdown. However, the unknown negative factor from [1] and recent severe underperformance relative to sector are material risks. Without clarity on that negative, the setup is incomplete. No trade recommendation is made."
+    "analysis": "- **External commentary:** [1] highlights TransUnion\u2019s strong five-year revenue CAGR of 11.6% and sell-side expectations for 11.3% revenue growth over the next 12 months, calling the recent 22% price decline a potential opportunity. The same source notes one unspecified negative (\u201c1 Not So Much\u201d) but does not detail it in the excerpt. No other external sources are provided to corroborate or challenge this view.\n\n- **Why it can work:** The company\u2019s revenue growth rate (11.6% historical, ~11.3% projected) is above average for business services, and the forward P/E of 12.33 is below the trailing P/E of 19.06, implying earnings expansion is expected. The RSI acceleration (5.4) and short interest (5.1% of float) suggest some bearish positioning that could unwind if sentiment shifts. The composite value score (52.3) is neutral, but the opportunity score (78.4) and squeeze-laggard score (78.4) indicate the stock is relatively cheap vs. peers and may be set for a mean-reversion move.\n\n- **What can break it:** The stock is down 31.6% from its 52-week high and underperformed its sector by 9.6% in the last month. The single negative factor in [1] is unknown, but could relate to debt, regulatory risk, or competitive pressure from Equifax/Experian. The PEG ratio of 1.13 suggests growth is already priced in, leaving little room for error. If projected revenue growth disappoints or the broader financial sector weakens, the stock could continue to lag.\n\n- **Confirming evidence to watch:** Look for upcoming quarterly revenue and earnings reports to confirm the 11.3% growth forecast. Monitor changes in short interest (currently 5.1%) and RSI momentum (currently 55.6, accelerating). A sustained move above the 52-week low (+7.3%) on above-average volume would suggest buying interest. Any positive analyst revisions or debt reduction announcements would support the thesis.\n\n- **Bottom line:** TransUnion shows a compelling revenue growth narrative and a relatively low forward multiple, but the stock is a laggard in a strong sector and the single negative factor from [1] is unknown. The setup is speculative and depends on execution against growth expectations. No trade recommendation is made."
   }
 ]
