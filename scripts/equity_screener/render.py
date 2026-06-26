@@ -493,7 +493,6 @@ def render_dashboard(df: pd.DataFrame, analyses: list[dict], price_filter: float
 
     if not universe_df.empty:
         for sector, sdf in universe_df.groupby("sector"):
-            sdf = sdf.sort_values("market_cap", ascending=False)
             rows = []
             for _, r in sdf.iterrows():
                 ticker = str(r.get("ticker", ""))
@@ -502,9 +501,12 @@ def render_dashboard(df: pd.DataFrame, analyses: list[dict], price_filter: float
                 opp = float(r.get("opportunity_score", 0) or 0)
                 opp_1w = float(r.get("composite_1w_ago", 0) or 0)
                 opp_1m = float(r.get("composite_1m_ago", 0) or 0)
+                opp_ytd = float(r.get("composite_ytd_ago", 0) or 0)
+                qtd = float(r.get("ret_qtd_pct", 0) or 0)
                 ytd = float(r.get("ret_ytd_pct", 0) or 0)
                 delta_1w = opp - opp_1w
                 delta_1m = opp - opp_1m
+                delta_ytd = opp - opp_ytd
 
                 def heat_cls(val):
                     v = float(val) if val and not (isinstance(val, float) and val != val) else 50
@@ -526,6 +528,8 @@ def render_dashboard(df: pd.DataFrame, analyses: list[dict], price_filter: float
                     f"<td><span class='heat-cell {heat_cls(opp)}'>{opp:.0f}</span></td>"
                     f"<td><span class='heat-cell {heat_cls(opp_1w)}'>{opp_1w:.0f}</span> {delta_span(delta_1w)}</td>"
                     f"<td><span class='heat-cell {heat_cls(opp_1m)}'>{opp_1m:.0f}</span> {delta_span(delta_1m)}</td>"
+                    f"<td><span class='heat-cell {heat_cls(opp_ytd)}'>{opp_ytd:.0f}</span> {delta_span(delta_ytd)}</td>"
+                    f"<td>{qtd:+.1f}%</td>"
                     f"<td>{ytd:+.1f}%</td>"
                     f"</tr>"
                 )
@@ -533,17 +537,17 @@ def render_dashboard(df: pd.DataFrame, analyses: list[dict], price_filter: float
                 f"<div class='sector-pivot'><h2>{html.escape(str(sector))} · {len(rows)} stocks</h2>"
                 f"<div class='table-wrap'><table class='universe-heat'><thead><tr>"
                 f"<th>Ticker</th><th>Mkt Cap</th>"
-                f"<th>Score Now</th><th>Score 1W Ago</th><th>Score 1M Ago</th>"
-                f"<th>YTD Chg</th></tr></thead><tbody>{''.join(rows)}</tbody></table></div></div>"
+                f"<th>Score Now</th><th>Score 1W Ago</th><th>Score 1M Ago</th><th>Score YTD Start</th>"
+                f"<th>QTD Chg</th><th>YTD Chg</th></tr></thead><tbody>{''.join(rows)}</tbody></table></div></div>"
             )
 
     universe_content = f"""<!doctype html>
 <html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Full Universe · Equity Screener</title>
 <style>{css}{theme_css}{heat_css}</style></head>
-<body class="revamp-v3"><header class="site-hero"><div class="hero-inner"><div class="brand-lockup"><div class="brand-mark">⊞</div><div class="brand-copy"><h1>Full Universe Monitor</h1><p>All VTI stocks ≥ $5B · composite scores today / 1w ago / 1m ago · YTD change</p></div></div><div class="hero-actions"><span class="status-pill live">● Live</span><span class="status-pill">{len(universe_df):,} stocks</span><a href="index.html">Cockpit</a><a href="factor-baskets.html">Themes</a><a href="divergence.html">Divergence</a><a class="active" href="universe.html">Universe</a></div></div></header>
-<main class="page-shell"><section class="method-panel"><div><h2>Full universe · no price cap</h2><p>Every VTI holding ≥ $5B market cap, grouped by sector and sorted by market cap. Each ticker shows today's composite score, the score from ~1 week ago and ~1 month ago (recomputed from DuckDB snapshots), and the YTD % change. Delta arrows highlight improving (▲ green) or deteriorating (▼ red) setups.</p></div><div class="method-facts"><span><b>Known</b>Composite scores from deterministic warehouse pipeline. Historical values recomputed from DuckDB daily/4h snapshots.</span><span><b>Estimated</b>Historical scores use same formula applied to snapshot data; historical valuation fields (PE, PB) are NaN for snapshots so composite leans on technical factors.</span><span><b>Heat map</b>Green ≥ 70 · Amber 55‑69 · Red ≤ 35 · Grey otherwise.</span></div></section>
+<body class="revamp-v3"><header class="site-hero"><div class="hero-inner"><div class="brand-lockup"><div class="brand-mark">⊞</div><div class="brand-copy"><h1>Full Universe Monitor</h1><p>All VTI stocks ≥ $5B · sorted by YTD score improvement · scores recomputed from DuckDB snapshots</p></div></div><div class="hero-actions"><span class="status-pill live">● Live</span><span class="status-pill">{len(universe_df):,} stocks</span><a href="index.html">Cockpit</a><a href="factor-baskets.html">Themes</a><a href="divergence.html">Divergence</a><a class="active" href="universe.html">Universe</a></div></div></header>
+<main class="page-shell"><section class="method-panel"><div><h2>Full universe · no price cap</h2><p>Every VTI holding ≥ $5B market cap, grouped by sector and sorted by YTD composite score improvement (best → worst). Shows today's score, scores at ~1w ago, ~1m ago, and YTD start (~Jan 2, 2026), plus QTD and YTD % price change. Delta arrows highlight improving (▲ green) or deteriorating (▼ red) setups.</p></div><div class="method-facts"><span><b>Known</b>Composite scores from deterministic warehouse pipeline. Historical values recomputed from DuckDB daily/4h snapshots at each date.</span><span><b>Estimated</b>Historical scores use same formula applied to snapshot data; historical valuation fields (PE, PB) are NaN for snapshots so composite leans on technical factors.</span><span><b>Heat map</b>Green ≥ 70 · Amber 55‑69 · Red ≤ 35 · Grey otherwise. Sorted by YTD score delta.</span></div></section>
 {''.join(universe_rows) if universe_rows else '<p class="note">No universe data available.</p>'}
-<div class="footer">Known: composite opportunity scores from deterministic pipeline; historical values from DuckDB daily/4h snapshots. Estimated: snapshot scores approximate today's formula; historical valuation fields unavailable in snapshots.</div></main></body></html>"""
+<div class="footer">Known: composite opportunity scores from deterministic pipeline; historical values from DuckDB daily/4h snapshots. Estimated: snapshot scores approximate today's formula; historical valuation fields unavailable in historical snapshots. QTD = quarter-to-date % price change from ~Apr 1, 2026.</div></main></body></html>"""
 
     (DOCS_DIR / "universe.html").write_text(universe_content)
