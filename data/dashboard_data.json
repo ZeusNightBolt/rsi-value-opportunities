@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-25T20:44:53.007635-04:00",
+  "generated_at": "2026-06-25T20:49:31.944891-04:00",
   "latest_4h_timestamp": "2026-06-25 16:00:00-04:00",
   "price_filter": 75.0,
   "universe_count": 353,
@@ -20031,7 +20031,7 @@
     {
       "ticker": "KMX",
       "cache_key": "web-v4:KMX:1782417600000:79.23:RSI breakout inflection",
-      "generated_at": "2026-06-26T00:44:52.503131+00:00",
+      "generated_at": "2026-06-26T00:49:31.442000+00:00",
       "input": {
         "ticker": "KMX",
         "company": "CarMax Inc.",
