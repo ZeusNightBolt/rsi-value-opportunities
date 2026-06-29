@@ -70,6 +70,7 @@ GIT_TRACKED_OUTPUTS = [
     "scripts/equity_screener/__init__.py",
     "scripts/equity_screener/baskets.py",
     "scripts/equity_screener/commentary.py",
+    "scripts/equity_screener/freshness.py",
     "scripts/equity_screener/config.py",
     "scripts/equity_screener/data.py",
     "scripts/equity_screener/git_ops.py",
@@ -88,4 +89,6 @@ GIT_TRACKED_OUTPUTS = [
     "data/dashboard_data.json",
     "data/llm_analysis.json",
     "data/scored_candidates.csv",
+    "test_build_dashboard.py",
+    "test_freshness_guard.py",
 ]

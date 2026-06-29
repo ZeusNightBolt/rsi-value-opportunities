@@ -5,6 +5,7 @@ import dataclasses
 import datetime as dt
 import sys
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 import duckdb
 
@@ -46,8 +47,9 @@ def freshness_decision(
     """
     latest_utc = _as_utc(latest_utc)
     now_utc = _as_utc(now_utc or dt.datetime.now(dt.timezone.utc))
+    now_market = now_utc.astimezone(ZoneInfo("America/New_York"))
     age_hours = (now_utc - latest_utc).total_seconds() / 3600
-    threshold_hours = WEEKEND_MAX_STALE_HOURS if now_utc.weekday() in (5, 6) else WEEKDAY_MAX_STALE_HOURS
+    threshold_hours = WEEKEND_MAX_STALE_HOURS if now_market.weekday() in (5, 6) else WEEKDAY_MAX_STALE_HOURS
 
     if age_hours > RETRY_STALE_HOURS and not refresh_already_retried:
         return FreshnessDecision(

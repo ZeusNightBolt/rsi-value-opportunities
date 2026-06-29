@@ -33,8 +33,9 @@ def render_score_cell(value, cls=""):
     # Heatmap: dark amber-to-color gradient background with opacity proportional to score
     color_rgb = COLOR_RGB.get(cls, "230,180,34")
     bg_alpha = 0.04 + opacity * 0.10  # subtle range 4%-14%
+    class_attr = f' score-{html.escape(cls)}' if cls else ''
     return (
-        f'<td class="score-td" style="background:rgba({color_rgb},{bg_alpha:.3f});--bar-pct:{v:.0f}%;--bar-color:rgb({color_rgb})">'
+        f'<td class="score-td{class_attr}" style="background:rgba({color_rgb},{bg_alpha:.3f});--bar-pct:{v:.0f}%;--bar-color:rgb({color_rgb})">'
         f'<div class="score-bar" style="--bar-pct:{v:.0f}%;--bar-color:rgb({color_rgb})">'
         f'<span class="bar-fill"></span>'
         f'<span class="bar-score">{v:.0f}</span>'
