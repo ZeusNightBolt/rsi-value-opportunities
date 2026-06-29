@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-28T22:17:49.335565-04:00",
+  "generated_at": "2026-06-28T22:57:55.390752-04:00",
   "latest_4h_timestamp": "2026-06-26 16:00:00-04:00",
   "price_filter": 75.0,
   "universe_count": 348,
@@ -20079,7 +20079,7 @@
     {
       "ticker": "BMY",
       "cache_key": "web-v4:BMY:1782504000000:78.76:RSI breakout inflection",
-      "generated_at": "2026-06-29T02:17:48.831450+00:00",
+      "generated_at": "2026-06-29T02:57:54.886726+00:00",
       "input": {
         "ticker": "BMY",
         "company": "Bristol-Myers Squibb Co.",
