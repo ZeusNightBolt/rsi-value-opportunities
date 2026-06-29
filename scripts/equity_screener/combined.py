@@ -78,6 +78,16 @@ def combined_top25_opportunities(df: pd.DataFrame, limit: int = 25, sector_cap: 
             "alignment_status": alignment,
             "combined_rank_takeaway": takeaway,
             "sector": sector,
+            "display_close": row.get("display_close"),
+            "price_source": row.get("price_source"),
+            "rsi0": row.get("rsi0"),
+            "four_h_timestamp": row.get("four_h_timestamp"),
+            "latest_daily_timestamp": row.get("latest_daily_timestamp"),
+            "market_cap": row.get("market_cap"),
+            "short_pct_float": row.get("short_pct_float"),
+            "from_52w_low_pct": row.get("from_52w_low_pct"),
+            "peer_lag_1m_pct": row.get("peer_lag_1m_pct"),
+            "wave_stage": row.get("wave_stage"),
         })
 
     if not contrib_rows:
