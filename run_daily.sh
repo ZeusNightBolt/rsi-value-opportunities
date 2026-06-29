@@ -38,11 +38,20 @@ ti_max = db.execute(\"SELECT max(to_timestamp(CAST(timestamp/1000 AS BIGINT))) F
 if ti_max[0] is None:
     print('FATAL: no 4h RSI data')
     sys.exit(2)
-age_hours = (datetime.datetime.now(datetime.timezone.utc) - ti_max[0].replace(tzinfo=datetime.timezone.utc)).total_seconds() / 3600
-if age_hours > 30:
-    print(f'REFUSING: 4h RSI data is {age_hours:.0f}h old')
+# DuckDB's to_timestamp() returns a timezone-aware timestamp in the local TZ.
+# Do NOT use replace(tzinfo=UTC): that relabels 16:00 ET as 16:00 UTC and
+# overstates age by four hours.
+latest_utc = ti_max[0].astimezone(datetime.timezone.utc) if ti_max[0].tzinfo else ti_max[0].replace(tzinfo=datetime.timezone.utc)
+now_utc = datetime.datetime.now(datetime.timezone.utc)
+age_hours = (now_utc - latest_utc).total_seconds() / 3600
+# This cron is intentionally daily, but markets are closed over the weekend.
+# Friday's 4h RSI can be ~53h old by the Sunday 20:30 ET run; that is expected,
+# not a pipeline failure. Keep the strict 30h guard on weekdays.
+threshold_hours = 80 if now_utc.weekday() in (5, 6) else 30
+if age_hours > threshold_hours:
+    print(f'REFUSING: 4h RSI data is {age_hours:.0f}h old > {threshold_hours}h threshold (latest={latest_utc.isoformat()})')
     sys.exit(2)
-print(f'OK: 4h RSI data is {age_hours:.0f}h old')
+print(f'OK: 4h RSI data is {age_hours:.0f}h old <= {threshold_hours}h threshold (latest={latest_utc.isoformat()})')
 db.close()
 " || exit $?
 
