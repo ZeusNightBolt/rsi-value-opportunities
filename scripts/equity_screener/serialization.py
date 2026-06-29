@@ -14,9 +14,10 @@ def clean_float(value):
 
 def record(row) -> dict:
     keys = [
-        "global_rank", "rank_in_sector", "sector", "ticker", "company", "market_cap", "four_h_close", "display_close", "price_source", "latest_daily_close",
+        "global_rank", "rank_in_sector", "portfolio_rank", "display_rank", "sector", "ticker", "company", "market_cap", "four_h_close", "display_close", "price_source", "latest_daily_close",
         "latest_polygon_price", "latest_polygon_price_source", "latest_polygon_price_timestamp", "latest_polygon_price_status", "warehouse_display_close",
         "diversified_source",
+        "raw_opportunity_score", "quality_penalty", "thin_volume_penalty", "broken_trend_penalty", "crash_penalty",
         "opportunity_score", "rsi_value_score", "squeeze_laggard_score", "value_laggard_score", "momentum_leader_score", "momentum_pullback_score", "rel_strength_pullback_score", "inflect_breakout_score", "wave_setup_score", "ev_score",
         "rsi_acceleration_score", "composite_value_score", "rel_strength_core_score", "price_position_52w", "wave_stage", "wave_stage_margin", "wave_accumulation_score", "wave_pullback_score", "wave_markup_score", "wave_breakout_score", "rsi0", "rsi1", "rsi2", "rsi3", "rsi4", "rsi5", "rsi_delta_1",
         "prior_delta_3_avg", "rsi_accel", "inflection_flag", "yf_forward_pe", "yf_trailing_pe",
@@ -34,7 +35,7 @@ def record(row) -> dict:
             out[key] = None if pd.isna(value) else str(value)
         elif key in {"four_h_timestamp", "latest_daily_timestamp"}:
             out[key] = str(value)
-        elif key in {"global_rank", "rank_in_sector", "inflection_flag"}:
+        elif key in {"global_rank", "rank_in_sector", "portfolio_rank", "display_rank", "inflection_flag"}:
             out[key] = None if pd.isna(value) else int(value)
         else:
             out[key] = clean_float(value)

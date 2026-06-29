@@ -286,7 +286,32 @@ def score_candidates(df: pd.DataFrame) -> pd.DataFrame:
     df["wave_stage"] = best_wave_col.map(wave_label_map).fillna("Neutral / transition")
     df.loc[df["wave_stage_margin"] < 3.0, "wave_stage"] = "Mixed / transition"
 
-    df["opportunity_score"] = df[SCORE_COLUMNS].max(axis=1)
+    # ── Data/tradability quality overlay ──
+    # The sleeve models intentionally surface contrarian names, but production
+    # output should not let zero/near-zero relative volume or severe broken-trend
+    # conditions dominate the headline rank.  Keep the raw sleeve signal for
+    # diagnostics, then subtract a bounded quality penalty from the final rank.
+    df["raw_opportunity_score"] = df[SCORE_COLUMNS].max(axis=1)
+    rel_vol = df["volume_vs_20d"].fillna(0.0)
+    df["thin_volume_penalty"] = np.select(
+        [rel_vol < 0.05, rel_vol < 0.25, rel_vol < 0.45],
+        [12.0, 8.0, 4.0],
+        default=0.0,
+    )
+    df["broken_trend_penalty"] = np.where(
+        (df["price_vs_sma200_pct"].fillna(0.0) < -30.0)
+        & (df["ret_3m_pct"].fillna(0.0) < -15.0),
+        6.0,
+        0.0,
+    )
+    df["crash_penalty"] = np.where(df["ret_1w_pct"].fillna(0.0) < -15.0, 4.0, 0.0)
+    df["quality_penalty"] = (
+        df["thin_volume_penalty"]
+        + df["broken_trend_penalty"]
+        + df["crash_penalty"]
+    ).clip(0, 18)
+    df["opportunity_score"] = (df["raw_opportunity_score"] - df["quality_penalty"]).clip(0, 100)
+    df = df.copy()
 
     # ── EV Master Score ──
     # High-expected-value stocks: strong signals with cross-sleeve agreement

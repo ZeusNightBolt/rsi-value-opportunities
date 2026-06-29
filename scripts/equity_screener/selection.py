@@ -2,6 +2,15 @@ import pandas as pd
 
 from .config import DIVERSIFIED_TOP_PLAN, SLEEVE_LABELS
 
+DIVERSIFIED_MIN_SCORE = 60.0
+ELIGIBILITY_FLAG_BY_SCORE = {
+    "momentum_leader_score": "momentum_leader_eligible",
+    "momentum_pullback_score": "mom_pullback_eligible",
+    "rel_strength_pullback_score": "rs_pullback_eligible",
+    "inflect_breakout_score": "inflect_breakout_eligible",
+    "wave_setup_score": "ev_master_eligible",
+}
+
 def cap_by_sector(df: pd.DataFrame, score_col: str, limit: int, per_sector_cap: int = 3) -> pd.DataFrame:
     if df.empty:
         return df.copy()
@@ -26,10 +35,16 @@ def build_diversified_top10(df: pd.DataFrame, per_sector_cap: int = 3) -> pd.Dat
     picked_set = set()
     picked_source = {}
 
-    def add_from(frame: pd.DataFrame, score_col: str, quota: int) -> None:
+    def add_from(frame: pd.DataFrame, score_col: str, quota: int, *, require_quality: bool = True) -> None:
         nonlocal picked, picked_set, sector_counts
         added = 0
-        for idx, row in frame.sort_values(score_col, ascending=False).iterrows():
+        candidates = frame
+        flag_col = ELIGIBILITY_FLAG_BY_SCORE.get(score_col)
+        if flag_col in candidates.columns:
+            candidates = candidates[candidates[flag_col].fillna(False).astype(bool)]
+        if require_quality and score_col in candidates.columns:
+            candidates = candidates[pd.to_numeric(candidates[score_col], errors="coerce") >= DIVERSIFIED_MIN_SCORE]
+        for idx, row in candidates.sort_values(score_col, ascending=False).iterrows():
             if idx in picked_set:
                 continue
             sector = str(row.get("sector", "Unknown"))
@@ -47,7 +62,7 @@ def build_diversified_top10(df: pd.DataFrame, per_sector_cap: int = 3) -> pd.Dat
         add_from(df, score_col, quota)
         if len(picked) >= 10:
             break
-    add_from(df, "opportunity_score", 10)
+    add_from(df, "opportunity_score", 10, require_quality=False)
     out = df.loc[picked[:10]].copy()
     out["diversified_source"] = [SLEEVE_LABELS[picked_source[idx]] if picked_source[idx] in SLEEVE_LABELS else "overall opportunity" for idx in out.index]
     out["portfolio_rank"] = range(1, len(out) + 1)

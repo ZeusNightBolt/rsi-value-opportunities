@@ -11,6 +11,7 @@ SCORE_COLUMNS = [
     "rsi_value_score",
     "squeeze_laggard_score",
     "value_laggard_score",
+    "momentum_leader_score",
     "momentum_pullback_score",
     "rel_strength_pullback_score",
     "inflect_breakout_score",
