@@ -101,9 +101,13 @@ def combined_top25_opportunities(df: pd.DataFrame, limit: int = 25, sector_cap: 
     combined_df = pd.DataFrame(contrib_rows)
 
     # --- Apply sector cap (use built-in head per group) ---
+    # Sort so CONFIRMATION items get priority over DIVERGENCE
     combined_df = (
         combined_df
-        .sort_values(["alignment_status", "combined_rank_score"], ascending=[True, False])
+        .sort_values(
+            ["sector", "alignment_status", "combined_rank_score"],
+            ascending=[True, False, False]  # False sorts DIVERGENCE after CONFIRMATION
+        )
         .groupby("sector")
         .head(sector_cap)
     )
